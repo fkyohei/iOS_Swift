@@ -83,3 +83,57 @@ dataDownload({ (arg0, arg1, arg2) -> Int in
     return 0
 })
 
+
+struct Rect {
+    var x: Float = 0
+    var y: Float = 0
+    var width: Float = 0
+    var height: Float = 0
+    
+    func maxX() -> Float {
+        return x + width
+    }
+    
+    static func availableMaxWidth() -> Float {
+        return 1024.0
+    }
+}
+var rect0 = Rect()
+var rect1 = Rect(x:0, y:0, width:200, height:200)
+var rect2 = Rect()
+rect2.x = 100
+rect2.y = 100
+rect2.width = 100
+rect2.height = 100
+rect2.maxX()
+Rect.availableMaxWidth()
+
+class Rect2 {
+    var x: Float = 0
+    var y: Float = 0
+    var width: Float = 0
+    var height: Float = 0
+    
+    func maxX() -> Float {
+        return x + width
+    }
+    
+    class func availableMaxWidth() -> Float {
+        return 1024.0
+    }
+}
+var rect3 = Rect2()
+rect3.x = 0
+rect3.y = 0
+rect3.width = 200
+rect3.height = 200
+rect3.maxX()
+Rect2.availableMaxWidth()
+
+
+class MyController: UIViewController {
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+}
+
