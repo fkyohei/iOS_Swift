@@ -53,3 +53,33 @@ for val in dict.values {
     val
 }
 
+
+func pow2(x: Int) -> Int {
+    return x * x
+}
+pow2(4)
+
+func addTitle(name: String) -> (kun: String, san: String, chan: String) {
+    return (name + "くん", name + "さん", name + "ちゃん")
+}
+var titledNames = addTitle("勉強")
+titledNames.kun
+titledNames.san
+titledNames.chan
+
+func dataDownload(handler: (String, String, String) -> Int) {
+    var arg0 = "call"
+    var arg1 = "from"
+    var arg2 = "dataDownload"
+    
+    handler(arg0, arg1, arg2)
+}
+
+dataDownload({ (arg0, arg1, arg2) -> Int in
+    println(arg0)
+    println(arg1)
+    println(arg2)
+
+    return 0
+})
+
