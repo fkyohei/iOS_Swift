@@ -137,3 +137,13 @@ class MyController: UIViewController {
     }
 }
 
+
+var AnyArray = [Any]()
+AnyArray.append(10)
+AnyArray.append("text")
+AnyArray.append(2.4)
+
+var url = NSURL(string: "http://www.apple.com?test=1&test2=2")!
+var host: String? = url.host
+var param: String? = url.query
+host?.hasPrefix("www")
