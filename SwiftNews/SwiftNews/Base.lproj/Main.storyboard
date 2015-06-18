@@ -34,19 +34,56 @@
                         </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <segue destination="Bf6-xk-lUp" kind="show" identifier="detail" id="eHj-y8-at3"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="98a-KF-eUb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="869" y="455"/>
         </scene>
+        <!--Detail Controller-->
+        <scene sceneID="aL2-vo-ShD">
+            <objects>
+                <viewController id="Bf6-xk-lUp" customClass="DetailController" customModule="SwiftNews" customModuleProvider="target" sceneMemberID="viewController">
+                    <webView key="view" contentMode="scaleToFill" id="3g6-6z-3ta">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </webView>
+                    <toolbarItems>
+                        <barButtonItem title="Twitter" id="Xq3-Ar-fBa">
+                            <connections>
+                                <action selector="twitter:" destination="Bf6-xk-lUp" id="iVS-AX-yPg"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="LBa-PK-AsF"/>
+                        <barButtonItem title="Facebook" id="Q49-I9-LX4">
+                            <connections>
+                                <action selector="facebook:" destination="Bf6-xk-lUp" id="Ctv-5c-nOR"/>
+                            </connections>
+                        </barButtonItem>
+                    </toolbarItems>
+                    <connections>
+                        <outlet property="webView" destination="3g6-6z-3ta" id="e31-Pc-lKS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Y4a-3P-n2j" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1624" y="455"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="1dd-QU-xg3">
             <objects>
-                <navigationController id="HEd-gZ-5JA" sceneMemberID="viewController">
+                <navigationController toolbarHidden="NO" id="HEd-gZ-5JA" sceneMemberID="viewController">
+                    <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="rjz-Hs-OSk">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="4dR-yz-pV8">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <connections>
                         <segue destination="1K0-wt-jig" kind="relationship" relationship="rootViewController" id="6TC-0X-BCA"/>
                     </connections>
