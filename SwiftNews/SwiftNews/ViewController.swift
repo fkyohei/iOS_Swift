@@ -9,10 +9,15 @@
 import UIKit
 
 class ViewController: UITableViewController {
-    // ニュースのアドレス
-    let newsUrlString = "http://ajax.googleapis.com/ajax/services/feed/load?v=1.0&q=http://rss.itmedia.co.jp/rss/2.0/news_bursts.xml&num=8"
+    // ニュースのアドレスの配列
+    let newsUrlStrings = ["http://ajax.googleapis.com/ajax/services/feed/load?v=1.0&q=http://rss.rssad.jp/rss/impresswatch/pcwatch.rdf&num=8",
+                          "http://ajax.googleapis.com/ajax/services/feed/load?v=1.0&q=http://rss.itmedia.co.jp/rss/2.0/news_bursts.xml&num=8",
+                          "http://ajax.googleapis.com/ajax/services/feed/load?v=1.0&q=http://jp.techcrunch.com/feed/&num=8",
+    ]
     // エントリーの配列
-    var entries = NSArray()
+    var entries = NSMutableArray()
+    // 画像ファイル名の配列
+    let imageNames = ["itmedia", "pcwatch", "techcrunch"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,9 +41,28 @@ class ViewController: UITableViewController {
         // エントリーを取得する
         var entry = entries[indexPath.row] as! NSDictionary
 
-        // セルにテキストを設定する
-        cell?.textLabel!.text = entry["title"] as? String
+        // タイトルラベルを取得して、タイトルを設定する
+        var titleLabel = cell?.viewWithTag(1) as! UILabel
+        titleLabel.text = entry["title"] as? String
         
+        // 本文ラベルを取得して、本文を設定する
+        var discriptionLabel = cell?.viewWithTag(2) as! UILabel
+        discriptionLabel.text = entry["contentSnippet"] as? String
+        
+        // 日付ラベルを取得して、日付を設定する
+        var dateLabel = cell?.viewWithTag(3) as! UILabel
+        dateLabel.text = entry["publishedDate"] as? String
+        
+        // 画像ファイル名を決定して、UIImageを作る
+        var urlString = entry["url"] as? String
+        var index = find(newsUrlStrings, urlString!)
+        var imageName = imageNames[index!]
+        var image = UIImage(named: imageName)
+        
+        // イメージビューを取得して、画像を設定する
+        var imageView = cell?.viewWithTag(4) as! UIImageView
+        imageView.image = image
+
         return cell!
     }
     
@@ -59,32 +83,76 @@ class ViewController: UITableViewController {
     }
 
     @IBAction func reflesh(sender: AnyObject) {
-        // NSURL を作る
-        var url = NSURL(string: newsUrlString)!
+        // エントリーを全て削除する
+        entries.removeAllObjects()
         
-        // データをダウンロードする
-        var task = NSURLSession.sharedSession().dataTaskWithURL(url, completionHandler: {
-            data, response, error in
-            // JSONデータを辞書に変換する
-            var dict = NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableContainers, error: nil) as! NSDictionary
+        // ニュースサイトの配列からアドレスを取り出す
+        for newsUrlString in newsUrlStrings {
+            var url = NSURL(string: newsUrlString)!
+        
+            // データをダウンロードする
+            var task = NSURLSession.sharedSession().dataTaskWithURL(url, completionHandler: {
+                data, response, error in
+                // JSONデータを辞書に変換する
+                var dict = NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableContainers, error: nil) as! NSDictionary
             
-            // /response/feed/entriesを取得
-            if var responseData = dict["responseData"] as? NSDictionary {
-                if var feed = responseData["feed"] as? NSDictionary {
-                    if var entries = feed["entries"] as? NSArray {
-                        // エントリーの配列を設定する
-                        self.entries = entries
+                // /response/feed/entriesを取得
+                if var responseData = dict["responseData"] as? NSDictionary {
+                    if var feed = responseData["feed"] as? NSDictionary {
+                        if var entries = feed["entries"] as? NSArray {
+                            // NSDateFormatterのインスタンスを作成
+                            var formatter = NSDateFormatter()
+                            formatter.locale = NSLocale(localeIdentifier: "en-US")
+                            formatter.dateFormat = "EEE, dd MMM yyyy HH:mm:ss zzzz"
+                            
+                            // エントリーに情報を追加する
+                            for var i = 0; i < entries.count; i++ {
+                                // エントリーを取り出す
+                                var entry = entries[i] as! NSMutableDictionary
+
+                                // ニュースサイトのURLを追加する
+                                entry["url"] = newsUrlString
+                                
+                                // NSDate型の日付を追加する
+                                var dateStr = entry["publishedDate"] as! String
+                                var date = formatter.dateFromString(dateStr)
+                                entry["date"] = date
+                            }
+
+                            // エントリーを配列に追加する
+                            self.entries.addObjectsFromArray(entries as [AnyObject])
+
+                            // エントリーをソートする
+                            self.entries.sortUsingComparator({ object1, object2 in
+                                // 日付を取得する
+                                var date1 = object1["date"] as! NSDate
+                                var date2 = object2["date"] as! NSDate
+                                
+                                // 日付を比較する
+                                var order = date1.compare(date2)
+                                
+                                // 比較結果をひっくり返す
+                                if order == NSComparisonResult.OrderedAscending {
+                                    return NSComparisonResult.OrderedDescending
+                                } else if order == NSComparisonResult.OrderedDescending {
+                                    return NSComparisonResult.OrderedAscending
+                                }
+                                return order
+                            })
+                            
+                        }
                     }
                 }
-            }
-        })
-        task.resume()
+                // テーブルビューを更新するため、メインスレッドにスイッチする
+                dispatch_async(dispatch_get_main_queue(), {
+                    // テーブルビューの更新をする
+                    self.tableView.reloadData()
+                })
+            })
+            task.resume()
+        }
         
-        // テーブルビューを更新するため、メインスレッドにスイッチする
-        dispatch_async(dispatch_get_main_queue(), {
-            // テーブルビューの更新をする
-            self.tableView.reloadData()
-        })
+        
     }
 }
 
