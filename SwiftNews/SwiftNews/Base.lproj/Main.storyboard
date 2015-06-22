@@ -33,12 +33,19 @@
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" tag="3" contentMode="right" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XLa-6M-rzC">
                                             <rect key="frame" x="432" y="86" width="150" height="20"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="150" id="ojs-um-Ekf"/>
+                                            </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <imageView userInteractionEnabled="NO" tag="4" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EWz-1c-peT">
+                                        <imageView userInteractionEnabled="NO" tag="4" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="EWz-1c-peT">
                                             <rect key="frame" x="19" y="33" width="54" height="48"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="48" id="70Y-t0-oVN"/>
+                                                <constraint firstAttribute="width" constant="54" id="ib8-Od-mkv"/>
+                                            </constraints>
                                         </imageView>
                                     </subviews>
                                     <constraints>
@@ -48,9 +55,9 @@
                                         <constraint firstItem="XLa-6M-rzC" firstAttribute="leading" secondItem="99Z-aK-xD8" secondAttribute="leadingMargin" constant="424" id="I84-Yl-cxO"/>
                                         <constraint firstItem="XLa-6M-rzC" firstAttribute="bottom" secondItem="99Z-aK-xD8" secondAttribute="bottomMargin" id="JqQ-O5-ZaF"/>
                                         <constraint firstAttribute="centerY" secondItem="EWz-1c-peT" secondAttribute="centerY" id="Rdf-vV-Qej"/>
+                                        <constraint firstItem="EWz-1c-peT" firstAttribute="leading" secondItem="99Z-aK-xD8" secondAttribute="leadingMargin" constant="11" id="UfY-Eb-s8M"/>
                                         <constraint firstItem="fwy-71-PNW" firstAttribute="top" secondItem="99Z-aK-xD8" secondAttribute="topMargin" constant="-8" id="aKu-MU-ylZ"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="VNv-mO-BRC" secondAttribute="trailing" constant="10" id="kEt-h7-LbM"/>
-                                        <constraint firstItem="EWz-1c-peT" firstAttribute="leading" secondItem="99Z-aK-xD8" secondAttribute="leadingMargin" constant="9" id="rfe-Ow-5us"/>
                                         <constraint firstItem="VNv-mO-BRC" firstAttribute="leading" secondItem="EWz-1c-peT" secondAttribute="trailing" constant="25" id="vaY-x2-PPf"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="fwy-71-PNW" secondAttribute="trailing" constant="10" id="xEV-Mf-Udw"/>
                                     </constraints>

@@ -22,6 +22,8 @@ class ViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        getdata()
     }
 
     override func didReceiveMemoryWarning() {
@@ -83,19 +85,23 @@ class ViewController: UITableViewController {
     }
 
     @IBAction func reflesh(sender: AnyObject) {
+        getdata()
+    }
+    
+    func getdata() {
         // エントリーを全て削除する
         entries.removeAllObjects()
         
         // ニュースサイトの配列からアドレスを取り出す
         for newsUrlString in newsUrlStrings {
             var url = NSURL(string: newsUrlString)!
-        
+            
             // データをダウンロードする
             var task = NSURLSession.sharedSession().dataTaskWithURL(url, completionHandler: {
                 data, response, error in
                 // JSONデータを辞書に変換する
                 var dict = NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableContainers, error: nil) as! NSDictionary
-            
+                
                 // /response/feed/entriesを取得
                 if var responseData = dict["responseData"] as? NSDictionary {
                     if var feed = responseData["feed"] as? NSDictionary {
@@ -109,7 +115,7 @@ class ViewController: UITableViewController {
                             for var i = 0; i < entries.count; i++ {
                                 // エントリーを取り出す
                                 var entry = entries[i] as! NSMutableDictionary
-
+                                
                                 // ニュースサイトのURLを追加する
                                 entry["url"] = newsUrlString
                                 
@@ -118,10 +124,10 @@ class ViewController: UITableViewController {
                                 var date = formatter.dateFromString(dateStr)
                                 entry["date"] = date
                             }
-
+                            
                             // エントリーを配列に追加する
                             self.entries.addObjectsFromArray(entries as [AnyObject])
-
+                            
                             // エントリーをソートする
                             self.entries.sortUsingComparator({ object1, object2 in
                                 // 日付を取得する
@@ -151,8 +157,6 @@ class ViewController: UITableViewController {
             })
             task.resume()
         }
-        
-        
     }
 }
 
