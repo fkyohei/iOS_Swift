@@ -158,6 +158,8 @@ class ViewController: UITableViewController {
 
 
     @IBAction func searchBtn(sender: AnyObject) {
+        // セグエを実行
+        performSegueWithIdentifier("search", sender: nil)
     }
 }
 

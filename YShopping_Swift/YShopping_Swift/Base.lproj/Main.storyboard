@@ -21,7 +21,7 @@
             </objects>
             <point key="canvasLocation" x="-433" y="374"/>
         </scene>
-        <!--View Controller-->
+        <!--検索結果-->
         <scene sceneID="ca4-5K-l94">
             <objects>
                 <viewController id="Bl8-PG-fD7" customClass="ViewController" customModule="YShopping_Swift" customModuleProvider="target" sceneMemberID="viewController">
@@ -123,11 +123,11 @@
                             </tableViewCell>
                         </prototypes>
                     </tableView>
-                    <navigationItem key="navigationItem" id="kZr-QN-dt7">
+                    <navigationItem key="navigationItem" title="検索結果" id="kZr-QN-dt7">
                         <barButtonItem key="rightBarButtonItem" systemItem="search" id="KBH-th-PVt">
                             <connections>
                                 <action selector="searchBtn:" destination="Bl8-PG-fD7" id="1bJ-8N-TUF"/>
-                                <segue destination="gxy-nI-0ti" kind="show" identifier="search" id="QzQ-g6-A57"/>
+                                <segue destination="gxy-nI-0ti" kind="show" identifier="search" id="TOk-y9-Tiq"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -139,25 +139,121 @@
             </objects>
             <point key="canvasLocation" x="331" y="374"/>
         </scene>
-        <!--Search View Controller-->
+        <!--検索条件-->
         <scene sceneID="rkH-Qd-Ytl">
             <objects>
                 <viewController id="gxy-nI-0ti" customClass="SearchViewController" customModule="YShopping_Swift" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="8uL-2i-qdO"/>
-                        <viewControllerLayoutGuide type="bottom" id="qHZ-zD-RBI"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="EoD-rP-rdg">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="55" sectionHeaderHeight="22" sectionFooterHeight="22" id="FT9-ig-kHP">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
+                        <view key="tableFooterView" contentMode="scaleToFill" id="77o-b0-dJq">
+                            <rect key="frame" x="0.0" y="141" width="600" height="60"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h2m-aM-gav">
+                                    <rect key="frame" x="366" y="8" width="200" height="46"/>
+                                    <color key="backgroundColor" red="0.0" green="0.50196081399917603" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="46" id="Jb6-EJ-6j3"/>
+                                        <constraint firstAttribute="width" constant="200" id="O0l-xU-YY3"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="16"/>
+                                    <state key="normal" title="検索する">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="h2m-aM-gav" secondAttribute="trailing" constant="34" id="Bo5-R4-Fuj"/>
+                                <constraint firstAttribute="bottom" secondItem="h2m-aM-gav" secondAttribute="bottom" constant="6" id="JYc-07-EfP"/>
+                            </constraints>
+                        </view>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="search" rowHeight="51" id="pa5-h3-I6J">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="pa5-h3-I6J" id="0dS-fb-a21">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XP6-of-Hwm">
+                                            <rect key="frame" x="8" y="8" width="108" height="34.5"/>
+                                            <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                    </tableView>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="検索条件" id="gQZ-cO-vy0"/>
+                    <connections>
+                        <segue destination="Af4-GV-rpI" kind="show" identifier="searchlist" id="0Oy-Jf-2x3"/>
+                        <segue destination="FZW-f0-K4u" kind="show" identifier="searchfree" id="4pV-RJ-w5U"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="avV-Ek-f3p" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1123" y="101"/>
+            <point key="canvasLocation" x="1209" y="84"/>
         </scene>
-        <!--Detail View Controller-->
+        <!--View Controller-->
+        <scene sceneID="xww-a2-7Nz">
+            <objects>
+                <viewController id="Af4-GV-rpI" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="OoM-mG-xfV">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="Sfb-ma-Xkw">
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="60"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
+                        <connections>
+                            <outlet property="dataSource" destination="Af4-GV-rpI" id="lIH-06-nHz"/>
+                            <outlet property="delegate" destination="Af4-GV-rpI" id="pYg-Hj-Gbq"/>
+                        </connections>
+                    </tableView>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9mR-sD-flZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1994" y="84"/>
+        </scene>
+        <!--キーワード入力-->
+        <scene sceneID="bQK-gf-aWF">
+            <objects>
+                <viewController id="FZW-f0-K4u" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="NJU-tX-b4y"/>
+                        <viewControllerLayoutGuide type="bottom" id="oT8-HV-J9Q"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="iwt-dq-jk9">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iO4-5L-qEL">
+                                <rect key="frame" x="57" y="99" width="486" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="iO4-5L-qEL" secondAttribute="trailing" constant="41" id="8Dw-PL-DO9"/>
+                            <constraint firstItem="iO4-5L-qEL" firstAttribute="leading" secondItem="iwt-dq-jk9" secondAttribute="leadingMargin" constant="41" id="bXH-UV-xnt"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="キーワード入力" id="U8M-Un-BhH"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mph-GQ-7By" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1994" y="828"/>
+        </scene>
+        <!--詳細-->
         <scene sceneID="XKr-Ii-DYX">
             <objects>
                 <viewController id="kEv-3C-MyP" customClass="DetailViewController" customModule="YShopping_Swift" customModuleProvider="target" sceneMemberID="viewController">
@@ -166,6 +262,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </webView>
+                    <navigationItem key="navigationItem" title="詳細" id="qAB-FR-DZr"/>
                     <connections>
                         <outlet property="webView" destination="svK-2n-8LS" id="Ubc-yQ-ati"/>
                     </connections>
