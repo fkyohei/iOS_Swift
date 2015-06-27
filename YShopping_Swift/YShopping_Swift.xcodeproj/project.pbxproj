@@ -15,6 +15,8 @@
 		E22A2D7B1B3E792C00A38A9F /* YShopping_SwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22A2D7A1B3E792C00A38A9F /* YShopping_SwiftTests.swift */; };
 		E22A2D851B3E7CEE00A38A9F /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22A2D841B3E7CEE00A38A9F /* SearchViewController.swift */; };
 		E22A2D871B3E7D0800A38A9F /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22A2D861B3E7D0800A38A9F /* DetailViewController.swift */; };
+		E22A2D8F1B3EA69600A38A9F /* AppIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = E22A2D8E1B3EA69600A38A9F /* AppIcon.png */; };
+		E22A2D911B3EB83600A38A9F /* noimage.png in Resources */ = {isa = PBXBuildFile; fileRef = E22A2D901B3EB83600A38A9F /* noimage.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,8 @@
 		E22A2D7A1B3E792C00A38A9F /* YShopping_SwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YShopping_SwiftTests.swift; sourceTree = "<group>"; };
 		E22A2D841B3E7CEE00A38A9F /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		E22A2D861B3E7D0800A38A9F /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		E22A2D8E1B3EA69600A38A9F /* AppIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = AppIcon.png; path = ../../../../Downloads/AppIcon.png; sourceTree = "<group>"; };
+		E22A2D901B3EB83600A38A9F /* noimage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = noimage.png; path = ../../../../Downloads/noimage.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +91,8 @@
 				E22A2D861B3E7D0800A38A9F /* DetailViewController.swift */,
 				E22A2D681B3E792C00A38A9F /* Main.storyboard */,
 				E22A2D6B1B3E792C00A38A9F /* Images.xcassets */,
+				E22A2D901B3EB83600A38A9F /* noimage.png */,
+				E22A2D8E1B3EA69600A38A9F /* AppIcon.png */,
 				E22A2D6D1B3E792C00A38A9F /* LaunchScreen.xib */,
 				E22A2D621B3E792C00A38A9F /* Supporting Files */,
 			);
@@ -125,9 +131,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E22A2D7E1B3E792C00A38A9F /* Build configuration list for PBXNativeTarget "YShopping_Swift" */;
 			buildPhases = (
+				12BCB85941359D53CE9560E4 /* Check Pods Manifest.lock */,
 				E22A2D5B1B3E792C00A38A9F /* Sources */,
 				E22A2D5C1B3E792C00A38A9F /* Frameworks */,
 				E22A2D5D1B3E792C00A38A9F /* Resources */,
+				06E8E5D1B993F3C5AF99F804 /* Embed Pods Frameworks */,
+				A075C89B73586669E3662CFA /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -198,6 +207,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E22A2D911B3EB83600A38A9F /* noimage.png in Resources */,
+				E22A2D8F1B3EA69600A38A9F /* AppIcon.png in Resources */,
 				E22A2D6A1B3E792C00A38A9F /* Main.storyboard in Resources */,
 				E22A2D6F1B3E792C00A38A9F /* LaunchScreen.xib in Resources */,
 				E22A2D6C1B3E792C00A38A9F /* Images.xcassets in Resources */,
@@ -212,6 +223,55 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		06E8E5D1B993F3C5AF99F804 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "";
+			showEnvVarsInLog = 0;
+		};
+		12BCB85941359D53CE9560E4 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "
+";
+			showEnvVarsInLog = 0;
+		};
+		A075C89B73586669E3662CFA /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E22A2D5B1B3E792C00A38A9F /* Sources */ = {
@@ -417,6 +477,7 @@
 				E22A2D801B3E792C00A38A9F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E22A2D811B3E792C00A38A9F /* Build configuration list for PBXNativeTarget "YShopping_SwiftTests" */ = {
 			isa = XCConfigurationList;
@@ -425,6 +486,7 @@
 				E22A2D831B3E792C00A38A9F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
