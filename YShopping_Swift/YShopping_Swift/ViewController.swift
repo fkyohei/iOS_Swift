@@ -9,11 +9,16 @@
 
 import UIKit
 
+
 class ViewController: UITableViewController {
     // YahooショッピングAPIのアドレス
-    let ApiUrlString = "http://shopping.yahooapis.jp/ShoppingWebService/V1/json/itemSearch?appid=dj0zaiZpPW54Tm5pOExlV05vcSZzPWNvbnN1bWVyc2VjcmV0Jng9Y2Y-&image_size=106&category_id=1"
+    let ApiBaseUrlString = "http://shopping.yahooapis.jp/ShoppingWebService/V1/json/itemSearch?appid=dj0zaiZpPW54Tm5pOExlV05vcSZzPWNvbnN1bWVyc2VjcmV0Jng9Y2Y-&image_size=106&category_id=1"
     // 取得データ配列
     var resultData = NSMutableArray()
+    // 取得データ開始件数
+    var offset = 0
+    // 読み込み中フラグ
+    var isLoading = false
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -74,8 +79,39 @@ class ViewController: UITableViewController {
         return cell!
     }
     
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        // セグエを実行
+        performSegueWithIdentifier("detail", sender: resultData[indexPath.row])
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        // detailセグエの場合
+        if segue.identifier == "detail" {
+            // DetailControllerを取得
+            var detailViewController = segue.destinationViewController as! DetailViewController
+
+            // データを設定する
+            detailViewController.detailData = sender as! NSDictionary
+        }
+    }
+    
+    override func scrollViewDidScroll(scrollView: UIScrollView) {
+        var contentOffsetWidthWindow = self.tableView.contentOffset.y + self.tableView.bounds.size.height
+        var eachToBottom = contentOffsetWidthWindow >= self.tableView.contentSize.height
+        // ページ最下部でないまたは読み込み中はなにもしない
+        if (!eachToBottom || self.isLoading) {
+            return;
+        }
+        // ロード中画像を表示し、フラグをtrueに
+        self.isLoading = true
+        SVProgressHUD.show()
+        // 次のデータ取得
+        getData()
+    }
+    
     func getData() {
         // NSURL を作る
+        var ApiUrlString = "\(ApiBaseUrlString)&offset=\(offset)"
         var url = NSURL(string: ApiUrlString)!
         
         // データをダウンロードする
@@ -103,9 +139,15 @@ class ViewController: UITableViewController {
                         
                     }
                 }
+                // 取得件数更新
+                self.offset += resultset["totalResultsReturned"] as! Int
             }
+            
             // テーブルビューを更新するため、メインスレッドにスイッチする
             dispatch_async(dispatch_get_main_queue(), {
+                // 読み込み中画像を非表示にし、フラグをfalseに
+                SVProgressHUD.dismiss()
+                self.isLoading = false
                 // テーブルビューの更新をする
                 self.tableView.reloadData()
             })

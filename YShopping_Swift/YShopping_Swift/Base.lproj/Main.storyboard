@@ -36,11 +36,6 @@
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="WBN-Vq-dof" id="pRN-rn-7ud">
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4WQ-Fq-3vU">
-                                            <rect key="frame" x="8" y="8" width="584" height="38"/>
-                                            <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="14"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="カテゴリ" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VqQ-Ju-Cmw">
                                             <rect key="frame" x="126" y="54" width="50" height="18"/>
                                             <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="10"/>
@@ -89,6 +84,11 @@
                                                 <constraint firstAttribute="width" constant="106" id="m0C-HY-jfq"/>
                                             </constraints>
                                         </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4WQ-Fq-3vU">
+                                            <rect key="frame" x="8" y="8" width="584" height="38"/>
+                                            <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="14"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="xVX-zp-Dw0" firstAttribute="trailing" secondItem="pRN-rn-7ud" secondAttribute="trailingMargin" id="0KH-zv-Ar4"/>
@@ -120,9 +120,6 @@
                                         <constraint firstItem="mQ4-hf-ygl" firstAttribute="leading" secondItem="pRN-rn-7ud" secondAttribute="leadingMargin" id="wQ3-Fr-kui"/>
                                     </constraints>
                                 </tableViewCellContentView>
-                                <connections>
-                                    <segue destination="kEv-3C-MyP" kind="show" identifier="detail" id="LvQ-5b-QdW"/>
-                                </connections>
                             </tableViewCell>
                         </prototypes>
                     </tableView>
@@ -134,6 +131,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <segue destination="kEv-3C-MyP" kind="show" identifier="detail" id="rXP-jc-2VD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AQQ-kx-cFA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -142,7 +142,7 @@
         <!--Search View Controller-->
         <scene sceneID="rkH-Qd-Ytl">
             <objects>
-                <viewController id="gxy-nI-0ti" customClass="SearchViewController" sceneMemberID="viewController">
+                <viewController id="gxy-nI-0ti" customClass="SearchViewController" customModule="YShopping_Swift" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="8uL-2i-qdO"/>
                         <viewControllerLayoutGuide type="bottom" id="qHZ-zD-RBI"/>
@@ -160,26 +160,19 @@
         <!--Detail View Controller-->
         <scene sceneID="XKr-Ii-DYX">
             <objects>
-                <viewController id="kEv-3C-MyP" customClass="DetailViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="fFa-BJ-GZu"/>
-                        <viewControllerLayoutGuide type="bottom" id="BCN-pl-BuE"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="6Bg-Fb-r2I">
+                <viewController id="kEv-3C-MyP" customClass="DetailViewController" customModule="YShopping_Swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <webView key="view" contentMode="scaleToFill" id="svK-2n-8LS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="f2d-WA-KGT">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </webView>
-                        </subviews>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
+                    </webView>
+                    <connections>
+                        <outlet property="webView" destination="svK-2n-8LS" id="Ubc-yQ-ati"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2xr-JV-hik" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1123" y="918"/>
+            <point key="canvasLocation" x="1123" y="817"/>
         </scene>
     </scenes>
 </document>
