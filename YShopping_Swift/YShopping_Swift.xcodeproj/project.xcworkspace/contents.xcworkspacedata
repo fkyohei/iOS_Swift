@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:YNews_Swift.xcodeproj">
+      location = "self:YShopping_Swift.xcodeproj">
    </FileRef>
 </Workspace>

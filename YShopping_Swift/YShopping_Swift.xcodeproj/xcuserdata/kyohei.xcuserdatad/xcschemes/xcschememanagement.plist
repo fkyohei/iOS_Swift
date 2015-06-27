@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>YNews_Swift.xcscheme</key>
+		<key>YShopping_Swift.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,12 +12,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>7528B3D61B3ABA4000B5B61A</key>
+		<key>E22A2D5E1B3E792C00A38A9F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>7528B3EB1B3ABA4000B5B61A</key>
+		<key>E22A2D731B3E792C00A38A9F</key>
 		<dict>
 			<key>primary</key>
 			<true/>

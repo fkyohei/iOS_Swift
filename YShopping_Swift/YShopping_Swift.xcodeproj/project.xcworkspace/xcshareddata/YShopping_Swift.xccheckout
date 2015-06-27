@@ -5,7 +5,7 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>E98C0A56-DD23-4836-8C90-B5CE00CC3040</string>
+	<string>D9451E9C-33A0-4462-8E84-7F91BB59F3C3</string>
 	<key>IDESourceControlProjectName</key>
 	<string>project</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
@@ -14,7 +14,7 @@
 		<string>https://github.com/fkyohei/iOS_Swift.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>YNews_Swift/YNews_Swift.xcodeproj/project.xcworkspace</string>
+	<string>YShopping_Swift/YShopping_Swift.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>B908E5C2514C1F02149D55C60D81CEE879671AD6</key>

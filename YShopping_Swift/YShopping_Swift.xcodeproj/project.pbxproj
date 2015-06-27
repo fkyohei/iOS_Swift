@@ -7,50 +7,50 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7528B3DD1B3ABA4000B5B61A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7528B3DC1B3ABA4000B5B61A /* AppDelegate.swift */; };
-		7528B3DF1B3ABA4000B5B61A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7528B3DE1B3ABA4000B5B61A /* ViewController.swift */; };
-		7528B3E21B3ABA4000B5B61A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7528B3E01B3ABA4000B5B61A /* Main.storyboard */; };
-		7528B3E41B3ABA4000B5B61A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7528B3E31B3ABA4000B5B61A /* Images.xcassets */; };
-		7528B3E71B3ABA4000B5B61A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7528B3E51B3ABA4000B5B61A /* LaunchScreen.xib */; };
-		7528B3F31B3ABA4000B5B61A /* YNews_SwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7528B3F21B3ABA4000B5B61A /* YNews_SwiftTests.swift */; };
-		7528B3FD1B3ABCFD00B5B61A /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7528B3FC1B3ABCFD00B5B61A /* DetailViewController.swift */; };
-		7528B3FF1B3ABD1C00B5B61A /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7528B3FE1B3ABD1C00B5B61A /* SearchViewController.swift */; };
+		E22A2D651B3E792C00A38A9F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22A2D641B3E792C00A38A9F /* AppDelegate.swift */; };
+		E22A2D671B3E792C00A38A9F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22A2D661B3E792C00A38A9F /* ViewController.swift */; };
+		E22A2D6A1B3E792C00A38A9F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E22A2D681B3E792C00A38A9F /* Main.storyboard */; };
+		E22A2D6C1B3E792C00A38A9F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E22A2D6B1B3E792C00A38A9F /* Images.xcassets */; };
+		E22A2D6F1B3E792C00A38A9F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E22A2D6D1B3E792C00A38A9F /* LaunchScreen.xib */; };
+		E22A2D7B1B3E792C00A38A9F /* YShopping_SwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22A2D7A1B3E792C00A38A9F /* YShopping_SwiftTests.swift */; };
+		E22A2D851B3E7CEE00A38A9F /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22A2D841B3E7CEE00A38A9F /* SearchViewController.swift */; };
+		E22A2D871B3E7D0800A38A9F /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22A2D861B3E7D0800A38A9F /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		7528B3ED1B3ABA4000B5B61A /* PBXContainerItemProxy */ = {
+		E22A2D751B3E792C00A38A9F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 7528B3CF1B3ABA4000B5B61A /* Project object */;
+			containerPortal = E22A2D571B3E792C00A38A9F /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 7528B3D61B3ABA4000B5B61A;
-			remoteInfo = YNews_Swift;
+			remoteGlobalIDString = E22A2D5E1B3E792C00A38A9F;
+			remoteInfo = YShopping_Swift;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		7528B3D71B3ABA4000B5B61A /* YNews_Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YNews_Swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		7528B3DB1B3ABA4000B5B61A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7528B3DC1B3ABA4000B5B61A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7528B3DE1B3ABA4000B5B61A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		7528B3E11B3ABA4000B5B61A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		7528B3E31B3ABA4000B5B61A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		7528B3E61B3ABA4000B5B61A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		7528B3EC1B3ABA4000B5B61A /* YNews_SwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YNews_SwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		7528B3F11B3ABA4000B5B61A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7528B3F21B3ABA4000B5B61A /* YNews_SwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YNews_SwiftTests.swift; sourceTree = "<group>"; };
-		7528B3FC1B3ABCFD00B5B61A /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
-		7528B3FE1B3ABD1C00B5B61A /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		E22A2D5F1B3E792C00A38A9F /* YShopping_Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YShopping_Swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E22A2D631B3E792C00A38A9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E22A2D641B3E792C00A38A9F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E22A2D661B3E792C00A38A9F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E22A2D691B3E792C00A38A9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E22A2D6B1B3E792C00A38A9F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		E22A2D6E1B3E792C00A38A9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		E22A2D741B3E792C00A38A9F /* YShopping_SwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YShopping_SwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E22A2D791B3E792C00A38A9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E22A2D7A1B3E792C00A38A9F /* YShopping_SwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YShopping_SwiftTests.swift; sourceTree = "<group>"; };
+		E22A2D841B3E7CEE00A38A9F /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		E22A2D861B3E7D0800A38A9F /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		7528B3D41B3ABA4000B5B61A /* Frameworks */ = {
+		E22A2D5C1B3E792C00A38A9F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7528B3E91B3ABA4000B5B61A /* Frameworks */ = {
+		E22A2D711B3E792C00A38A9F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -60,60 +60,60 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		7528B3CE1B3ABA4000B5B61A = {
+		E22A2D561B3E792C00A38A9F = {
 			isa = PBXGroup;
 			children = (
-				7528B3D91B3ABA4000B5B61A /* YNews_Swift */,
-				7528B3EF1B3ABA4000B5B61A /* YNews_SwiftTests */,
-				7528B3D81B3ABA4000B5B61A /* Products */,
+				E22A2D611B3E792C00A38A9F /* YShopping_Swift */,
+				E22A2D771B3E792C00A38A9F /* YShopping_SwiftTests */,
+				E22A2D601B3E792C00A38A9F /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		7528B3D81B3ABA4000B5B61A /* Products */ = {
+		E22A2D601B3E792C00A38A9F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7528B3D71B3ABA4000B5B61A /* YNews_Swift.app */,
-				7528B3EC1B3ABA4000B5B61A /* YNews_SwiftTests.xctest */,
+				E22A2D5F1B3E792C00A38A9F /* YShopping_Swift.app */,
+				E22A2D741B3E792C00A38A9F /* YShopping_SwiftTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		7528B3D91B3ABA4000B5B61A /* YNews_Swift */ = {
+		E22A2D611B3E792C00A38A9F /* YShopping_Swift */ = {
 			isa = PBXGroup;
 			children = (
-				7528B3DC1B3ABA4000B5B61A /* AppDelegate.swift */,
-				7528B3DE1B3ABA4000B5B61A /* ViewController.swift */,
-				7528B3FC1B3ABCFD00B5B61A /* DetailViewController.swift */,
-				7528B3FE1B3ABD1C00B5B61A /* SearchViewController.swift */,
-				7528B3E01B3ABA4000B5B61A /* Main.storyboard */,
-				7528B3E31B3ABA4000B5B61A /* Images.xcassets */,
-				7528B3E51B3ABA4000B5B61A /* LaunchScreen.xib */,
-				7528B3DA1B3ABA4000B5B61A /* Supporting Files */,
+				E22A2D641B3E792C00A38A9F /* AppDelegate.swift */,
+				E22A2D661B3E792C00A38A9F /* ViewController.swift */,
+				E22A2D841B3E7CEE00A38A9F /* SearchViewController.swift */,
+				E22A2D861B3E7D0800A38A9F /* DetailViewController.swift */,
+				E22A2D681B3E792C00A38A9F /* Main.storyboard */,
+				E22A2D6B1B3E792C00A38A9F /* Images.xcassets */,
+				E22A2D6D1B3E792C00A38A9F /* LaunchScreen.xib */,
+				E22A2D621B3E792C00A38A9F /* Supporting Files */,
 			);
-			path = YNews_Swift;
+			path = YShopping_Swift;
 			sourceTree = "<group>";
 		};
-		7528B3DA1B3ABA4000B5B61A /* Supporting Files */ = {
+		E22A2D621B3E792C00A38A9F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				7528B3DB1B3ABA4000B5B61A /* Info.plist */,
+				E22A2D631B3E792C00A38A9F /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		7528B3EF1B3ABA4000B5B61A /* YNews_SwiftTests */ = {
+		E22A2D771B3E792C00A38A9F /* YShopping_SwiftTests */ = {
 			isa = PBXGroup;
 			children = (
-				7528B3F21B3ABA4000B5B61A /* YNews_SwiftTests.swift */,
-				7528B3F01B3ABA4000B5B61A /* Supporting Files */,
+				E22A2D7A1B3E792C00A38A9F /* YShopping_SwiftTests.swift */,
+				E22A2D781B3E792C00A38A9F /* Supporting Files */,
 			);
-			path = YNews_SwiftTests;
+			path = YShopping_SwiftTests;
 			sourceTree = "<group>";
 		};
-		7528B3F01B3ABA4000B5B61A /* Supporting Files */ = {
+		E22A2D781B3E792C00A38A9F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				7528B3F11B3ABA4000B5B61A /* Info.plist */,
+				E22A2D791B3E792C00A38A9F /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -121,60 +121,60 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		7528B3D61B3ABA4000B5B61A /* YNews_Swift */ = {
+		E22A2D5E1B3E792C00A38A9F /* YShopping_Swift */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7528B3F61B3ABA4000B5B61A /* Build configuration list for PBXNativeTarget "YNews_Swift" */;
+			buildConfigurationList = E22A2D7E1B3E792C00A38A9F /* Build configuration list for PBXNativeTarget "YShopping_Swift" */;
 			buildPhases = (
-				7528B3D31B3ABA4000B5B61A /* Sources */,
-				7528B3D41B3ABA4000B5B61A /* Frameworks */,
-				7528B3D51B3ABA4000B5B61A /* Resources */,
+				E22A2D5B1B3E792C00A38A9F /* Sources */,
+				E22A2D5C1B3E792C00A38A9F /* Frameworks */,
+				E22A2D5D1B3E792C00A38A9F /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = YNews_Swift;
-			productName = YNews_Swift;
-			productReference = 7528B3D71B3ABA4000B5B61A /* YNews_Swift.app */;
+			name = YShopping_Swift;
+			productName = YShopping_Swift;
+			productReference = E22A2D5F1B3E792C00A38A9F /* YShopping_Swift.app */;
 			productType = "com.apple.product-type.application";
 		};
-		7528B3EB1B3ABA4000B5B61A /* YNews_SwiftTests */ = {
+		E22A2D731B3E792C00A38A9F /* YShopping_SwiftTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7528B3F91B3ABA4000B5B61A /* Build configuration list for PBXNativeTarget "YNews_SwiftTests" */;
+			buildConfigurationList = E22A2D811B3E792C00A38A9F /* Build configuration list for PBXNativeTarget "YShopping_SwiftTests" */;
 			buildPhases = (
-				7528B3E81B3ABA4000B5B61A /* Sources */,
-				7528B3E91B3ABA4000B5B61A /* Frameworks */,
-				7528B3EA1B3ABA4000B5B61A /* Resources */,
+				E22A2D701B3E792C00A38A9F /* Sources */,
+				E22A2D711B3E792C00A38A9F /* Frameworks */,
+				E22A2D721B3E792C00A38A9F /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				7528B3EE1B3ABA4000B5B61A /* PBXTargetDependency */,
+				E22A2D761B3E792C00A38A9F /* PBXTargetDependency */,
 			);
-			name = YNews_SwiftTests;
-			productName = YNews_SwiftTests;
-			productReference = 7528B3EC1B3ABA4000B5B61A /* YNews_SwiftTests.xctest */;
+			name = YShopping_SwiftTests;
+			productName = YShopping_SwiftTests;
+			productReference = E22A2D741B3E792C00A38A9F /* YShopping_SwiftTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		7528B3CF1B3ABA4000B5B61A /* Project object */ = {
+		E22A2D571B3E792C00A38A9F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = fujisakikyo;
 				TargetAttributes = {
-					7528B3D61B3ABA4000B5B61A = {
+					E22A2D5E1B3E792C00A38A9F = {
 						CreatedOnToolsVersion = 6.3.2;
 					};
-					7528B3EB1B3ABA4000B5B61A = {
+					E22A2D731B3E792C00A38A9F = {
 						CreatedOnToolsVersion = 6.3.2;
-						TestTargetID = 7528B3D61B3ABA4000B5B61A;
+						TestTargetID = E22A2D5E1B3E792C00A38A9F;
 					};
 				};
 			};
-			buildConfigurationList = 7528B3D21B3ABA4000B5B61A /* Build configuration list for PBXProject "YNews_Swift" */;
+			buildConfigurationList = E22A2D5A1B3E792C00A38A9F /* Build configuration list for PBXProject "YShopping_Swift" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -182,29 +182,29 @@
 				en,
 				Base,
 			);
-			mainGroup = 7528B3CE1B3ABA4000B5B61A;
-			productRefGroup = 7528B3D81B3ABA4000B5B61A /* Products */;
+			mainGroup = E22A2D561B3E792C00A38A9F;
+			productRefGroup = E22A2D601B3E792C00A38A9F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7528B3D61B3ABA4000B5B61A /* YNews_Swift */,
-				7528B3EB1B3ABA4000B5B61A /* YNews_SwiftTests */,
+				E22A2D5E1B3E792C00A38A9F /* YShopping_Swift */,
+				E22A2D731B3E792C00A38A9F /* YShopping_SwiftTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		7528B3D51B3ABA4000B5B61A /* Resources */ = {
+		E22A2D5D1B3E792C00A38A9F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7528B3E21B3ABA4000B5B61A /* Main.storyboard in Resources */,
-				7528B3E71B3ABA4000B5B61A /* LaunchScreen.xib in Resources */,
-				7528B3E41B3ABA4000B5B61A /* Images.xcassets in Resources */,
+				E22A2D6A1B3E792C00A38A9F /* Main.storyboard in Resources */,
+				E22A2D6F1B3E792C00A38A9F /* LaunchScreen.xib in Resources */,
+				E22A2D6C1B3E792C00A38A9F /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7528B3EA1B3ABA4000B5B61A /* Resources */ = {
+		E22A2D721B3E792C00A38A9F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -214,48 +214,48 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		7528B3D31B3ABA4000B5B61A /* Sources */ = {
+		E22A2D5B1B3E792C00A38A9F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7528B3FD1B3ABCFD00B5B61A /* DetailViewController.swift in Sources */,
-				7528B3DF1B3ABA4000B5B61A /* ViewController.swift in Sources */,
-				7528B3FF1B3ABD1C00B5B61A /* SearchViewController.swift in Sources */,
-				7528B3DD1B3ABA4000B5B61A /* AppDelegate.swift in Sources */,
+				E22A2D851B3E7CEE00A38A9F /* SearchViewController.swift in Sources */,
+				E22A2D671B3E792C00A38A9F /* ViewController.swift in Sources */,
+				E22A2D651B3E792C00A38A9F /* AppDelegate.swift in Sources */,
+				E22A2D871B3E7D0800A38A9F /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7528B3E81B3ABA4000B5B61A /* Sources */ = {
+		E22A2D701B3E792C00A38A9F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7528B3F31B3ABA4000B5B61A /* YNews_SwiftTests.swift in Sources */,
+				E22A2D7B1B3E792C00A38A9F /* YShopping_SwiftTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		7528B3EE1B3ABA4000B5B61A /* PBXTargetDependency */ = {
+		E22A2D761B3E792C00A38A9F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 7528B3D61B3ABA4000B5B61A /* YNews_Swift */;
-			targetProxy = 7528B3ED1B3ABA4000B5B61A /* PBXContainerItemProxy */;
+			target = E22A2D5E1B3E792C00A38A9F /* YShopping_Swift */;
+			targetProxy = E22A2D751B3E792C00A38A9F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		7528B3E01B3ABA4000B5B61A /* Main.storyboard */ = {
+		E22A2D681B3E792C00A38A9F /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				7528B3E11B3ABA4000B5B61A /* Base */,
+				E22A2D691B3E792C00A38A9F /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		7528B3E51B3ABA4000B5B61A /* LaunchScreen.xib */ = {
+		E22A2D6D1B3E792C00A38A9F /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				7528B3E61B3ABA4000B5B61A /* Base */,
+				E22A2D6E1B3E792C00A38A9F /* Base */,
 			);
 			name = LaunchScreen.xib;
 			sourceTree = "<group>";
@@ -263,7 +263,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		7528B3F41B3ABA4000B5B61A /* Debug */ = {
+		E22A2D7C1B3E792C00A38A9F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -307,7 +307,7 @@
 			};
 			name = Debug;
 		};
-		7528B3F51B3ABA4000B5B61A /* Release */ = {
+		E22A2D7D1B3E792C00A38A9F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -344,27 +344,27 @@
 			};
 			name = Release;
 		};
-		7528B3F71B3ABA4000B5B61A /* Debug */ = {
+		E22A2D7F1B3E792C00A38A9F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = YNews_Swift/Info.plist;
+				INFOPLIST_FILE = YShopping_Swift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
-		7528B3F81B3ABA4000B5B61A /* Release */ = {
+		E22A2D801B3E792C00A38A9F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = YNews_Swift/Info.plist;
+				INFOPLIST_FILE = YShopping_Swift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
-		7528B3FA1B3ABA4000B5B61A /* Debug */ = {
+		E22A2D821B3E792C00A38A9F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -376,14 +376,14 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = YNews_SwiftTests/Info.plist;
+				INFOPLIST_FILE = YShopping_SwiftTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YNews_Swift.app/YNews_Swift";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YShopping_Swift.app/YShopping_Swift";
 			};
 			name = Debug;
 		};
-		7528B3FB1B3ABA4000B5B61A /* Release */ = {
+		E22A2D831B3E792C00A38A9F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -391,44 +391,42 @@
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = YNews_SwiftTests/Info.plist;
+				INFOPLIST_FILE = YShopping_SwiftTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YNews_Swift.app/YNews_Swift";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YShopping_Swift.app/YShopping_Swift";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		7528B3D21B3ABA4000B5B61A /* Build configuration list for PBXProject "YNews_Swift" */ = {
+		E22A2D5A1B3E792C00A38A9F /* Build configuration list for PBXProject "YShopping_Swift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7528B3F41B3ABA4000B5B61A /* Debug */,
-				7528B3F51B3ABA4000B5B61A /* Release */,
+				E22A2D7C1B3E792C00A38A9F /* Debug */,
+				E22A2D7D1B3E792C00A38A9F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7528B3F61B3ABA4000B5B61A /* Build configuration list for PBXNativeTarget "YNews_Swift" */ = {
+		E22A2D7E1B3E792C00A38A9F /* Build configuration list for PBXNativeTarget "YShopping_Swift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7528B3F71B3ABA4000B5B61A /* Debug */,
-				7528B3F81B3ABA4000B5B61A /* Release */,
+				E22A2D7F1B3E792C00A38A9F /* Debug */,
+				E22A2D801B3E792C00A38A9F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
-		7528B3F91B3ABA4000B5B61A /* Build configuration list for PBXNativeTarget "YNews_SwiftTests" */ = {
+		E22A2D811B3E792C00A38A9F /* Build configuration list for PBXNativeTarget "YShopping_SwiftTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7528B3FA1B3ABA4000B5B61A /* Debug */,
-				7528B3FB1B3ABA4000B5B61A /* Release */,
+				E22A2D821B3E792C00A38A9F /* Debug */,
+				E22A2D831B3E792C00A38A9F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 7528B3CF1B3ABA4000B5B61A /* Project object */;
+	rootObject = E22A2D571B3E792C00A38A9F /* Project object */;
 }

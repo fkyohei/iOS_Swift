@@ -1,8 +1,8 @@
 //
 //  ViewController.swift
-//  YNews_Swift
+//  YShopping_Swift
 //
-//  Created by 藤崎 恭平 on 2015/06/24.
+//  Created by kyohei on 2015/06/27.
 //  Copyright (c) 2015年 fujisakikyo. All rights reserved.
 //
 
@@ -15,34 +15,31 @@ class ViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        getdata()
+        getData()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-    // テーブル行数
+    
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // TODO: データ取得できるようになったら、取得件数に変更
+        // テーブル行数
         return 5
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        // セルを取得
-        var cell = tableView.dequeueReusableCellWithIdentifier("news") as? UITableViewCell
+        var cell = tableView.dequeueReusableCellWithIdentifier("shopping") as? UITableViewCell
         
-        cell?.textLabel?.text = "test"
+        cell?.textLabel?.text = "shop"
         
-        // セル返却
         return cell!
     }
     
-    func getdata() {
+    func getData() {
         // NSURL を作る
         var url = NSURL(string: newsUrlString)!
-
+        
         // データをダウンロードする
         var task = NSURLSession.sharedSession().dataTaskWithURL(url, completionHandler: {
             data, response, error in
@@ -51,10 +48,9 @@ class ViewController: UITableViewController {
         })
         task.resume()
     }
-    
+
+
     @IBAction func searchBtn(sender: AnyObject) {
     }
-    
-    
 }
 

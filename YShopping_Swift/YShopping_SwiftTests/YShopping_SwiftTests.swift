@@ -1,15 +1,15 @@
 //
-//  YNews_SwiftTests.swift
-//  YNews_SwiftTests
+//  YShopping_SwiftTests.swift
+//  YShopping_SwiftTests
 //
-//  Created by 藤崎 恭平 on 2015/06/24.
+//  Created by kyohei on 2015/06/27.
 //  Copyright (c) 2015年 fujisakikyo. All rights reserved.
 //
 
 import UIKit
 import XCTest
 
-class YNews_SwiftTests: XCTestCase {
+class YShopping_SwiftTests: XCTestCase {
     
     override func setUp() {
         super.setUp()

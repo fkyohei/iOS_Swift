@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "7528B3D61B3ABA4000B5B61A"
-               BuildableName = "YNews_Swift.app"
-               BlueprintName = "YNews_Swift"
-               ReferencedContainer = "container:YNews_Swift.xcodeproj">
+               BlueprintIdentifier = "E22A2D5E1B3E792C00A38A9F"
+               BuildableName = "YShopping_Swift.app"
+               BlueprintName = "YShopping_Swift"
+               ReferencedContainer = "container:YShopping_Swift.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -28,10 +28,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "7528B3EB1B3ABA4000B5B61A"
-               BuildableName = "YNews_SwiftTests.xctest"
-               BlueprintName = "YNews_SwiftTests"
-               ReferencedContainer = "container:YNews_Swift.xcodeproj">
+               BlueprintIdentifier = "E22A2D731B3E792C00A38A9F"
+               BuildableName = "YShopping_SwiftTests.xctest"
+               BlueprintName = "YShopping_SwiftTests"
+               ReferencedContainer = "container:YShopping_Swift.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -46,20 +46,20 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "7528B3EB1B3ABA4000B5B61A"
-               BuildableName = "YNews_SwiftTests.xctest"
-               BlueprintName = "YNews_SwiftTests"
-               ReferencedContainer = "container:YNews_Swift.xcodeproj">
+               BlueprintIdentifier = "E22A2D731B3E792C00A38A9F"
+               BuildableName = "YShopping_SwiftTests.xctest"
+               BlueprintName = "YShopping_SwiftTests"
+               ReferencedContainer = "container:YShopping_Swift.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "7528B3D61B3ABA4000B5B61A"
-            BuildableName = "YNews_Swift.app"
-            BlueprintName = "YNews_Swift"
-            ReferencedContainer = "container:YNews_Swift.xcodeproj">
+            BlueprintIdentifier = "E22A2D5E1B3E792C00A38A9F"
+            BuildableName = "YShopping_Swift.app"
+            BlueprintName = "YShopping_Swift"
+            ReferencedContainer = "container:YShopping_Swift.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -76,10 +76,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "7528B3D61B3ABA4000B5B61A"
-            BuildableName = "YNews_Swift.app"
-            BlueprintName = "YNews_Swift"
-            ReferencedContainer = "container:YNews_Swift.xcodeproj">
+            BlueprintIdentifier = "E22A2D5E1B3E792C00A38A9F"
+            BuildableName = "YShopping_Swift.app"
+            BlueprintName = "YShopping_Swift"
+            ReferencedContainer = "container:YShopping_Swift.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -95,10 +95,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "7528B3D61B3ABA4000B5B61A"
-            BuildableName = "YNews_Swift.app"
-            BlueprintName = "YNews_Swift"
-            ReferencedContainer = "container:YNews_Swift.xcodeproj">
+            BlueprintIdentifier = "E22A2D5E1B3E792C00A38A9F"
+            BuildableName = "YShopping_Swift.app"
+            BlueprintName = "YShopping_Swift"
+            ReferencedContainer = "container:YShopping_Swift.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

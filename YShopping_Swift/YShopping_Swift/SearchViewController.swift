@@ -1,13 +1,13 @@
 //
 //  SearchViewController.swift
-//  YNews_Swift
+//  YShopping_Swift
 //
-//  Created by 藤崎 恭平 on 2015/06/24.
+//  Created by kyohei on 2015/06/27.
 //  Copyright (c) 2015年 fujisakikyo. All rights reserved.
 //
 
 import UIKit
 
 class SearchViewController: UIViewController {
-
+    
 }
