@@ -9,10 +9,13 @@
 import UIKit
 
 class ViewController: UITableViewController {
+    // ニュースのアドレス
+    let newsUrlString = "http://www.apple.com"
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        getdata()
     }
 
     override func didReceiveMemoryWarning() {
@@ -23,7 +26,7 @@ class ViewController: UITableViewController {
     // テーブル行数
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // TODO: データ取得できるようになったら、取得件数に変更
-        return 1;
+        return 5
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -35,5 +38,23 @@ class ViewController: UITableViewController {
         // セル返却
         return cell!
     }
+    
+    func getdata() {
+        // NSURL を作る
+        var url = NSURL(string: newsUrlString)!
+
+        // データをダウンロードする
+        var task = NSURLSession.sharedSession().dataTaskWithURL(url, completionHandler: {
+            data, response, error in
+            // ダウンロードサイズを表示する（テスト用）
+            println("done, length \(data.length)")
+        })
+        task.resume()
+    }
+    
+    @IBAction func searchBtn(sender: AnyObject) {
+    }
+    
+    
 }
 

@@ -83,12 +83,12 @@
 			children = (
 				7528B3DC1B3ABA4000B5B61A /* AppDelegate.swift */,
 				7528B3DE1B3ABA4000B5B61A /* ViewController.swift */,
+				7528B3FC1B3ABCFD00B5B61A /* DetailViewController.swift */,
+				7528B3FE1B3ABD1C00B5B61A /* SearchViewController.swift */,
 				7528B3E01B3ABA4000B5B61A /* Main.storyboard */,
 				7528B3E31B3ABA4000B5B61A /* Images.xcassets */,
 				7528B3E51B3ABA4000B5B61A /* LaunchScreen.xib */,
 				7528B3DA1B3ABA4000B5B61A /* Supporting Files */,
-				7528B3FC1B3ABCFD00B5B61A /* DetailViewController.swift */,
-				7528B3FE1B3ABD1C00B5B61A /* SearchViewController.swift */,
 			);
 			path = YNews_Swift;
 			sourceTree = "<group>";
@@ -417,6 +417,7 @@
 				7528B3F81B3ABA4000B5B61A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7528B3F91B3ABA4000B5B61A /* Build configuration list for PBXNativeTarget "YNews_SwiftTests" */ = {
 			isa = XCConfigurationList;
@@ -425,6 +426,7 @@
 				7528B3FB1B3ABA4000B5B61A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
