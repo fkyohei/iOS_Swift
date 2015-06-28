@@ -72,11 +72,6 @@
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="詳細" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rce-ZJ-Ani">
-                                            <rect key="frame" x="520" y="132" width="54" height="30"/>
-                                            <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="12"/>
-                                            <textInputTraits key="textInputTraits"/>
-                                        </textField>
                                         <imageView userInteractionEnabled="NO" tag="5" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mQ4-hf-ygl">
                                             <rect key="frame" x="8" y="54" width="106" height="106"/>
                                             <constraints>
@@ -89,12 +84,16 @@
                                             <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="14"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="詳細" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iG0-hv-aLL">
+                                            <rect key="frame" x="532" y="132" width="45" height="28"/>
+                                            <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="13"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="xVX-zp-Dw0" firstAttribute="trailing" secondItem="pRN-rn-7ud" secondAttribute="trailingMargin" id="0KH-zv-Ar4"/>
                                         <constraint firstItem="xVX-zp-Dw0" firstAttribute="leading" secondItem="a7h-ig-mEY" secondAttribute="trailing" constant="8" id="3gm-HO-KwJ"/>
-                                        <constraint firstItem="rce-ZJ-Ani" firstAttribute="top" secondItem="xVX-zp-Dw0" secondAttribute="bottom" constant="8" id="4LL-Pg-q2T"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="rce-ZJ-Ani" secondAttribute="trailing" constant="18" id="4U8-YC-tyg"/>
                                         <constraint firstItem="xMb-xT-ycL" firstAttribute="trailing" secondItem="pRN-rn-7ud" secondAttribute="trailingMargin" id="5gI-Ko-YLH"/>
                                         <constraint firstItem="4WQ-Fq-3vU" firstAttribute="leading" secondItem="pRN-rn-7ud" secondAttribute="leadingMargin" id="9Qm-Jy-Pu8"/>
                                         <constraint firstItem="VqQ-Ju-Cmw" firstAttribute="leading" secondItem="mQ4-hf-ygl" secondAttribute="trailing" constant="12" id="9co-Ll-ZYg"/>
@@ -104,18 +103,19 @@
                                         <constraint firstItem="xMb-xT-ycL" firstAttribute="top" secondItem="4WQ-Fq-3vU" secondAttribute="bottom" constant="8" id="M0f-MH-obR"/>
                                         <constraint firstItem="wpu-dC-maT" firstAttribute="top" secondItem="VqQ-Ju-Cmw" secondAttribute="bottom" constant="8" id="P9X-XS-6dk"/>
                                         <constraint firstAttribute="bottomMargin" secondItem="mQ4-hf-ygl" secondAttribute="bottom" constant="1.5" id="Pa8-Qc-Zph"/>
-                                        <constraint firstAttribute="bottomMargin" secondItem="rce-ZJ-Ani" secondAttribute="bottom" constant="-0.5" id="Q5K-0B-iOM"/>
                                         <constraint firstItem="VqQ-Ju-Cmw" firstAttribute="top" secondItem="4WQ-Fq-3vU" secondAttribute="bottom" constant="8" id="TPZ-tJ-Q3G"/>
                                         <constraint firstItem="mQ4-hf-ygl" firstAttribute="top" secondItem="4WQ-Fq-3vU" secondAttribute="bottom" constant="8" id="U4i-PT-547"/>
                                         <constraint firstItem="a7h-ig-mEY" firstAttribute="top" secondItem="wpu-dC-maT" secondAttribute="bottom" constant="8" id="UbE-Bc-m7i"/>
                                         <constraint firstItem="wpu-dC-maT" firstAttribute="leading" secondItem="mQ4-hf-ygl" secondAttribute="trailing" constant="12" id="WcW-Lt-gz4"/>
                                         <constraint firstItem="4WQ-Fq-3vU" firstAttribute="top" secondItem="pRN-rn-7ud" secondAttribute="topMargin" id="e7I-ra-XGX"/>
+                                        <constraint firstItem="iG0-hv-aLL" firstAttribute="top" secondItem="xVX-zp-Dw0" secondAttribute="bottom" constant="8" id="gtx-aD-c3Q"/>
                                         <constraint firstAttribute="bottomMargin" secondItem="a7h-ig-mEY" secondAttribute="bottom" constant="37.5" id="heI-6p-0TF"/>
                                         <constraint firstItem="4WQ-Fq-3vU" firstAttribute="trailing" secondItem="pRN-rn-7ud" secondAttribute="trailingMargin" id="j0U-Jc-73s"/>
                                         <constraint firstItem="4MZ-lh-0iw" firstAttribute="leading" secondItem="wpu-dC-maT" secondAttribute="trailing" constant="8" id="j9l-GT-kEk"/>
                                         <constraint firstItem="xMb-xT-ycL" firstAttribute="leading" secondItem="VqQ-Ju-Cmw" secondAttribute="trailing" constant="8" id="oMz-Kf-9wo"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="iG0-hv-aLL" secondAttribute="bottom" constant="1.5" id="pxe-un-dkQ"/>
                                         <constraint firstItem="a7h-ig-mEY" firstAttribute="leading" secondItem="mQ4-hf-ygl" secondAttribute="trailing" constant="12" id="qu8-wc-Dd8"/>
-                                        <constraint firstItem="rce-ZJ-Ani" firstAttribute="top" secondItem="xVX-zp-Dw0" secondAttribute="bottom" constant="8" id="t4e-JT-Tfz"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="iG0-hv-aLL" secondAttribute="trailing" constant="15" id="rBl-do-Xle"/>
                                         <constraint firstItem="4MZ-lh-0iw" firstAttribute="top" secondItem="xMb-xT-ycL" secondAttribute="bottom" constant="8" id="vve-5h-hnc"/>
                                         <constraint firstItem="mQ4-hf-ygl" firstAttribute="leading" secondItem="pRN-rn-7ud" secondAttribute="leadingMargin" id="wQ3-Fr-kui"/>
                                     </constraints>
@@ -184,7 +184,18 @@
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="選択されていません" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BYR-da-iuA">
+                                            <rect key="frame" x="342" y="8" width="189" height="34.5"/>
+                                            <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="17"/>
+                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailingMargin" secondItem="BYR-da-iuA" secondAttribute="trailing" constant="28" id="Heg-8D-BYy"/>
+                                        <constraint firstItem="BYR-da-iuA" firstAttribute="top" secondItem="0dS-fb-a21" secondAttribute="topMargin" id="YTw-TN-8c1"/>
+                                        <constraint firstItem="BYR-da-iuA" firstAttribute="bottom" secondItem="0dS-fb-a21" secondAttribute="bottomMargin" id="oQW-gz-qq7"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
@@ -192,8 +203,9 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="検索条件" id="gQZ-cO-vy0"/>
                     <connections>
-                        <segue destination="Af4-GV-rpI" kind="show" identifier="searchlist" id="0Oy-Jf-2x3"/>
+                        <segue destination="Af4-GV-rpI" kind="show" identifier="searchcategorylist" id="0Oy-Jf-2x3"/>
                         <segue destination="FZW-f0-K4u" kind="show" identifier="searchfree" id="4pV-RJ-w5U"/>
+                        <segue destination="Af4-GV-rpI" kind="show" identifier="searchsortlist" id="uHq-ml-2IN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="avV-Ek-f3p" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -251,7 +263,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mph-GQ-7By" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1994" y="828"/>
+            <point key="canvasLocation" x="2002" y="887"/>
         </scene>
         <!--詳細-->
         <scene sceneID="XKr-Ii-DYX">
@@ -269,7 +281,10 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2xr-JV-hik" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1123" y="817"/>
+            <point key="canvasLocation" x="1209" y="887"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="0Oy-Jf-2x3"/>
+    </inferredMetricsTieBreakers>
 </document>
