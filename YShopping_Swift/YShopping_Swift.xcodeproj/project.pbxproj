@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		753FFA9A1B41514500D5856E /* Category.plist in Resources */ = {isa = PBXBuildFile; fileRef = 753FFA991B41514500D5856E /* Category.plist */; };
+		753FFA9E1B4159A700D5856E /* SearchCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753FFA9D1B4159A700D5856E /* SearchCategoryViewController.swift */; };
 		9CF340FDC106A5520AE157D1 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E1C617ACA6B1D3DBF86CA365 /* libPods.a */; };
 		E22A2D651B3E792C00A38A9F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22A2D641B3E792C00A38A9F /* AppDelegate.swift */; };
 		E22A2D671B3E792C00A38A9F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22A2D661B3E792C00A38A9F /* ViewController.swift */; };
@@ -16,7 +18,6 @@
 		E22A2D7B1B3E792C00A38A9F /* YShopping_SwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22A2D7A1B3E792C00A38A9F /* YShopping_SwiftTests.swift */; };
 		E22A2D851B3E7CEE00A38A9F /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22A2D841B3E7CEE00A38A9F /* SearchViewController.swift */; };
 		E22A2D871B3E7D0800A38A9F /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22A2D861B3E7D0800A38A9F /* DetailViewController.swift */; };
-		E22A2D8F1B3EA69600A38A9F /* AppIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = E22A2D8E1B3EA69600A38A9F /* AppIcon.png */; };
 		E22A2D931B3EBCAD00A38A9F /* noimage.png in Resources */ = {isa = PBXBuildFile; fileRef = E22A2D921B3EBCAD00A38A9F /* noimage.png */; };
 		E22A2D971B3ECAE500A38A9F /* Briding-Header.m in Sources */ = {isa = PBXBuildFile; fileRef = E22A2D961B3ECAE500A38A9F /* Briding-Header.m */; };
 /* End PBXBuildFile section */
@@ -34,6 +35,8 @@
 /* Begin PBXFileReference section */
 		1A766E513952AB95F82DDF75 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		287435F1B1468D39EAEC00B7 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		753FFA991B41514500D5856E /* Category.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Category.plist; path = ../../../../../Desktop/Category.plist; sourceTree = "<group>"; };
+		753FFA9D1B4159A700D5856E /* SearchCategoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchCategoryViewController.swift; sourceTree = "<group>"; };
 		E1C617ACA6B1D3DBF86CA365 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E22A2D5F1B3E792C00A38A9F /* YShopping_Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YShopping_Swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E22A2D631B3E792C00A38A9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,7 +50,6 @@
 		E22A2D7A1B3E792C00A38A9F /* YShopping_SwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YShopping_SwiftTests.swift; sourceTree = "<group>"; };
 		E22A2D841B3E7CEE00A38A9F /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		E22A2D861B3E7D0800A38A9F /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
-		E22A2D8E1B3EA69600A38A9F /* AppIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = AppIcon.png; path = ../../../../Downloads/AppIcon.png; sourceTree = "<group>"; };
 		E22A2D921B3EBCAD00A38A9F /* noimage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = noimage.png; path = img_tmp/noimage.png; sourceTree = "<group>"; };
 		E22A2D941B3ECAE500A38A9F /* YShopping_Swift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YShopping_Swift-Bridging-Header.h"; sourceTree = "<group>"; };
 		E22A2D951B3ECAE500A38A9F /* Briding-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Briding-Header.h"; sourceTree = "<group>"; };
@@ -116,11 +118,11 @@
 				E22A2D641B3E792C00A38A9F /* AppDelegate.swift */,
 				E22A2D661B3E792C00A38A9F /* ViewController.swift */,
 				E22A2D841B3E7CEE00A38A9F /* SearchViewController.swift */,
+				753FFA9D1B4159A700D5856E /* SearchCategoryViewController.swift */,
 				E22A2D861B3E7D0800A38A9F /* DetailViewController.swift */,
 				E22A2D681B3E792C00A38A9F /* Main.storyboard */,
 				E22A2D6B1B3E792C00A38A9F /* Images.xcassets */,
 				E22A2D921B3EBCAD00A38A9F /* noimage.png */,
-				E22A2D8E1B3EA69600A38A9F /* AppIcon.png */,
 				E22A2D6D1B3E792C00A38A9F /* LaunchScreen.xib */,
 				E22A2D621B3E792C00A38A9F /* Supporting Files */,
 				E22A2D951B3ECAE500A38A9F /* Briding-Header.h */,
@@ -133,6 +135,7 @@
 		E22A2D621B3E792C00A38A9F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				753FFA991B41514500D5856E /* Category.plist */,
 				E22A2D631B3E792C00A38A9F /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -238,9 +241,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E22A2D931B3EBCAD00A38A9F /* noimage.png in Resources */,
-				E22A2D8F1B3EA69600A38A9F /* AppIcon.png in Resources */,
 				E22A2D6A1B3E792C00A38A9F /* Main.storyboard in Resources */,
 				E22A2D6F1B3E792C00A38A9F /* LaunchScreen.xib in Resources */,
+				753FFA9A1B41514500D5856E /* Category.plist in Resources */,
 				E22A2D6C1B3E792C00A38A9F /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -293,6 +296,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				753FFA9E1B4159A700D5856E /* SearchCategoryViewController.swift in Sources */,
 				E22A2D971B3ECAE500A38A9F /* Briding-Header.m in Sources */,
 				E22A2D851B3E7CEE00A38A9F /* SearchViewController.swift in Sources */,
 				E22A2D671B3E792C00A38A9F /* ViewController.swift in Sources */,
