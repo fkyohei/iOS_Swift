@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0630"
+   LastUpgradeVersion = "0640"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,8 +14,8 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C030B21D6CFB4DB7E2CA2552"
-               BuildableName = "libPods-YShopping_SwiftTests-SVProgressHUD.a"
+               BlueprintIdentifier = "F923502769DF8682A6EEF0A2"
+               BuildableName = "SVProgressHUD.framework"
                BlueprintName = "Pods-YShopping_SwiftTests-SVProgressHUD"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
@@ -39,15 +39,6 @@
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       allowLocationSimulation = "YES">
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C030B21D6CFB4DB7E2CA2552"
-            BuildableName = "libPods-YShopping_SwiftTests-SVProgressHUD.a"
-            BlueprintName = "Pods-YShopping_SwiftTests-SVProgressHUD"
-            ReferencedContainer = "container:Pods.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -57,15 +48,6 @@
       useCustomWorkingDirectory = "NO"
       buildConfiguration = "Release"
       debugDocumentVersioning = "YES">
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C030B21D6CFB4DB7E2CA2552"
-            BuildableName = "libPods-YShopping_SwiftTests-SVProgressHUD.a"
-            BlueprintName = "Pods-YShopping_SwiftTests-SVProgressHUD"
-            ReferencedContainer = "container:Pods.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

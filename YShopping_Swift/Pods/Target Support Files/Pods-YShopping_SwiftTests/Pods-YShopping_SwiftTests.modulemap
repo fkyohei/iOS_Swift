@@ -1,0 +1,6 @@
+framework module Pods_YShopping_SwiftTests {
+  umbrella header "Pods-YShopping_SwiftTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

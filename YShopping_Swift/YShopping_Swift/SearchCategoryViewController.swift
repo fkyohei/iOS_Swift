@@ -9,21 +9,63 @@
 import UIKit
 
 class SearchCategoryViewController: UITableViewController {
-    // カテゴリ一覧
-    var dictCategory = NSDictionary()
+    // カテゴリ名一覧
+    var aryCategoryName = [ "すべてのカテゴリから",
+                            "ファッション",
+                            "食品",
+                            "ダイエット、健康",
+                            "コスメ、香水",
+                            "パソコン、周辺機器",
+                            "AV機器、カメラ",
+                            "家電",
+                            "家具、インテリア",
+                            "花、ガーデニング",
+                            "キッチン、生活雑貨、日用品",
+                            "DIY、工具、文具",
+                            "ペット用品、生き物",
+                            "楽器、趣味、学習",
+                            "ゲーム、おもちゃ",
+                            "ベビー、キッズ、マタニティ",
+                            "スポーツ",
+                            "レジャー、アウトドア",
+                            "自転車、車、バイク用品",
+                            "CD、音楽ソフト",
+                            "DVD、映像ソフト",
+                            "本、雑誌、コミック"
+    ]
+    
+    // カテゴリコード一覧
+    var aryCategoryCode = [ "1",       //"すべてのカテゴリから"
+                            "13457",   //"ファッション"
+                            "2498",    //"食品"
+                            "2500",    //"ダイエット、健康"
+                            "2501",    //"コスメ、香水"
+                            "2502",    //"パソコン、周辺機器"
+                            "2504",    //"AV機器、カメラ"
+                            "2505",    //"家電"
+                            "2506",    //"家具、インテリア"
+                            "2507",    //"花、ガーデニング"
+                            "2508",    //"キッチン、生活雑貨、日用品"
+                            "2503",    //"DIY、工具、文具"
+                            "2509",    //"ペット用品、生き物"
+                            "2510",    //"楽器、趣味、学習"
+                            "2511",    //"ゲーム、おもちゃ"
+                            "2497",    //"ベビー、キッズ、マタニティ"
+                            "2512",    //"スポーツ"
+                            "2513",    //"レジャー、アウトドア"
+                            "2514",    //"自転車、車、バイク用品"
+                            "2516",    //"CD、音楽ソフト"
+                            "2517",    //"DVD、映像ソフト"
+                            "10002"   //"本、雑誌、コミック"
+    ]
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        // カテゴリ一覧を設定ファイルから取得
-        var filePath = NSBundle.mainBundle().pathForResource("Category.plist", ofType: nil)
-        dictCategory = NSDictionary(contentsOfFile: filePath!)!
-        println(dictCategory)
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // カテゴリ数
-        return dictCategory.count
+        return aryCategoryCode.count
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -32,9 +74,26 @@ class SearchCategoryViewController: UITableViewController {
         
         // ラベルを取得
         var textLabel = cell?.viewWithTag(1) as! UILabel
-        textLabel.text = dictCategory[indexPath.row]?.value
-//        println(dictCategory[indexPath.row]?.key)
+        textLabel.text = aryCategoryName[indexPath.row] as String
         
         return cell!
+    }
+    
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        // セグエ実行
+        var arySelectCodeAndName = [aryCategoryCode[indexPath.row], aryCategoryName[indexPath.row]]
+        performSegueWithIdentifier("backsearchlistforcategory", sender: arySelectCodeAndName)
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        // searchcategorylistセグエの場合
+        if segue.identifier == "backsearchlistforcategory" {
+            // SearchViewControllerを取得
+            var searchViewController = segue.destinationViewController as! SearchViewController
+            
+            // データを設定する
+            searchViewController.strCategoryId      = sender!.firstObject as! String
+            searchViewController.strCategoryName    = sender!.lastObject as! String
+        }
     }
 }

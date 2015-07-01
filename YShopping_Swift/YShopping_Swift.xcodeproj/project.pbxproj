@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		753FFA9A1B41514500D5856E /* Category.plist in Resources */ = {isa = PBXBuildFile; fileRef = 753FFA991B41514500D5856E /* Category.plist */; };
+		15CE8E51A7BB994F3B1B7338 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8850D2CE42314593C12EF516 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		563BF71CC847239DA87AA98B /* Pods_YShopping_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8114138334BB58BB4CC4F14 /* Pods_YShopping_Swift.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		753FFA9E1B4159A700D5856E /* SearchCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753FFA9D1B4159A700D5856E /* SearchCategoryViewController.swift */; };
-		9CF340FDC106A5520AE157D1 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E1C617ACA6B1D3DBF86CA365 /* libPods.a */; };
+		75F0A2F11B43BC73004F6EE3 /* Category.json in Resources */ = {isa = PBXBuildFile; fileRef = 75F0A2F01B43BC73004F6EE3 /* Category.json */; };
 		E22A2D651B3E792C00A38A9F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22A2D641B3E792C00A38A9F /* AppDelegate.swift */; };
 		E22A2D671B3E792C00A38A9F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22A2D661B3E792C00A38A9F /* ViewController.swift */; };
 		E22A2D6A1B3E792C00A38A9F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E22A2D681B3E792C00A38A9F /* Main.storyboard */; };
@@ -19,7 +20,6 @@
 		E22A2D851B3E7CEE00A38A9F /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22A2D841B3E7CEE00A38A9F /* SearchViewController.swift */; };
 		E22A2D871B3E7D0800A38A9F /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22A2D861B3E7D0800A38A9F /* DetailViewController.swift */; };
 		E22A2D931B3EBCAD00A38A9F /* noimage.png in Resources */ = {isa = PBXBuildFile; fileRef = E22A2D921B3EBCAD00A38A9F /* noimage.png */; };
-		E22A2D971B3ECAE500A38A9F /* Briding-Header.m in Sources */ = {isa = PBXBuildFile; fileRef = E22A2D961B3ECAE500A38A9F /* Briding-Header.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,9 +35,10 @@
 /* Begin PBXFileReference section */
 		1A766E513952AB95F82DDF75 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		287435F1B1468D39EAEC00B7 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		753FFA991B41514500D5856E /* Category.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Category.plist; path = ../../../../../Desktop/Category.plist; sourceTree = "<group>"; };
 		753FFA9D1B4159A700D5856E /* SearchCategoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchCategoryViewController.swift; sourceTree = "<group>"; };
-		E1C617ACA6B1D3DBF86CA365 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		75F0A2F01B43BC73004F6EE3 /* Category.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Category.json; sourceTree = "<group>"; };
+		8850D2CE42314593C12EF516 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8114138334BB58BB4CC4F14 /* Pods_YShopping_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YShopping_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E22A2D5F1B3E792C00A38A9F /* YShopping_Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YShopping_Swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E22A2D631B3E792C00A38A9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E22A2D641B3E792C00A38A9F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -51,9 +52,6 @@
 		E22A2D841B3E7CEE00A38A9F /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		E22A2D861B3E7D0800A38A9F /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		E22A2D921B3EBCAD00A38A9F /* noimage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = noimage.png; path = img_tmp/noimage.png; sourceTree = "<group>"; };
-		E22A2D941B3ECAE500A38A9F /* YShopping_Swift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YShopping_Swift-Bridging-Header.h"; sourceTree = "<group>"; };
-		E22A2D951B3ECAE500A38A9F /* Briding-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Briding-Header.h"; sourceTree = "<group>"; };
-		E22A2D961B3ECAE500A38A9F /* Briding-Header.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Briding-Header.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +59,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9CF340FDC106A5520AE157D1 /* libPods.a in Frameworks */,
+				15CE8E51A7BB994F3B1B7338 /* Pods.framework in Frameworks */,
+				563BF71CC847239DA87AA98B /* Pods_YShopping_Swift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,7 +77,8 @@
 		94DD8A06BF71D44BE25973EC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				E1C617ACA6B1D3DBF86CA365 /* libPods.a */,
+				8850D2CE42314593C12EF516 /* Pods.framework */,
+				B8114138334BB58BB4CC4F14 /* Pods_YShopping_Swift.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -125,9 +125,6 @@
 				E22A2D921B3EBCAD00A38A9F /* noimage.png */,
 				E22A2D6D1B3E792C00A38A9F /* LaunchScreen.xib */,
 				E22A2D621B3E792C00A38A9F /* Supporting Files */,
-				E22A2D951B3ECAE500A38A9F /* Briding-Header.h */,
-				E22A2D961B3ECAE500A38A9F /* Briding-Header.m */,
-				E22A2D941B3ECAE500A38A9F /* YShopping_Swift-Bridging-Header.h */,
 			);
 			path = YShopping_Swift;
 			sourceTree = "<group>";
@@ -135,7 +132,7 @@
 		E22A2D621B3E792C00A38A9F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				753FFA991B41514500D5856E /* Category.plist */,
+				75F0A2F01B43BC73004F6EE3 /* Category.json */,
 				E22A2D631B3E792C00A38A9F /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -170,6 +167,7 @@
 				E22A2D5C1B3E792C00A38A9F /* Frameworks */,
 				E22A2D5D1B3E792C00A38A9F /* Resources */,
 				A075C89B73586669E3662CFA /* Copy Pods Resources */,
+				F9952A4B354513EC9BA75E33 /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -240,10 +238,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75F0A2F11B43BC73004F6EE3 /* Category.json in Resources */,
 				E22A2D931B3EBCAD00A38A9F /* noimage.png in Resources */,
 				E22A2D6A1B3E792C00A38A9F /* Main.storyboard in Resources */,
 				E22A2D6F1B3E792C00A38A9F /* LaunchScreen.xib in Resources */,
-				753FFA9A1B41514500D5856E /* Category.plist in Resources */,
 				E22A2D6C1B3E792C00A38A9F /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -289,6 +287,21 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		F9952A4B354513EC9BA75E33 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YShopping_Swift/Pods-YShopping_Swift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -297,7 +310,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				753FFA9E1B4159A700D5856E /* SearchCategoryViewController.swift in Sources */,
-				E22A2D971B3ECAE500A38A9F /* Briding-Header.m in Sources */,
 				E22A2D851B3E7CEE00A38A9F /* SearchViewController.swift in Sources */,
 				E22A2D671B3E792C00A38A9F /* ViewController.swift in Sources */,
 				E22A2D651B3E792C00A38A9F /* AppDelegate.swift in Sources */,
@@ -345,6 +357,7 @@
 /* Begin XCBuildConfiguration section */
 		E22A2D7C1B3E792C00A38A9F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A766E513952AB95F82DDF75 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -389,6 +402,7 @@
 		};
 		E22A2D7D1B3E792C00A38A9F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 287435F1B1468D39EAEC00B7 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -433,7 +447,7 @@
 				INFOPLIST_FILE = YShopping_Swift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "YShopping_Swift/YShopping_Swift-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -447,12 +461,13 @@
 				INFOPLIST_FILE = YShopping_Swift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "YShopping_Swift/YShopping_Swift-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 			};
 			name = Release;
 		};
 		E22A2D821B3E792C00A38A9F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A766E513952AB95F82DDF75 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -472,6 +487,7 @@
 		};
 		E22A2D831B3E792C00A38A9F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 287435F1B1468D39EAEC00B7 /* Pods.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (

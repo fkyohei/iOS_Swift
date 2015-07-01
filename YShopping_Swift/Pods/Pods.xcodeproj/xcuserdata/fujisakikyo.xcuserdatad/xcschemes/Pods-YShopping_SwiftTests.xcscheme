@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0630"
+   LastUpgradeVersion = "0640"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,8 +14,8 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "DAF923F8E4559E7C2FF61BE4"
-               BuildableName = "libPods-YShopping_SwiftTests.a"
+               BlueprintIdentifier = "1635072AC49CC7612EF7ABDB"
+               BuildableName = "Pods_YShopping_SwiftTests.framework"
                BlueprintName = "Pods-YShopping_SwiftTests"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
@@ -39,15 +39,6 @@
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       allowLocationSimulation = "YES">
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "DAF923F8E4559E7C2FF61BE4"
-            BuildableName = "libPods-YShopping_SwiftTests.a"
-            BlueprintName = "Pods-YShopping_SwiftTests"
-            ReferencedContainer = "container:Pods.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -57,15 +48,6 @@
       useCustomWorkingDirectory = "NO"
       buildConfiguration = "Release"
       debugDocumentVersioning = "YES">
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "DAF923F8E4559E7C2FF61BE4"
-            BuildableName = "libPods-YShopping_SwiftTests.a"
-            BlueprintName = "Pods-YShopping_SwiftTests"
-            ReferencedContainer = "container:Pods.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

@@ -6,63 +6,63 @@
 	<dict>
 		<key>Pods-SVProgressHUD.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>2</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>Pods-YShopping_Swift-SVProgressHUD.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>4</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>Pods-YShopping_Swift.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>3</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>Pods-YShopping_SwiftTests-SVProgressHUD.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>6</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>Pods-YShopping_SwiftTests.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>5</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>Pods.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>1</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>263681770A264ABB6F4AB691</key>
+		<key>112D0834DBA676278E16CE6A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>377E67D7A5F5086CFE061D01</key>
+		<key>1635072AC49CC7612EF7ABDB</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>3909A5BCAFA7874C8C3BD763</key>
+		<key>A86B7F189BE2BE595411E604</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>4BDBD560DD84C1E15E31A128</key>
+		<key>AD6BC382EDA531A69620F12F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C030B21D6CFB4DB7E2CA2552</key>
+		<key>BD77BE066699F087141A5B97</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>DAF923F8E4559E7C2FF61BE4</key>
+		<key>F923502769DF8682A6EEF0A2</key>
 		<dict>
 			<key>primary</key>
 			<true/>
