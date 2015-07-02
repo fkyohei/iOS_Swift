@@ -10,6 +10,17 @@ import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
+    
+    // カテゴリ変数
+    var strCategoryId = "1"
+    var strCategoryName = "すべてのカテゴリから"
+    // フリーワード変数
+    var strFreeword = ""
+    // 表示順序変数
+    var strSortTag = "-score"
+    var strSortTagName = "おすすめ順"
+    
+    
 
     var window: UIWindow?
 

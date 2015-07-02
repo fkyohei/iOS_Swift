@@ -13,13 +13,15 @@ import SVProgressHUD
 
 class ViewController: UITableViewController {
     // YahooショッピングAPIのアドレス
-    let ApiBaseUrlString = "http://shopping.yahooapis.jp/ShoppingWebService/V1/json/itemSearch?appid=dj0zaiZpPW54Tm5pOExlV05vcSZzPWNvbnN1bWVyc2VjcmV0Jng9Y2Y-&image_size=106&category_id=1"
+    let ApiBaseUrlString = "http://shopping.yahooapis.jp/ShoppingWebService/V1/json/itemSearch?appid=dj0zaiZpPW54Tm5pOExlV05vcSZzPWNvbnN1bWVyc2VjcmV0Jng9Y2Y-&image_size=106"
     // 取得データ配列
     var resultData = NSMutableArray()
     // 取得データ開始件数
     var offset = 0
     // 読み込み中フラグ
     var isLoading = false
+    // AppDelegateのインスタンス変数
+    var appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,6 +29,12 @@ class ViewController: UITableViewController {
 
         // データ取得
         getData()
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        // 取得データを空にして再読み込み
+        resultData = NSMutableArray()
+        self.tableView.reloadData()
     }
 
     override func didReceiveMemoryWarning() {
@@ -113,6 +121,16 @@ class ViewController: UITableViewController {
     func getData() {
         // NSURL を作る
         var ApiUrlString = "\(ApiBaseUrlString)&offset=\(offset)"
+        // 条件が設定されていたら条件指定
+        if appDelegate.strCategoryId != "" {
+            ApiUrlString = ApiUrlString + "&category_id=\(appDelegate.strCategoryId)"
+        }
+        if appDelegate.strFreeword != "" {
+            ApiUrlString = ApiUrlString + "&query=\(appDelegate.strFreeword)"
+        }
+        if appDelegate.strSortTag != "" {
+            ApiUrlString = ApiUrlString + "&sort=\(appDelegate.strSortTag)"
+        }
         var url = NSURL(string: ApiUrlString)!
         
         // データをダウンロードする

@@ -54,12 +54,6 @@
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" tag="4" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xVX-zp-Dw0">
-                                            <rect key="frame" x="192" y="106" width="400" height="18"/>
-                                            <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="10"/>
-                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
                                         <label opaque="NO" userInteractionEnabled="NO" tag="3" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4MZ-lh-0iw">
                                             <rect key="frame" x="192" y="80" width="400" height="18"/>
                                             <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="10"/>
@@ -87,6 +81,12 @@
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="詳細" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iG0-hv-aLL">
                                             <rect key="frame" x="532" y="132" width="45" height="28"/>
                                             <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="13"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" tag="4" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xVX-zp-Dw0">
+                                            <rect key="frame" x="192" y="106" width="400" height="18"/>
+                                            <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="10"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -142,7 +142,7 @@
         <!--検索条件-->
         <scene sceneID="rkH-Qd-Ytl">
             <objects>
-                <viewController id="gxy-nI-0ti" customClass="SearchViewController" customModule="YShopping_Swift" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="searchVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="gxy-nI-0ti" customClass="SearchViewController" customModule="YShopping_Swift" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="55" sectionHeaderHeight="22" sectionFooterHeight="22" id="FT9-ig-kHP">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -163,6 +163,9 @@
                                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                     </state>
+                                    <connections>
+                                        <action selector="searchBtn:" destination="gxy-nI-0ti" eventType="touchUpInside" id="HK3-1E-XpC"/>
+                                    </connections>
                                 </button>
                             </subviews>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -178,7 +181,7 @@
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="pa5-h3-I6J" id="0dS-fb-a21">
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XP6-of-Hwm">
+                                        <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XP6-of-Hwm">
                                             <rect key="frame" x="8" y="8" width="108" height="35"/>
                                             <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="17"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -193,7 +196,10 @@
                                     </subviews>
                                     <constraints>
                                         <constraint firstAttribute="trailingMargin" secondItem="BYR-da-iuA" secondAttribute="trailing" constant="28" id="Heg-8D-BYy"/>
+                                        <constraint firstItem="XP6-of-Hwm" firstAttribute="top" secondItem="0dS-fb-a21" secondAttribute="topMargin" id="L8r-Fo-XAn"/>
+                                        <constraint firstItem="XP6-of-Hwm" firstAttribute="leading" secondItem="0dS-fb-a21" secondAttribute="leadingMargin" id="TzG-qE-cC7"/>
                                         <constraint firstItem="BYR-da-iuA" firstAttribute="top" secondItem="0dS-fb-a21" secondAttribute="topMargin" id="YTw-TN-8c1"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="XP6-of-Hwm" secondAttribute="bottom" constant="-0.5" id="i7C-x4-WfS"/>
                                         <constraint firstItem="BYR-da-iuA" firstAttribute="bottom" secondItem="0dS-fb-a21" secondAttribute="bottomMargin" id="oQW-gz-qq7"/>
                                     </constraints>
                                 </tableViewCellContentView>
@@ -204,8 +210,8 @@
                     <navigationItem key="navigationItem" title="検索条件" id="gQZ-cO-vy0"/>
                     <connections>
                         <segue destination="Af4-GV-rpI" kind="show" identifier="searchcategorylist" id="0Oy-Jf-2x3"/>
-                        <segue destination="FZW-f0-K4u" kind="show" identifier="searchfree" id="4pV-RJ-w5U"/>
-                        <segue destination="Vkb-mI-a0o" kind="show" id="EZW-A4-5sE"/>
+                        <segue destination="FZW-f0-K4u" kind="show" identifier="searchfreeword" id="4pV-RJ-w5U"/>
+                        <segue destination="Vkb-mI-a0o" kind="show" identifier="searchsortlist" id="EZW-A4-5sE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="avV-Ek-f3p" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -216,12 +222,12 @@
         <scene sceneID="xww-a2-7Nz">
             <objects>
                 <viewController id="Af4-GV-rpI" customClass="SearchCategoryViewController" customModule="YShopping_Swift" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="58" sectionHeaderHeight="22" sectionFooterHeight="22" id="OoM-mG-xfV">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="56" sectionHeaderHeight="22" sectionFooterHeight="22" id="OoM-mG-xfV">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="categorylist" rowHeight="58" id="cmT-2h-gM8">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="categorylist" rowHeight="56" id="cmT-2h-gM8">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cmT-2h-gM8" id="8tr-mQ-Bxi">
@@ -229,7 +235,7 @@
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5kG-eS-wtS">
                                             <rect key="frame" x="26" y="8" width="288" height="42"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="17"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -252,10 +258,10 @@
             </objects>
             <point key="canvasLocation" x="1992" y="-720"/>
         </scene>
-        <!--View Controller-->
+        <!--Search Sort View Controller-->
         <scene sceneID="624-Or-VfQ">
             <objects>
-                <viewController id="Vkb-mI-a0o" sceneMemberID="viewController">
+                <viewController id="Vkb-mI-a0o" customClass="SearchSortViewController" customModule="YShopping_Swift" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="66" sectionHeaderHeight="22" sectionFooterHeight="22" id="Wby-cQ-a7R">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -266,6 +272,19 @@
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="JMv-0b-A70" id="XMz-c2-m8L">
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1HV-o5-esx">
+                                            <rect key="frame" x="23" y="8" width="252" height="50"/>
+                                            <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="1HV-o5-esx" firstAttribute="bottom" secondItem="XMz-c2-m8L" secondAttribute="bottomMargin" id="5gs-oc-dJf"/>
+                                        <constraint firstItem="1HV-o5-esx" firstAttribute="top" secondItem="XMz-c2-m8L" secondAttribute="topMargin" id="9kC-ea-Ylp"/>
+                                        <constraint firstItem="1HV-o5-esx" firstAttribute="leading" secondItem="XMz-c2-m8L" secondAttribute="leadingMargin" constant="15" id="ydk-G4-X6f"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
@@ -278,7 +297,7 @@
         <!--キーワード入力-->
         <scene sceneID="bQK-gf-aWF">
             <objects>
-                <viewController id="FZW-f0-K4u" sceneMemberID="viewController">
+                <viewController id="FZW-f0-K4u" customClass="SearchFreewordViewController" customModule="YShopping_Swift" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="NJU-tX-b4y"/>
                         <viewControllerLayoutGuide type="bottom" id="oT8-HV-J9Q"/>
@@ -287,9 +306,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iO4-5L-qEL">
+                            <textField opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" restorationIdentifier="freeword" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iO4-5L-qEL">
                                 <rect key="frame" x="57" y="99" width="486" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                         </subviews>
@@ -299,7 +318,16 @@
                             <constraint firstItem="iO4-5L-qEL" firstAttribute="leading" secondItem="iwt-dq-jk9" secondAttribute="leadingMargin" constant="41" id="bXH-UV-xnt"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="キーワード入力" id="U8M-Un-BhH"/>
+                    <navigationItem key="navigationItem" title="キーワード入力" id="U8M-Un-BhH">
+                        <barButtonItem key="rightBarButtonItem" tag="2" systemItem="done" id="7fX-MT-z61">
+                            <connections>
+                                <action selector="addBtn:" destination="FZW-f0-K4u" id="DfC-SP-LqJ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="freewordfield" destination="iO4-5L-qEL" id="l6D-Hm-6TQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mph-GQ-7By" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

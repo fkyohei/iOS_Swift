@@ -80,20 +80,14 @@ class SearchCategoryViewController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        // セグエ実行
-        var arySelectCodeAndName = [aryCategoryCode[indexPath.row], aryCategoryName[indexPath.row]]
-        performSegueWithIdentifier("backsearchlistforcategory", sender: arySelectCodeAndName)
+        //AppDelegateのインスタンスを取得
+        var appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        // 値を設定
+        appDelegate.strCategoryId = aryCategoryCode[indexPath.row]
+        appDelegate.strCategoryName = aryCategoryName[indexPath.row]
+        
+        // Viewの移動する
+        self.navigationController?.popViewControllerAnimated(true)
     }
-    
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // searchcategorylistセグエの場合
-        if segue.identifier == "backsearchlistforcategory" {
-            // SearchViewControllerを取得
-            var searchViewController = segue.destinationViewController as! SearchViewController
-            
-            // データを設定する
-            searchViewController.strCategoryId      = sender!.firstObject as! String
-            searchViewController.strCategoryName    = sender!.lastObject as! String
-        }
-    }
+
 }
