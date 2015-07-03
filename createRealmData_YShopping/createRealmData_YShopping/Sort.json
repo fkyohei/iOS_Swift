@@ -1,0 +1,22 @@
+[
+ {
+ "code" : "-score",
+ "name" : "おすすめ順"
+ },
+ {
+ "code" : "-sold",
+ "name" : "売れている順"
+ },
+ {
+ "code" : "%2Bprice",
+ "name" : "商品価格が安い順"
+ },
+ {
+ "code" : "-price",
+ "name" : "商品価格が高い順"
+ },
+ {
+ "code" : "-review_count",
+ "name" : "レビュー件数の多い順"
+ }
+]

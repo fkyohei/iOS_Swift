@@ -1,0 +1,6 @@
+framework module Pods_createRealmData_YShopping {
+  umbrella header "Pods-createRealmData_YShopping-umbrella.h"
+
+  export *
+  module * { export * }
+}
