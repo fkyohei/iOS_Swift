@@ -1,0 +1,16 @@
+# Uncomment this line to define a global platform for your project
+platform :ios, '8.3'
+use_frameworks!
+
+
+target 'createRealmData_objc_YShopping' do
+
+pod 'Realm'
+pod 'RealmSwift'
+
+end
+
+target 'createRealmData_objc_YShoppingTests' do
+
+end
+
