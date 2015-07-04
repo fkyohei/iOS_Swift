@@ -14,8 +14,8 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "4BDBD560DD84C1E15E31A128"
-               BuildableName = "libPods-YShopping_Swift.a"
+               BlueprintIdentifier = "A2D4A4C460C8459662177E10"
+               BuildableName = "Pods_YShopping_Swift.framework"
                BlueprintName = "Pods-YShopping_Swift"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
@@ -39,6 +39,15 @@
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       allowLocationSimulation = "YES">
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "A2D4A4C460C8459662177E10"
+            BuildableName = "Pods_YShopping_Swift.framework"
+            BlueprintName = "Pods-YShopping_Swift"
+            ReferencedContainer = "container:Pods.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>

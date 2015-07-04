@@ -14,8 +14,8 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "263681770A264ABB6F4AB691"
-               BuildableName = "libPods-YShopping_Swift-SVProgressHUD.a"
+               BlueprintIdentifier = "D43E58959BAE3EA6300BBC1A"
+               BuildableName = "SVProgressHUD.framework"
                BlueprintName = "Pods-YShopping_Swift-SVProgressHUD"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
@@ -39,6 +39,15 @@
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       allowLocationSimulation = "YES">
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "D43E58959BAE3EA6300BBC1A"
+            BuildableName = "SVProgressHUD.framework"
+            BlueprintName = "Pods-YShopping_Swift-SVProgressHUD"
+            ReferencedContainer = "container:Pods.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>

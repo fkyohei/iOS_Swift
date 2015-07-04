@@ -56,6 +56,7 @@
 		E22A2D841B3E7CEE00A38A9F /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		E22A2D861B3E7D0800A38A9F /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		E22A2D921B3EBCAD00A38A9F /* noimage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = noimage.png; path = img_tmp/noimage.png; sourceTree = "<group>"; };
+		E26EFDE11B47D6E200D38E8D /* YShopping_v1.realm */ = {isa = PBXFileReference; lastKnownFileType = file; path = YShopping_v1.realm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +120,7 @@
 		E22A2D611B3E792C00A38A9F /* YShopping_Swift */ = {
 			isa = PBXGroup;
 			children = (
+				E26EFDE11B47D6E200D38E8D /* YShopping_v1.realm */,
 				E22A2D641B3E792C00A38A9F /* AppDelegate.swift */,
 				E22A2D661B3E792C00A38A9F /* ViewController.swift */,
 				E22A2D841B3E7CEE00A38A9F /* SearchViewController.swift */,

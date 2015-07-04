@@ -10,7 +10,8 @@ import UIKit
 import Social
 
 class DetailController: UIViewController {
-    @IBOutlet weak var webView: UIWebView!
+    @IBOutlet var webView: UIWebView!
+
     // エントリー
     var entry = NSDictionary()
     
