@@ -7,35 +7,27 @@
 //
 
 import UIKit
+import Realm
+import RealmSwift
 
 class SearchSortViewController: UITableViewController {
     // AppDelegateのインスタンス変数
-    var appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
-    // ソート順コード
-    var arySortTag = [
-        "-score",   // おすすめ順
-        "-sold",    // 売れている順
-        "%2Bprice",   // 商品価格が安い順
-        "-price",   // 商品価格が高い順
-        "-review_count"   // レビュー件数の多い順
-    ]
-    // ソート順名
-    var arySortTagName = [
-        "おすすめ順",
-        "売れている順",
-        "商品価格が安い順",
-        "商品価格が高い順",
-        "レビュー件数の多い順"
-    ]
-
+    var appDelegate: AppDelegate!
+    // ソート条件一覧
+    var Sortitems: RLMResults!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // インスタンス取得
+        appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        // Realmからソート条件取得
+        Sortitems = Sort.allObjectsInRealm(appDelegate.Yshoppingrealm)
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // ソート順数
-        return arySortTag.count
+        return Int(Sortitems.count)
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -43,15 +35,18 @@ class SearchSortViewController: UITableViewController {
         var cell = tableView.dequeueReusableCellWithIdentifier("sortlist") as? UITableViewCell
         
         var taglabel = cell?.viewWithTag(1) as! UILabel
-        taglabel.text = arySortTagName[indexPath.row]
+        taglabel.text = Sortitems[UInt(indexPath.row)].name
         
         return cell!
     }
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        // 選択した条件取得
+        let item = Sortitems.objectAtIndex(UInt(indexPath.row)) as! Sort
+        
         // 値を設定
-        appDelegate.strSortTag = arySortTag[indexPath.row]
-        appDelegate.strSortTagName = arySortTagName[indexPath.row]
+        appDelegate.strSortTag = item.code
+        appDelegate.strSortTagName = item.name
         
         // Viewの移動
         self.navigationController?.popViewControllerAnimated(true)

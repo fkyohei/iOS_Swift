@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Realm
+import RealmSwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -20,6 +22,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var strSortTag = "-score"
     var strSortTagName = "おすすめ順"
     
+    var Yshoppingrealm:RLMRealm!
+    
     
 
     var window: UIWindow?
@@ -27,6 +31,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        let path = NSBundle.mainBundle().pathForResource("YShopping_v1",ofType:"realm")
+        Yshoppingrealm = RLMRealm(path: path, readOnly: true, error:nil)
+        
         return true
     }
 

@@ -131,6 +131,9 @@ class ViewController: UITableViewController {
         if appDelegate.strSortTag != "" {
             ApiUrlString = ApiUrlString + "&sort=\(appDelegate.strSortTag)"
         }
+        // URLエンコード
+        ApiUrlString = ApiUrlString.stringByAddingPercentEncodingWithAllowedCharacters(NSCharacterSet.URLQueryAllowedCharacterSet())!
+        
         var url = NSURL(string: ApiUrlString)!
         
         // データをダウンロードする
@@ -151,7 +154,8 @@ class ViewController: UITableViewController {
                             if data_key as! String == "Request" {
                                 continue
                             }
-                            if data_value["Name"] != nil {
+                            var data = data_value["Name"] as? String
+                            if data != nil {
                                 self.resultData.addObject(data_value)
                             }
                         }
