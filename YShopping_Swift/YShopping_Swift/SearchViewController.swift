@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Realm
+import RealmSwift
 
 class SearchViewController: UITableViewController {
     // AppDelegateのインスタンス変数

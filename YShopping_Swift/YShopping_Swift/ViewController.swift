@@ -78,9 +78,29 @@ class ViewController: UITableViewController {
         // 商品画像ラベルを取得して、商品画像を設定する
         var imageLabel = cell?.viewWithTag(5) as! UIImageView
 //        if var eximage = data["ExImage"] as? NSDictionary {
-//            var imageUrl = NSURL(string: (data["Url"] as? String)!)
-//            var imageData = NSData(contentsOfURL: imageUrl!,options: NSDataReadingOptions.DataReadingMappedIfSafe, error: nil)!
-//            imageLabel.image = UIImage(data:imageData)
+//            var q_global: dispatch_queue_t = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+//            var q_main: dispatch_queue_t  = dispatch_get_main_queue();
+//            
+//            dispatch_async(q_global, {
+//                var imageUrl = NSURL(string: (data["Url"] as? String)!)
+//                var imageData: NSData = NSData(contentsOfURL: imageUrl!,options: NSDataReadingOptions.DataReadingMappedIfSafe, error: nil)!
+//                var image: UIImage = UIImage(data: imageData)!
+//                
+//                dispatch_async(q_main, {
+//                    imageLabel.image = image
+//                    cell.layoutSubviews()
+//                })
+//            })
+//            // 画像URL
+//            let imageurl = NSURL(string: (data["Url"] as? String)!)
+//            let req = NSURLRequest(URL:imageurl!)
+//            
+//            // 画像を非同期で表示
+//            NSURLConnection.sendAsynchronousRequest(req, queue:NSOperationQueue.mainQueue()){(res, data, err) in
+//                imageLabel.image = UIImage(data:data)
+//                println(data)
+//            }
+//
 //        } else {
             imageLabel.image = UIImage(named: "noimage")
 //        }
