@@ -50,10 +50,12 @@ code_sign() {
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework 'Realm.framework'
   install_framework 'RealmSwift.framework'
+  install_framework 'SDWebImage.framework'
   install_framework 'SVProgressHUD.framework'
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework 'Realm.framework'
   install_framework 'RealmSwift.framework'
+  install_framework 'SDWebImage.framework'
   install_framework 'SVProgressHUD.framework'
 fi

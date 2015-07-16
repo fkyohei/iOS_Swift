@@ -9,6 +9,7 @@
 
 import UIKit
 import SVProgressHUD
+import SDWebImage
 
 
 class ViewController: UITableViewController {
@@ -77,33 +78,14 @@ class ViewController: UITableViewController {
         
         // 商品画像ラベルを取得して、商品画像を設定する
         var imageLabel = cell?.viewWithTag(5) as! UIImageView
-//        if var eximage = data["ExImage"] as? NSDictionary {
-//            var q_global: dispatch_queue_t = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
-//            var q_main: dispatch_queue_t  = dispatch_get_main_queue();
-//            
-//            dispatch_async(q_global, {
-//                var imageUrl = NSURL(string: (data["Url"] as? String)!)
-//                var imageData: NSData = NSData(contentsOfURL: imageUrl!,options: NSDataReadingOptions.DataReadingMappedIfSafe, error: nil)!
-//                var image: UIImage = UIImage(data: imageData)!
-//                
-//                dispatch_async(q_main, {
-//                    imageLabel.image = image
-//                    cell.layoutSubviews()
-//                })
-//            })
-//            // 画像URL
-//            let imageurl = NSURL(string: (data["Url"] as? String)!)
-//            let req = NSURLRequest(URL:imageurl!)
-//            
-//            // 画像を非同期で表示
-//            NSURLConnection.sendAsynchronousRequest(req, queue:NSOperationQueue.mainQueue()){(res, data, err) in
-//                imageLabel.image = UIImage(data:data)
-//                println(data)
-//            }
-//
-//        } else {
+        var imageUrl = NSURL(string: (data["Url"] as? String)!)
+        if var eximage = data["ExImage"] as? NSDictionary {
+            // 非同期で画像を取得しセット
+            var imageUrl = NSURL(string: (eximage["Url"] as? String)!)
+            imageLabel.sd_setImageWithURL(imageUrl)
+        } else {
             imageLabel.image = UIImage(named: "noimage")
-//        }
+        }
         
         return cell!
     }
@@ -168,9 +150,6 @@ class ViewController: UITableViewController {
                 if var resultset0 = resultset["0"] as? NSDictionary {
                     if var result = resultset0["Result"] as? NSDictionary {
                         for (data_key, data_value) in result {
-//                            println("***********\(data_key)")
-//                            println(data_value)
-//                            println("***************")
                             if data_key as! String == "Request" {
                                 continue
                             }

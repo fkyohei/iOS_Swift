@@ -4,6 +4,7 @@ use_frameworks!
 
 pod 'SVProgressHUD'
 pod 'RealmSwift'
+pod 'SDWebImage', '~>3.7'
 
 target 'YShopping_Swift' do
 
