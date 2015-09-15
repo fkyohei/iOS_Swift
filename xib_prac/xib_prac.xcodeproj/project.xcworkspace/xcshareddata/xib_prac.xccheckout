@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>927E5619-5520-4F69-8FDC-EADBC1C738EB</string>
+	<key>IDESourceControlProjectName</key>
+	<string>project</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>E809DB5E6732DB2249F9C361F776932717880FEA</key>
+		<string>https://bitbucket.org/fkyohei/app_traning.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>xib_prac/xib_prac.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>E809DB5E6732DB2249F9C361F776932717880FEA</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://bitbucket.org/fkyohei/app_traning.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>E809DB5E6732DB2249F9C361F776932717880FEA</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>E809DB5E6732DB2249F9C361F776932717880FEA</string>
+			<key>IDESourceControlWCCName</key>
+			<string>app_training</string>
+		</dict>
+	</array>
+</dict>
+</plist>

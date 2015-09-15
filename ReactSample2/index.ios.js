@@ -10,6 +10,6 @@ var {
 } = React;
 
 // 初期呼び出しファイルを設定
-var ReactSample2 = require('./MovieApp.js');
+var ReactSample2 = require('./MoviesApp.js');
 
 AppRegistry.registerComponent('ReactSample2', () => ReactSample2);
