@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="aNl-9N-U2N">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="de1-78-aZF">
+            <objects>
+                <viewController id="aNl-9N-U2N" customClass="ViewController" customModule="xib_prac_tableview" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Epa-AV-CdR"/>
+                        <viewControllerLayoutGuide type="bottom" id="jnR-Yt-PuU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="abC-Zz-OP4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qqh-hv-lOk">
+                                <rect key="frame" x="137" y="284" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="IKl-LY-jq7"/>
+                                    <constraint firstAttribute="width" constant="100" id="tzp-hd-grb"/>
+                                </constraints>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="let-Q4-ZDH" kind="presentation" id="rcS-3d-nap"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="qqh-hv-lOk" secondAttribute="centerX" id="Tbv-DW-zpE"/>
+                            <constraint firstAttribute="centerY" secondItem="qqh-hv-lOk" secondAttribute="centerY" id="ibj-wq-VaX"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tyI-9b-wtY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="229.5" y="188.5"/>
+        </scene>
+        <!--Table View-->
+        <scene sceneID="sHA-de-Mmz">
+            <objects>
+                <viewController id="let-Q4-ZDH" customClass="TableView" customModule="xib_prac_tableview" customModuleProvider="target" sceneMemberID="viewController">
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="t78-Pl-lmq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="771.5" y="188.5"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomCell" customModule="xib_prac_tableview" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CustomCell" rowHeight="100" id="Vyl-1a-abn" customClass="CustomCell" customModule="xib_prac_tableview" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="111"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Vyl-1a-abn" id="7gW-7Q-o4z">
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Picture" translatesAutoresizingMaskIntoConstraints="NO" id="8zU-OE-vMx">
+                        <rect key="frame" x="8" y="16" width="80" height="80"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="80" id="8uQ-a2-Pd6"/>
+                            <constraint firstAttribute="width" constant="80" id="XH7-Vs-mUC"/>
+                            <constraint firstAttribute="width" secondItem="8zU-OE-vMx" secondAttribute="height" multiplier="1:1" id="fSJ-iJ-gnq"/>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="r8T-SD-Cnl"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vky-M7-mAI">
+                        <rect key="frame" x="108" y="16" width="204" height="80"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="204" id="EqW-Ga-ag9"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="EqW-Ga-ag9"/>
+                            </mask>
+                        </variation>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="vky-M7-mAI" firstAttribute="height" secondItem="8zU-OE-vMx" secondAttribute="height" id="7jq-Ea-U2H"/>
+                    <constraint firstItem="vky-M7-mAI" firstAttribute="leading" secondItem="8zU-OE-vMx" secondAttribute="trailing" constant="20" id="IfN-zj-DOc"/>
+                    <constraint firstItem="8zU-OE-vMx" firstAttribute="top" secondItem="7gW-7Q-o4z" secondAttribute="topMargin" constant="8" id="Otj-UV-SEE"/>
+                    <constraint firstItem="vky-M7-mAI" firstAttribute="trailing" secondItem="7gW-7Q-o4z" secondAttribute="trailingMargin" id="TG2-x1-hPa"/>
+                    <constraint firstAttribute="centerY" secondItem="vky-M7-mAI" secondAttribute="centerY" id="b1t-2Z-GwG"/>
+                    <constraint firstAttribute="centerY" secondItem="8zU-OE-vMx" secondAttribute="centerY" id="kaR-CB-6cb"/>
+                    <constraint firstItem="8zU-OE-vMx" firstAttribute="leading" secondItem="7gW-7Q-o4z" secondAttribute="leadingMargin" id="vG2-CE-MlF"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="customLabel" destination="vky-M7-mAI" id="Sih-Lz-l17"/>
+            </connections>
+            <point key="canvasLocation" x="544" y="401.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Picture" width="100" height="100"/>
+    </resources>
+</document>
