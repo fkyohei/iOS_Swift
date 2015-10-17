@@ -62,7 +62,7 @@ int main(int argc, const char * argv[]) {
         [realm commitWriteTransaction];
         
         NSError *error2 = nil;
-        BOOL result = [realm writeCopyToPath:@"/Users/fujisakikyo/Desktop/YShopping_v1.realm" error:&error2];
+        BOOL result = [realm writeCopyToPath:@"/Users/kyohei/Desktop/YShopping_v1.realm" error:&error2];
     }
     return 0;
 }

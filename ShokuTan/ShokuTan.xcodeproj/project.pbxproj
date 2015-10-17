@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E23A1FB91BD25AEF00C70DDA /* Area.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23A1FB81BD25AEF00C70DDA /* Area.swift */; settings = {ASSET_TAGS = (); }; };
+		E23A1FBF1BD266C800C70DDA /* Pref.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23A1FBE1BD266C800C70DDA /* Pref.swift */; settings = {ASSET_TAGS = (); }; };
+		E23A1FC21BD2682300C70DDA /* MainCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23A1FC11BD2682300C70DDA /* MainCategory.swift */; settings = {ASSET_TAGS = (); }; };
+		E23A1FC41BD2686200C70DDA /* SubCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23A1FC31BD2686200C70DDA /* SubCategory.swift */; settings = {ASSET_TAGS = (); }; };
+		E23A1FC61BD2689500C70DDA /* ViewContorller.xib in Resources */ = {isa = PBXBuildFile; fileRef = E23A1FC51BD2689500C70DDA /* ViewContorller.xib */; settings = {ASSET_TAGS = (); }; };
 		E2B79BF81BD239E5004E3654 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B79BF71BD239E5004E3654 /* AppDelegate.swift */; };
 		E2B79BFA1BD239E5004E3654 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B79BF91BD239E5004E3654 /* ViewController.swift */; };
 		E2B79BFD1BD239E5004E3654 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2B79BFB1BD239E5004E3654 /* Main.storyboard */; };
@@ -36,6 +41,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E23A1FB81BD25AEF00C70DDA /* Area.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Area.swift; sourceTree = "<group>"; };
+		E23A1FBE1BD266C800C70DDA /* Pref.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pref.swift; sourceTree = "<group>"; };
+		E23A1FC01BD2681500C70DDA /* ShokuTan_v1.realm */ = {isa = PBXFileReference; lastKnownFileType = file; path = ShokuTan_v1.realm; sourceTree = "<group>"; };
+		E23A1FC11BD2682300C70DDA /* MainCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainCategory.swift; sourceTree = "<group>"; };
+		E23A1FC31BD2686200C70DDA /* SubCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubCategory.swift; sourceTree = "<group>"; };
+		E23A1FC51BD2689500C70DDA /* ViewContorller.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewContorller.xib; sourceTree = "<group>"; };
 		E2B79BF41BD239E5004E3654 /* ShokuTan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShokuTan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2B79BF71BD239E5004E3654 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E2B79BF91BD239E5004E3654 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -80,6 +91,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E23A1FBA1BD25AF800C70DDA /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				E2B79BF91BD239E5004E3654 /* ViewController.swift */,
+			);
+			name = controller;
+			sourceTree = "<group>";
+		};
+		E23A1FBB1BD25B0400C70DDA /* view */ = {
+			isa = PBXGroup;
+			children = (
+				E23A1FC51BD2689500C70DDA /* ViewContorller.xib */,
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
+		E23A1FBC1BD25B0C00C70DDA /* object */ = {
+			isa = PBXGroup;
+			children = (
+				E23A1FB81BD25AEF00C70DDA /* Area.swift */,
+				E23A1FBE1BD266C800C70DDA /* Pref.swift */,
+				E23A1FC11BD2682300C70DDA /* MainCategory.swift */,
+				E23A1FC31BD2686200C70DDA /* SubCategory.swift */,
+			);
+			name = object;
+			sourceTree = "<group>";
+		};
 		E2B79BEB1BD239E5004E3654 = {
 			isa = PBXGroup;
 			children = (
@@ -105,12 +143,15 @@
 		E2B79BF61BD239E5004E3654 /* ShokuTan */ = {
 			isa = PBXGroup;
 			children = (
+				E23A1FBC1BD25B0C00C70DDA /* object */,
+				E23A1FBB1BD25B0400C70DDA /* view */,
+				E23A1FBA1BD25AF800C70DDA /* controller */,
 				E2B79BF71BD239E5004E3654 /* AppDelegate.swift */,
-				E2B79BF91BD239E5004E3654 /* ViewController.swift */,
 				E2B79BFB1BD239E5004E3654 /* Main.storyboard */,
 				E2B79BFE1BD239E5004E3654 /* Assets.xcassets */,
 				E2B79C001BD239E5004E3654 /* LaunchScreen.storyboard */,
 				E2B79C031BD239E5004E3654 /* Info.plist */,
+				E23A1FC01BD2681500C70DDA /* ShokuTan_v1.realm */,
 			);
 			path = ShokuTan;
 			sourceTree = "<group>";
@@ -239,6 +280,7 @@
 			files = (
 				E2B79C021BD239E5004E3654 /* LaunchScreen.storyboard in Resources */,
 				E2B79BFF1BD239E5004E3654 /* Assets.xcassets in Resources */,
+				E23A1FC61BD2689500C70DDA /* ViewContorller.xib in Resources */,
 				E2B79BFD1BD239E5004E3654 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,7 +325,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				E2B79BFA1BD239E5004E3654 /* ViewController.swift in Sources */,
+				E23A1FB91BD25AEF00C70DDA /* Area.swift in Sources */,
+				E23A1FBF1BD266C800C70DDA /* Pref.swift in Sources */,
 				E2B79BF81BD239E5004E3654 /* AppDelegate.swift in Sources */,
+				E23A1FC41BD2686200C70DDA /* SubCategory.swift in Sources */,
+				E23A1FC21BD2682300C70DDA /* MainCategory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -516,6 +562,7 @@
 				E2B79C1E1BD239E5004E3654 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E2B79C1F1BD239E5004E3654 /* Build configuration list for PBXNativeTarget "ShokuTanTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +571,7 @@
 				E2B79C211BD239E5004E3654 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E2B79C221BD239E5004E3654 /* Build configuration list for PBXNativeTarget "ShokuTanUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +580,7 @@
 				E2B79C241BD239E5004E3654 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,6 +1,0 @@
-framework module RealmSwift {
-  umbrella header "Pods-createRealmData_objc_YShopping-RealmSwift-umbrella.h"
-
-  export *
-  module * { export * }
-}
