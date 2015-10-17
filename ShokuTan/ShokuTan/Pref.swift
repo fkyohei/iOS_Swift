@@ -10,8 +10,8 @@ import Foundation
 import RealmSwift
 
 class Pref: Object {
-    dynamic var id = 0
-    dynamic var code = ""
-    dynamic var name = ""
+    dynamic var id       = 0
+    dynamic var code     = ""
+    dynamic var name     = ""
     dynamic var areacode = ""
 }

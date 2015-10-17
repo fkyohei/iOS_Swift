@@ -1,2 +1,2 @@
 github "ReactiveCocoa/ReactiveCocoa" "swift2"
-github "realm/realm-cocoa"
+github "realm/realm-cocoa" == 0.95.3

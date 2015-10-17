@@ -106,53 +106,21 @@ typedef int swift_int4  __attribute__((__ext_vector_type__(4)));
 /// <code>class Dog: Object {
 ///     dynamic var name: String = ""
 ///     dynamic var adopted: Bool = false
-///     let siblings = List<Dog>()
+///     let siblings = List<Dog>
 /// }
 /// 
 /// </code>
 /// <h3>Supported property types</h3>
 /// <ul><li><code>String
-/// </code>, <code>NSString
 /// </code></li><li><code>Int
 /// </code></li><li><code>Float
 /// </code></li><li><code>Double
 /// </code></li><li><code>Bool
 /// </code></li><li><code>NSDate
 /// </code></li><li><code>NSData
-/// </code></li><li><code>RealmOptional<T>
-/// </code> for optional numeric properties</li><li><code>Object
+/// </code></li><li><code>Object
 /// </code> subclasses for to-one relationships</li><li><code>List<T: Object>
 /// </code> for to-many relationships</li></ul>
-/// <code>String
-/// </code>, <code>NSString
-/// </code>, <code>NSDate
-/// </code>, <code>NSData
-/// </code> and <code>Object
-/// </code> subclass properties can be
-/// optional. <code>Int
-/// </code>, <code>Float
-/// </code>, <code>Double
-/// </code>, <code>Bool
-/// </code> and <code>List
-/// </code> properties cannot. To store
-/// an optional number, instead use <code>RealmOptional<Int>
-/// </code>, <code>RealmOptional<Float>
-/// </code>,
-/// <code>RealmOptional<Double>
-/// </code>, or <code>RealmOptional<Bool>
-/// </code> instead, which wraps an optional
-/// value of the generic type.
-///
-/// All property types except for <code>List
-/// </code> and <code>RealmOptional
-/// </code> <em>must</em> be declared as
-/// <code>dynamic var
-/// </code>. <code>List
-/// </code> and <code>RealmOptional
-/// </code> properties must be declared as
-/// non-dynamic <code>let
-/// </code> properties.
-///
 /// <h3>Querying</h3>
 /// You can gets <code>Results
 /// </code> of an Object subclass via tha <code>objects(_:)
@@ -288,6 +256,8 @@ SWIFT_CLASS("_TtC10RealmSwift11ResultsBase")
 /// Returns a human-readable description of the objects contained in these results.
 @property (nonatomic, readonly, copy) NSString * __nonnull description;
 - (nonnull instancetype)init:(RLMResults * __nonnull)rlmResults OBJC_DESIGNATED_INITIALIZER;
+
+/// :nodoc:
 - (NSInteger)countByEnumeratingWithState:(NSFastEnumerationState * __null_unspecified)state objects:(id __nullable * __null_unspecified)buffer count:(NSInteger)len;
 @end
 

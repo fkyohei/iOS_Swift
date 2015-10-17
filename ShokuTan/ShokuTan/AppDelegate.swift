@@ -7,16 +7,41 @@
 //
 
 import UIKit
+import Fabric
+import Crashlytics
+import Realm
 import RealmSwift
+
+
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    
+    // 検索条件
+    var search_realm: Realm!
+    
+    class func sharedAppDelegate() -> AppDelegate {
+        let sharedAppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        return sharedAppDelegate
+    }
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
-        return true
+        do {
+            // 検索条件読み込み
+            let realm_path = NSBundle.mainBundle().pathForResource("ShokuTan_v1", ofType:"realm")
+            let realm_config = Realm.Configuration(path: realm_path, readOnly: true)
+            search_realm = try Realm(configuration: realm_config)
+            
+            Fabric.with([Crashlytics.self])
+            return true
+            
+        } catch let error as NSError {
+            print(error)
+            return false
+        }
     }
 
     func applicationWillResignActive(application: UIApplication) {

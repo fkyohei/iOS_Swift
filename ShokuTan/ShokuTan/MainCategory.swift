@@ -10,7 +10,7 @@ import Foundation
 import RealmSwift
 
 class MainCategory: Object {
-    dynamic var id = 0
+    dynamic var id   = 0
     dynamic var code = ""
     dynamic var name = ""
 }

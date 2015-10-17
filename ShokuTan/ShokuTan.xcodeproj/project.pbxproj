@@ -11,7 +11,15 @@
 		E23A1FBF1BD266C800C70DDA /* Pref.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23A1FBE1BD266C800C70DDA /* Pref.swift */; settings = {ASSET_TAGS = (); }; };
 		E23A1FC21BD2682300C70DDA /* MainCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23A1FC11BD2682300C70DDA /* MainCategory.swift */; settings = {ASSET_TAGS = (); }; };
 		E23A1FC41BD2686200C70DDA /* SubCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23A1FC31BD2686200C70DDA /* SubCategory.swift */; settings = {ASSET_TAGS = (); }; };
-		E23A1FC61BD2689500C70DDA /* ViewContorller.xib in Resources */ = {isa = PBXBuildFile; fileRef = E23A1FC51BD2689500C70DDA /* ViewContorller.xib */; settings = {ASSET_TAGS = (); }; };
+		E23A1FCA1BD282AB00C70DDA /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E23A1FC81BD282AB00C70DDA /* Fabric.framework */; settings = {ASSET_TAGS = (); }; };
+		E23A1FCB1BD282AB00C70DDA /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E23A1FC91BD282AB00C70DDA /* Crashlytics.framework */; settings = {ASSET_TAGS = (); }; };
+		E23A1FD71BD29A0A00C70DDA /* ShokuTan_v1.realm in Resources */ = {isa = PBXBuildFile; fileRef = E23A1FD61BD29A0A00C70DDA /* ShokuTan_v1.realm */; settings = {ASSET_TAGS = (); }; };
+		E23A1FD91BD29E9B00C70DDA /* SearchViewContoller.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23A1FD81BD29E9B00C70DDA /* SearchViewContoller.swift */; settings = {ASSET_TAGS = (); }; };
+		E23A1FDB1BD29ECE00C70DDA /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23A1FDA1BD29ECE00C70DDA /* FavoritesViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		E23A1FDD1BD29F0900C70DDA /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23A1FDC1BD29F0900C70DDA /* HistoryViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		E23A1FDF1BD29F1B00C70DDA /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23A1FDE1BD29F1B00C70DDA /* MoreViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		E23A1FE11BD2A34000C70DDA /* Option.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23A1FE01BD2A34000C70DDA /* Option.swift */; settings = {ASSET_TAGS = (); }; };
+		E23A1FE31BD2A44A00C70DDA /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23A1FE21BD2A44A00C70DDA /* BaseViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		E2B79BF81BD239E5004E3654 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B79BF71BD239E5004E3654 /* AppDelegate.swift */; };
 		E2B79BFA1BD239E5004E3654 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B79BF91BD239E5004E3654 /* ViewController.swift */; };
 		E2B79BFD1BD239E5004E3654 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2B79BFB1BD239E5004E3654 /* Main.storyboard */; };
@@ -43,10 +51,17 @@
 /* Begin PBXFileReference section */
 		E23A1FB81BD25AEF00C70DDA /* Area.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Area.swift; sourceTree = "<group>"; };
 		E23A1FBE1BD266C800C70DDA /* Pref.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pref.swift; sourceTree = "<group>"; };
-		E23A1FC01BD2681500C70DDA /* ShokuTan_v1.realm */ = {isa = PBXFileReference; lastKnownFileType = file; path = ShokuTan_v1.realm; sourceTree = "<group>"; };
 		E23A1FC11BD2682300C70DDA /* MainCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainCategory.swift; sourceTree = "<group>"; };
 		E23A1FC31BD2686200C70DDA /* SubCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubCategory.swift; sourceTree = "<group>"; };
-		E23A1FC51BD2689500C70DDA /* ViewContorller.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewContorller.xib; sourceTree = "<group>"; };
+		E23A1FC81BD282AB00C70DDA /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
+		E23A1FC91BD282AB00C70DDA /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
+		E23A1FD61BD29A0A00C70DDA /* ShokuTan_v1.realm */ = {isa = PBXFileReference; lastKnownFileType = file; path = ShokuTan_v1.realm; sourceTree = "<group>"; };
+		E23A1FD81BD29E9B00C70DDA /* SearchViewContoller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewContoller.swift; sourceTree = "<group>"; };
+		E23A1FDA1BD29ECE00C70DDA /* FavoritesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
+		E23A1FDC1BD29F0900C70DDA /* HistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		E23A1FDE1BD29F1B00C70DDA /* MoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreViewController.swift; sourceTree = "<group>"; };
+		E23A1FE01BD2A34000C70DDA /* Option.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Option.swift; sourceTree = "<group>"; };
+		E23A1FE21BD2A44A00C70DDA /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		E2B79BF41BD239E5004E3654 /* ShokuTan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShokuTan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2B79BF71BD239E5004E3654 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E2B79BF91BD239E5004E3654 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -71,6 +86,8 @@
 			files = (
 				E2B79C271BD23AC2004E3654 /* Realm.framework in Frameworks */,
 				E2B79C281BD23AC2004E3654 /* RealmSwift.framework in Frameworks */,
+				E23A1FCB1BD282AB00C70DDA /* Crashlytics.framework in Frameworks */,
+				E23A1FCA1BD282AB00C70DDA /* Fabric.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,6 +112,11 @@
 			isa = PBXGroup;
 			children = (
 				E2B79BF91BD239E5004E3654 /* ViewController.swift */,
+				E23A1FD81BD29E9B00C70DDA /* SearchViewContoller.swift */,
+				E23A1FDA1BD29ECE00C70DDA /* FavoritesViewController.swift */,
+				E23A1FDC1BD29F0900C70DDA /* HistoryViewController.swift */,
+				E23A1FDE1BD29F1B00C70DDA /* MoreViewController.swift */,
+				E23A1FE21BD2A44A00C70DDA /* BaseViewController.swift */,
 			);
 			name = controller;
 			sourceTree = "<group>";
@@ -102,7 +124,6 @@
 		E23A1FBB1BD25B0400C70DDA /* view */ = {
 			isa = PBXGroup;
 			children = (
-				E23A1FC51BD2689500C70DDA /* ViewContorller.xib */,
 			);
 			name = view;
 			sourceTree = "<group>";
@@ -114,6 +135,7 @@
 				E23A1FBE1BD266C800C70DDA /* Pref.swift */,
 				E23A1FC11BD2682300C70DDA /* MainCategory.swift */,
 				E23A1FC31BD2686200C70DDA /* SubCategory.swift */,
+				E23A1FE01BD2A34000C70DDA /* Option.swift */,
 			);
 			name = object;
 			sourceTree = "<group>";
@@ -121,6 +143,8 @@
 		E2B79BEB1BD239E5004E3654 = {
 			isa = PBXGroup;
 			children = (
+				E23A1FC81BD282AB00C70DDA /* Fabric.framework */,
+				E23A1FC91BD282AB00C70DDA /* Crashlytics.framework */,
 				E2B79C251BD23AC2004E3654 /* Realm.framework */,
 				E2B79C261BD23AC2004E3654 /* RealmSwift.framework */,
 				E2B79BF61BD239E5004E3654 /* ShokuTan */,
@@ -151,7 +175,7 @@
 				E2B79BFE1BD239E5004E3654 /* Assets.xcassets */,
 				E2B79C001BD239E5004E3654 /* LaunchScreen.storyboard */,
 				E2B79C031BD239E5004E3654 /* Info.plist */,
-				E23A1FC01BD2681500C70DDA /* ShokuTan_v1.realm */,
+				E23A1FD61BD29A0A00C70DDA /* ShokuTan_v1.realm */,
 			);
 			path = ShokuTan;
 			sourceTree = "<group>";
@@ -184,7 +208,8 @@
 				E2B79BF01BD239E5004E3654 /* Sources */,
 				E2B79BF11BD239E5004E3654 /* Frameworks */,
 				E2B79BF21BD239E5004E3654 /* Resources */,
-				E2B79C291BD23AC5004E3654 /* ShellScript */,
+				E2B79C291BD23AC5004E3654 /* Copy Realm Frameworks */,
+				E23A1FC71BD2827800C70DDA /* Fabric Script */,
 			);
 			buildRules = (
 			);
@@ -279,8 +304,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E2B79C021BD239E5004E3654 /* LaunchScreen.storyboard in Resources */,
+				E23A1FD71BD29A0A00C70DDA /* ShokuTan_v1.realm in Resources */,
 				E2B79BFF1BD239E5004E3654 /* Assets.xcassets in Resources */,
-				E23A1FC61BD2689500C70DDA /* ViewContorller.xib in Resources */,
 				E2B79BFD1BD239E5004E3654 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -302,7 +327,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		E2B79C291BD23AC5004E3654 /* ShellScript */ = {
+		E23A1FC71BD2827800C70DDA /* Fabric Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Fabric Script";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run e43332b7ae5f699204a14f8e255340e991ae80ca 5e6e5cce981d41049f4319b9cbde1b33cf986140c506eda2c53937555467d59a";
+		};
+		E2B79C291BD23AC5004E3654 /* Copy Realm Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -311,6 +350,7 @@
 				"$(SRCROOT)/Carthage/Build/iOS/Realm.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/RealmSwift.framework",
 			);
+			name = "Copy Realm Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -325,9 +365,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				E2B79BFA1BD239E5004E3654 /* ViewController.swift in Sources */,
+				E23A1FD91BD29E9B00C70DDA /* SearchViewContoller.swift in Sources */,
+				E23A1FDB1BD29ECE00C70DDA /* FavoritesViewController.swift in Sources */,
+				E23A1FE11BD2A34000C70DDA /* Option.swift in Sources */,
 				E23A1FB91BD25AEF00C70DDA /* Area.swift in Sources */,
+				E23A1FE31BD2A44A00C70DDA /* BaseViewController.swift in Sources */,
 				E23A1FBF1BD266C800C70DDA /* Pref.swift in Sources */,
+				E23A1FDF1BD29F1B00C70DDA /* MoreViewController.swift in Sources */,
 				E2B79BF81BD239E5004E3654 /* AppDelegate.swift in Sources */,
+				E23A1FDD1BD29F0900C70DDA /* HistoryViewController.swift in Sources */,
 				E23A1FC41BD2686200C70DDA /* SubCategory.swift in Sources */,
 				E23A1FC21BD2682300C70DDA /* MainCategory.swift in Sources */,
 			);
@@ -472,6 +518,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = ShokuTan/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -487,6 +534,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = ShokuTan/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
