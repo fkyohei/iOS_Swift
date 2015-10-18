@@ -15,18 +15,30 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E60-Ww-cbV">
-                        <rect key="frame" x="28" y="0.0" width="259" height="43.5"/>
+                        <rect key="frame" x="20" y="0.0" width="267" height="43.5"/>
                         <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="17"/>
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <constraints>
+                    <constraint firstItem="E60-Ww-cbV" firstAttribute="top" secondItem="bmz-Un-9fW" secondAttribute="top" id="CcO-FH-Bvl"/>
                     <constraint firstItem="E60-Ww-cbV" firstAttribute="top" secondItem="bmz-Un-9fW" secondAttribute="topMargin" constant="-8" id="HuV-2F-xrS"/>
+                    <constraint firstAttribute="trailing" secondItem="E60-Ww-cbV" secondAttribute="trailing" id="KNd-5A-iik"/>
+                    <constraint firstItem="E60-Ww-cbV" firstAttribute="leading" secondItem="bmz-Un-9fW" secondAttribute="leading" constant="20" id="Ndr-nW-08i"/>
                     <constraint firstItem="E60-Ww-cbV" firstAttribute="leading" secondItem="bmz-Un-9fW" secondAttribute="leadingMargin" constant="20" id="YNY-NS-Am6"/>
                     <constraint firstAttribute="trailingMargin" secondItem="E60-Ww-cbV" secondAttribute="trailing" constant="-8" id="bNb-gB-G84"/>
+                    <constraint firstAttribute="bottom" secondItem="E60-Ww-cbV" secondAttribute="bottom" id="eHS-zj-vhR"/>
                     <constraint firstAttribute="bottomMargin" secondItem="E60-Ww-cbV" secondAttribute="bottom" constant="-8" id="uen-3e-3hg"/>
                 </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="HuV-2F-xrS"/>
+                        <exclude reference="YNY-NS-Am6"/>
+                        <exclude reference="bNb-gB-G84"/>
+                        <exclude reference="uen-3e-3hg"/>
+                    </mask>
+                </variation>
             </tableViewCellContentView>
             <connections>
                 <outlet property="custom_label" destination="E60-Ww-cbV" id="25O-SY-tCi"/>

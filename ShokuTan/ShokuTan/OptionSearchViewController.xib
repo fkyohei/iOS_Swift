@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OptionSearchViewController" customModule="ShokuTan" customModuleProvider="target">
+            <connections>
+                <outlet property="option_table_view" destination="RIk-G3-RAV" id="O4d-Zr-8tJ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zn3-IG-OSa">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="L8x-44-1G2"/>
+                    </constraints>
+                    <items>
+                        <navigationItem title="こだわり選択" id="bB9-Br-cKV"/>
+                    </items>
+                </navigationBar>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" allowsMultipleSelection="YES" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="RIk-G3-RAV">
+                    <rect key="frame" x="0.0" y="60" width="320" height="508"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="Fdv-WQ-eqq"/>
+                        <outlet property="delegate" destination="-1" id="Mxu-km-e6C"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="RIk-G3-RAV" firstAttribute="top" secondItem="zn3-IG-OSa" secondAttribute="bottom" id="GrZ-4E-yAX"/>
+                <constraint firstAttribute="trailing" secondItem="RIk-G3-RAV" secondAttribute="trailing" id="Kaz-Iw-K2g"/>
+                <constraint firstItem="zn3-IG-OSa" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Rvv-f6-AV9"/>
+                <constraint firstAttribute="bottom" secondItem="RIk-G3-RAV" secondAttribute="bottom" id="aLQ-X2-ToF"/>
+                <constraint firstAttribute="trailing" secondItem="zn3-IG-OSa" secondAttribute="trailing" id="dGc-PW-taT"/>
+                <constraint firstItem="RIk-G3-RAV" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="kvT-XN-Qrf"/>
+                <constraint firstItem="zn3-IG-OSa" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="qaz-21-vPG"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+</document>

@@ -31,7 +31,7 @@ class MainCategorySearchViewController: BaseViewController, UITableViewDataSourc
         self.main_category_table_view.registerNib(nib, forCellReuseIdentifier: "MainCategoryCustomCell")
         
         // メインカテゴリデータ取得
-        main_category_items = self.appdelegate.search_realm.objects(MainCategory)
+        self.main_category_items = self.appdelegate.search_realm.objects(MainCategory)
     }
 
     override func didReceiveMemoryWarning() {
@@ -44,20 +44,20 @@ class MainCategorySearchViewController: BaseViewController, UITableViewDataSourc
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return main_category_items.count
+        return self.main_category_items.count
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = self.main_category_table_view.dequeueReusableCellWithIdentifier("MainCategoryCustomCell", forIndexPath: indexPath) as! MainCategoryCustomCell
         // ラベルを設定
-        let obj_main_category: MainCategory = main_category_items[indexPath.row] as MainCategory
+        let obj_main_category: MainCategory = self.main_category_items[indexPath.row] as MainCategory
         cell.custom_label.text = obj_main_category.name
         
         return cell
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        let obj_main_category: MainCategory = main_category_items[indexPath.row] as MainCategory
+        let obj_main_category: MainCategory = self.main_category_items[indexPath.row] as MainCategory
         print("\(obj_main_category.code)")
         print("\(obj_main_category.name)")
     }

@@ -31,7 +31,7 @@ class AreaSearchViewController: BaseViewController, UITableViewDataSource, UITab
         self.area_table_view.registerNib(nib, forCellReuseIdentifier: "AreaCustomCell")
         
         // エリアデータ取得
-        area_items = self.appdelegate.search_realm.objects(Area)
+        self.area_items = self.appdelegate.search_realm.objects(Area)
     }
 
     override func didReceiveMemoryWarning() {
@@ -44,20 +44,20 @@ class AreaSearchViewController: BaseViewController, UITableViewDataSource, UITab
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return area_items.count
+        return self.area_items.count
     }
         
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = self.area_table_view.dequeueReusableCellWithIdentifier("AreaCustomCell", forIndexPath: indexPath) as! AreaCustomCell
         // ラベルを設定
-        let obj_area: Area = area_items[indexPath.row] as Area
+        let obj_area: Area = self.area_items[indexPath.row] as Area
         cell.custom_label.text = obj_area.name
         
         return cell
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        let obj_area: Area = area_items[indexPath.row] as Area
+        let obj_area: Area = self.area_items[indexPath.row] as Area
         print("\(obj_area.code)")
         print("\(obj_area.name)")
     }

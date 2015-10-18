@@ -82,6 +82,7 @@
                     <connections>
                         <segue destination="4O9-gZ-dxN" kind="show" identifier="toAreaSearchView" id="Z9Y-iQ-Bxh"/>
                         <segue destination="DY6-gs-aWM" kind="show" identifier="toMainCategorySearchView" id="jgH-oi-NI3"/>
+                        <segue destination="nbX-Z6-tYs" kind="show" identifier="toOptionSearchView" id="JgW-Tu-eNP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iny-Q8-irv" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -105,7 +106,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fcs-A8-Ewu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="438" y="-685"/>
+            <point key="canvasLocation" x="423" y="-1334"/>
         </scene>
         <!--Main Category Search View Controller-->
         <scene sceneID="FUN-BH-bgh">
@@ -124,36 +125,26 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="50z-Fl-zy3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="438" y="-26"/>
+            <point key="canvasLocation" x="423" y="-695"/>
         </scene>
-        <!--Root View Controller-->
-        <scene sceneID="pRY-AK-l4Z">
+        <!--Option Search View Controller-->
+        <scene sceneID="n8Z-dH-OEv">
             <objects>
-                <tableViewController id="ghD-vU-BVU" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="DPi-yW-kh9">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                <viewController id="nbX-Z6-tYs" customClass="OptionSearchViewController" customModule="ShokuTan" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="z9j-OZ-3oq"/>
+                        <viewControllerLayoutGuide type="bottom" id="b1l-xA-wkF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Itp-6L-SoS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="ET9-wj-mcs">
-                                <rect key="frame" x="0.0" y="28" width="600" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ET9-wj-mcs" id="0FG-Dn-Hj7">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="ghD-vU-BVU" id="iQG-2o-C0q"/>
-                            <outlet property="delegate" destination="ghD-vU-BVU" id="Ser-9S-Dsk"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="tbx-xD-KED"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="CxM-BQ-72A" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jIf-XO-bm2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1635" y="-970"/>
+            <point key="canvasLocation" x="423" y="-62"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="YLQ-ZZ-jVe">

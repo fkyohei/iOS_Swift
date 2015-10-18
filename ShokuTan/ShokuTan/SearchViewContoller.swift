@@ -52,6 +52,7 @@ class SearchViewContoller: BaseViewController, UITextFieldDelegate {
      * こだわりから探す
      */
     @IBAction func option_search_btn(sender: AnyObject) {
+        self.performSegueWithIdentifier("toOptionSearchView", sender: self)
     }
     
     /**
