@@ -12,7 +12,7 @@ import RealmSwift
 class AreaSearchViewController: BaseViewController, UITableViewDataSource, UITableViewDelegate {
     @IBOutlet weak var area_table_view: UITableView!
     // エリアデータ
-    var area_items:RealmSwift.Results<Area>!
+    var area_items: RealmSwift.Results<Area>!
 
     /**
      * xib読み込み

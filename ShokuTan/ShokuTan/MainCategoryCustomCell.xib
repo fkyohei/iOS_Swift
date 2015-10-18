@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainCategoryCustomCell" customModule="ShokuTan" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="Mhz-h0-s0Q" customClass="MainCategoryCustomCell" customModule="ShokuTan" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Mhz-h0-s0Q" id="bmz-Un-9fW">
+                <rect key="frame" x="0.0" y="0.0" width="287" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E60-Ww-cbV">
+                        <rect key="frame" x="28" y="0.0" width="259" height="43.5"/>
+                        <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="E60-Ww-cbV" firstAttribute="top" secondItem="bmz-Un-9fW" secondAttribute="topMargin" constant="-8" id="HuV-2F-xrS"/>
+                    <constraint firstItem="E60-Ww-cbV" firstAttribute="leading" secondItem="bmz-Un-9fW" secondAttribute="leadingMargin" constant="20" id="YNY-NS-Am6"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="E60-Ww-cbV" secondAttribute="trailing" constant="-8" id="bNb-gB-G84"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="E60-Ww-cbV" secondAttribute="bottom" constant="-8" id="uen-3e-3hg"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="custom_label" destination="E60-Ww-cbV" id="25O-SY-tCi"/>
+            </connections>
+            <point key="canvasLocation" x="300" y="296"/>
+        </tableViewCell>
+    </objects>
+</document>

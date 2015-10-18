@@ -26,6 +26,10 @@
 		E23A1FEC1BD36D2000C70DDA /* AreaSearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E23A1FEB1BD36D2000C70DDA /* AreaSearchViewController.xib */; settings = {ASSET_TAGS = (); }; };
 		E23A1FEF1BD3716100C70DDA /* AreaCustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E23A1FEE1BD3716100C70DDA /* AreaCustomCell.xib */; settings = {ASSET_TAGS = (); }; };
 		E23A1FF11BD372C200C70DDA /* AreaCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23A1FF01BD372C200C70DDA /* AreaCustomCell.swift */; settings = {ASSET_TAGS = (); }; };
+		E23A1FF41BD3AF2D00C70DDA /* MainCategorySearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23A1FF21BD3AF2D00C70DDA /* MainCategorySearchViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		E23A1FF51BD3AF2D00C70DDA /* MainCategorySearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E23A1FF31BD3AF2D00C70DDA /* MainCategorySearchViewController.xib */; settings = {ASSET_TAGS = (); }; };
+		E23A1FF71BD3B09E00C70DDA /* MainCategoryCustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E23A1FF61BD3B09E00C70DDA /* MainCategoryCustomCell.xib */; settings = {ASSET_TAGS = (); }; };
+		E23A1FF91BD3B12A00C70DDA /* MainCategoryCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23A1FF81BD3B12A00C70DDA /* MainCategoryCustomCell.swift */; settings = {ASSET_TAGS = (); }; };
 		E2B79BF81BD239E5004E3654 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B79BF71BD239E5004E3654 /* AppDelegate.swift */; };
 		E2B79BFA1BD239E5004E3654 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B79BF91BD239E5004E3654 /* ViewController.swift */; };
 		E2B79BFD1BD239E5004E3654 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2B79BFB1BD239E5004E3654 /* Main.storyboard */; };
@@ -74,6 +78,10 @@
 		E23A1FEB1BD36D2000C70DDA /* AreaSearchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AreaSearchViewController.xib; sourceTree = "<group>"; };
 		E23A1FEE1BD3716100C70DDA /* AreaCustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AreaCustomCell.xib; sourceTree = "<group>"; };
 		E23A1FF01BD372C200C70DDA /* AreaCustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AreaCustomCell.swift; sourceTree = "<group>"; };
+		E23A1FF21BD3AF2D00C70DDA /* MainCategorySearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainCategorySearchViewController.swift; sourceTree = "<group>"; };
+		E23A1FF31BD3AF2D00C70DDA /* MainCategorySearchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainCategorySearchViewController.xib; sourceTree = "<group>"; };
+		E23A1FF61BD3B09E00C70DDA /* MainCategoryCustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainCategoryCustomCell.xib; sourceTree = "<group>"; };
+		E23A1FF81BD3B12A00C70DDA /* MainCategoryCustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainCategoryCustomCell.swift; sourceTree = "<group>"; };
 		E2B79BF41BD239E5004E3654 /* ShokuTan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShokuTan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2B79BF71BD239E5004E3654 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E2B79BF91BD239E5004E3654 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -160,6 +168,8 @@
 				E23A1FD81BD29E9B00C70DDA /* SearchViewContoller.swift */,
 				E23A1FE81BD36C3200C70DDA /* AreaSearchViewController.swift */,
 				E23A1FF01BD372C200C70DDA /* AreaCustomCell.swift */,
+				E23A1FF21BD3AF2D00C70DDA /* MainCategorySearchViewController.swift */,
+				E23A1FF81BD3B12A00C70DDA /* MainCategoryCustomCell.swift */,
 			);
 			name = search;
 			sourceTree = "<group>";
@@ -170,6 +180,8 @@
 				E23A1FE41BD353B500C70DDA /* SearchViewController.xib */,
 				E23A1FEB1BD36D2000C70DDA /* AreaSearchViewController.xib */,
 				E23A1FEE1BD3716100C70DDA /* AreaCustomCell.xib */,
+				E23A1FF31BD3AF2D00C70DDA /* MainCategorySearchViewController.xib */,
+				E23A1FF61BD3B09E00C70DDA /* MainCategoryCustomCell.xib */,
 			);
 			name = search;
 			sourceTree = "<group>";
@@ -337,10 +349,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E23A1FF51BD3AF2D00C70DDA /* MainCategorySearchViewController.xib in Resources */,
 				E2B79C021BD239E5004E3654 /* LaunchScreen.storyboard in Resources */,
 				E23A1FD71BD29A0A00C70DDA /* ShokuTan_v1.realm in Resources */,
 				E2B79BFF1BD239E5004E3654 /* Assets.xcassets in Resources */,
 				E23A1FEC1BD36D2000C70DDA /* AreaSearchViewController.xib in Resources */,
+				E23A1FF71BD3B09E00C70DDA /* MainCategoryCustomCell.xib in Resources */,
 				E23A1FE51BD353B500C70DDA /* SearchViewController.xib in Resources */,
 				E2B79BFD1BD239E5004E3654 /* Main.storyboard in Resources */,
 				E23A1FEF1BD3716100C70DDA /* AreaCustomCell.xib in Resources */,
@@ -401,7 +415,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E23A1FF41BD3AF2D00C70DDA /* MainCategorySearchViewController.swift in Sources */,
 				E2B79BFA1BD239E5004E3654 /* ViewController.swift in Sources */,
+				E23A1FF91BD3B12A00C70DDA /* MainCategoryCustomCell.swift in Sources */,
 				E23A1FE91BD36C3200C70DDA /* AreaSearchViewController.swift in Sources */,
 				E23A1FD91BD29E9B00C70DDA /* SearchViewContoller.swift in Sources */,
 				E23A1FDB1BD29ECE00C70DDA /* FavoritesViewController.swift in Sources */,

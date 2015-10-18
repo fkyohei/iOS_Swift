@@ -81,6 +81,7 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <segue destination="4O9-gZ-dxN" kind="show" identifier="toAreaSearchView" id="Z9Y-iQ-Bxh"/>
+                        <segue destination="DY6-gs-aWM" kind="show" identifier="toMainCategorySearchView" id="jgH-oi-NI3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iny-Q8-irv" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -100,12 +101,30 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fcs-A8-Ewu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="438" y="-685"/>
+        </scene>
+        <!--Main Category Search View Controller-->
+        <scene sceneID="FUN-BH-bgh">
+            <objects>
+                <viewController id="DY6-gs-aWM" customClass="MainCategorySearchViewController" customModule="ShokuTan" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KU1-TM-YZq"/>
+                        <viewControllerLayoutGuide type="bottom" id="bKf-Ws-ONM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Liw-9F-huS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="50z-Fl-zy3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="438" y="-26"/>
         </scene>
         <!--Root View Controller-->
         <scene sceneID="pRY-AK-l4Z">

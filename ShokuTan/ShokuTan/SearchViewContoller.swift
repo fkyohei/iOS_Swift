@@ -45,6 +45,7 @@ class SearchViewContoller: BaseViewController, UITextFieldDelegate {
      * カテゴリから探す
      */
     @IBAction func category_search_btn(sender: AnyObject) {
+        self.performSegueWithIdentifier("toMainCategorySearchView", sender: self)
     }
     
     /**
