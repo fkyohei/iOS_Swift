@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AreaSearchViewController" customModule="ShokuTan" customModuleProvider="target">
+            <connections>
+                <outlet property="area_table_view" destination="qdP-zg-iGn" id="Fb9-sp-5eA"/>
+                <outlet property="view" destination="iN0-l3-epB" id="DtU-uu-TOl"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MST-lx-GR4">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="E3d-AJ-vxI"/>
+                    </constraints>
+                    <items>
+                        <navigationItem title="エリア選択" id="Vd2-EG-GZT"/>
+                    </items>
+                </navigationBar>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="qdP-zg-iGn">
+                    <rect key="frame" x="0.0" y="60" width="320" height="508"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="Th5-Ab-KY9"/>
+                        <outlet property="delegate" destination="-1" id="ggz-Af-DmM"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="MST-lx-GR4" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="6MT-qb-AZc"/>
+                <constraint firstItem="MST-lx-GR4" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="FiW-Si-bZs"/>
+                <constraint firstAttribute="trailing" secondItem="MST-lx-GR4" secondAttribute="trailing" id="HNH-qJ-Kj4"/>
+                <constraint firstAttribute="trailing" secondItem="qdP-zg-iGn" secondAttribute="trailing" id="UIV-B8-oTK"/>
+                <constraint firstItem="qdP-zg-iGn" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="aTH-4L-Qrc"/>
+                <constraint firstAttribute="bottom" secondItem="qdP-zg-iGn" secondAttribute="bottom" id="hPg-fx-71H"/>
+                <constraint firstItem="qdP-zg-iGn" firstAttribute="top" secondItem="MST-lx-GR4" secondAttribute="bottom" id="vji-0i-fcz"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+</document>

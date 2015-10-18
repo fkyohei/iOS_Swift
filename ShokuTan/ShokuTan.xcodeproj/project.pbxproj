@@ -20,6 +20,12 @@
 		E23A1FDF1BD29F1B00C70DDA /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23A1FDE1BD29F1B00C70DDA /* MoreViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		E23A1FE11BD2A34000C70DDA /* Option.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23A1FE01BD2A34000C70DDA /* Option.swift */; settings = {ASSET_TAGS = (); }; };
 		E23A1FE31BD2A44A00C70DDA /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23A1FE21BD2A44A00C70DDA /* BaseViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		E23A1FE51BD353B500C70DDA /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E23A1FE41BD353B500C70DDA /* SearchViewController.xib */; settings = {ASSET_TAGS = (); }; };
+		E23A1FE71BD367E400C70DDA /* AppDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23A1FE61BD367E400C70DDA /* AppDefine.swift */; settings = {ASSET_TAGS = (); }; };
+		E23A1FE91BD36C3200C70DDA /* AreaSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23A1FE81BD36C3200C70DDA /* AreaSearchViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		E23A1FEC1BD36D2000C70DDA /* AreaSearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E23A1FEB1BD36D2000C70DDA /* AreaSearchViewController.xib */; settings = {ASSET_TAGS = (); }; };
+		E23A1FEF1BD3716100C70DDA /* AreaCustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E23A1FEE1BD3716100C70DDA /* AreaCustomCell.xib */; settings = {ASSET_TAGS = (); }; };
+		E23A1FF11BD372C200C70DDA /* AreaCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23A1FF01BD372C200C70DDA /* AreaCustomCell.swift */; settings = {ASSET_TAGS = (); }; };
 		E2B79BF81BD239E5004E3654 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B79BF71BD239E5004E3654 /* AppDelegate.swift */; };
 		E2B79BFA1BD239E5004E3654 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B79BF91BD239E5004E3654 /* ViewController.swift */; };
 		E2B79BFD1BD239E5004E3654 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2B79BFB1BD239E5004E3654 /* Main.storyboard */; };
@@ -62,6 +68,12 @@
 		E23A1FDE1BD29F1B00C70DDA /* MoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreViewController.swift; sourceTree = "<group>"; };
 		E23A1FE01BD2A34000C70DDA /* Option.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Option.swift; sourceTree = "<group>"; };
 		E23A1FE21BD2A44A00C70DDA /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		E23A1FE41BD353B500C70DDA /* SearchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
+		E23A1FE61BD367E400C70DDA /* AppDefine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDefine.swift; sourceTree = "<group>"; };
+		E23A1FE81BD36C3200C70DDA /* AreaSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AreaSearchViewController.swift; sourceTree = "<group>"; };
+		E23A1FEB1BD36D2000C70DDA /* AreaSearchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AreaSearchViewController.xib; sourceTree = "<group>"; };
+		E23A1FEE1BD3716100C70DDA /* AreaCustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AreaCustomCell.xib; sourceTree = "<group>"; };
+		E23A1FF01BD372C200C70DDA /* AreaCustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AreaCustomCell.swift; sourceTree = "<group>"; };
 		E2B79BF41BD239E5004E3654 /* ShokuTan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShokuTan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2B79BF71BD239E5004E3654 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E2B79BF91BD239E5004E3654 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -111,8 +123,8 @@
 		E23A1FBA1BD25AF800C70DDA /* controller */ = {
 			isa = PBXGroup;
 			children = (
+				E23A1FEA1BD36C4B00C70DDA /* search */,
 				E2B79BF91BD239E5004E3654 /* ViewController.swift */,
-				E23A1FD81BD29E9B00C70DDA /* SearchViewContoller.swift */,
 				E23A1FDA1BD29ECE00C70DDA /* FavoritesViewController.swift */,
 				E23A1FDC1BD29F0900C70DDA /* HistoryViewController.swift */,
 				E23A1FDE1BD29F1B00C70DDA /* MoreViewController.swift */,
@@ -124,6 +136,7 @@
 		E23A1FBB1BD25B0400C70DDA /* view */ = {
 			isa = PBXGroup;
 			children = (
+				E23A1FED1BD36D2A00C70DDA /* search */,
 			);
 			name = view;
 			sourceTree = "<group>";
@@ -136,8 +149,29 @@
 				E23A1FC11BD2682300C70DDA /* MainCategory.swift */,
 				E23A1FC31BD2686200C70DDA /* SubCategory.swift */,
 				E23A1FE01BD2A34000C70DDA /* Option.swift */,
+				E23A1FE61BD367E400C70DDA /* AppDefine.swift */,
 			);
 			name = object;
+			sourceTree = "<group>";
+		};
+		E23A1FEA1BD36C4B00C70DDA /* search */ = {
+			isa = PBXGroup;
+			children = (
+				E23A1FD81BD29E9B00C70DDA /* SearchViewContoller.swift */,
+				E23A1FE81BD36C3200C70DDA /* AreaSearchViewController.swift */,
+				E23A1FF01BD372C200C70DDA /* AreaCustomCell.swift */,
+			);
+			name = search;
+			sourceTree = "<group>";
+		};
+		E23A1FED1BD36D2A00C70DDA /* search */ = {
+			isa = PBXGroup;
+			children = (
+				E23A1FE41BD353B500C70DDA /* SearchViewController.xib */,
+				E23A1FEB1BD36D2000C70DDA /* AreaSearchViewController.xib */,
+				E23A1FEE1BD3716100C70DDA /* AreaCustomCell.xib */,
+			);
+			name = search;
 			sourceTree = "<group>";
 		};
 		E2B79BEB1BD239E5004E3654 = {
@@ -306,7 +340,10 @@
 				E2B79C021BD239E5004E3654 /* LaunchScreen.storyboard in Resources */,
 				E23A1FD71BD29A0A00C70DDA /* ShokuTan_v1.realm in Resources */,
 				E2B79BFF1BD239E5004E3654 /* Assets.xcassets in Resources */,
+				E23A1FEC1BD36D2000C70DDA /* AreaSearchViewController.xib in Resources */,
+				E23A1FE51BD353B500C70DDA /* SearchViewController.xib in Resources */,
 				E2B79BFD1BD239E5004E3654 /* Main.storyboard in Resources */,
+				E23A1FEF1BD3716100C70DDA /* AreaCustomCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -365,9 +402,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				E2B79BFA1BD239E5004E3654 /* ViewController.swift in Sources */,
+				E23A1FE91BD36C3200C70DDA /* AreaSearchViewController.swift in Sources */,
 				E23A1FD91BD29E9B00C70DDA /* SearchViewContoller.swift in Sources */,
 				E23A1FDB1BD29ECE00C70DDA /* FavoritesViewController.swift in Sources */,
 				E23A1FE11BD2A34000C70DDA /* Option.swift in Sources */,
+				E23A1FE71BD367E400C70DDA /* AppDefine.swift in Sources */,
 				E23A1FB91BD25AEF00C70DDA /* Area.swift in Sources */,
 				E23A1FE31BD2A44A00C70DDA /* BaseViewController.swift in Sources */,
 				E23A1FBF1BD266C800C70DDA /* Pref.swift in Sources */,
@@ -375,6 +414,7 @@
 				E2B79BF81BD239E5004E3654 /* AppDelegate.swift in Sources */,
 				E23A1FDD1BD29F0900C70DDA /* HistoryViewController.swift in Sources */,
 				E23A1FC41BD2686200C70DDA /* SubCategory.swift in Sources */,
+				E23A1FF11BD372C200C70DDA /* AreaCustomCell.swift in Sources */,
 				E23A1FC21BD2682300C70DDA /* MainCategory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

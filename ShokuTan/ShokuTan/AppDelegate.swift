@@ -21,6 +21,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     // 検索条件
     var search_realm: Realm!
+    // ユーザ記録(お気に入り・履歴)
+    var user_realm: Realm!
     
     class func sharedAppDelegate() -> AppDelegate {
         let sharedAppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
@@ -34,6 +36,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             let realm_path = NSBundle.mainBundle().pathForResource("ShokuTan_v1", ofType:"realm")
             let realm_config = Realm.Configuration(path: realm_path, readOnly: true)
             search_realm = try Realm(configuration: realm_config)
+            
+            // ユーザ記録読み込み
+            user_realm = try Realm()
             
             Fabric.with([Crashlytics.self])
             return true

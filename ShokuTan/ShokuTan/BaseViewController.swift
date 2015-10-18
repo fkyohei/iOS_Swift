@@ -12,11 +12,31 @@ import RealmSwift
 class BaseViewController: UIViewController, UITabBarControllerDelegate {
     var appdelegate: AppDelegate!
     
-
     override func viewDidLoad() {
         super.viewDidLoad()
 
         self.appdelegate = AppDelegate.sharedAppDelegate()
+    }
+    
+    func tabBarController(tabBarController: UITabBarController, didSelectViewController viewController: UIViewController) {
+       let index = tabBarController.selectedIndex
+        
+        switch index {
+        case 0:
+            tabBarController.selectedIndex = 0
+            break
+        case 1:
+            tabBarController.selectedIndex = 1
+            break
+        case 2:
+            tabBarController.selectedIndex = 2
+            break
+        case 3:
+            tabBarController.selectedIndex = 3
+            break
+        default:
+            break
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -24,15 +44,4 @@ class BaseViewController: UIViewController, UITabBarControllerDelegate {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchViewContoller" customModule="ShokuTan" customModuleProvider="target">
+            <connections>
+                <outlet property="freeword_text_field" destination="7EF-xk-SmI" id="br9-y6-FMN"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AcY-BG-eNC">
+                    <rect key="frame" x="20" y="80" width="80" height="100.5"/>
+                    <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="10"/>
+                    <state key="normal" title="エリアから探す"/>
+                    <connections>
+                        <action selector="area_search_btn:" destination="-1" eventType="touchUpInside" id="Zfp-yv-Opf"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9rx-Uh-5th">
+                    <rect key="frame" x="120" y="80" width="80" height="100.5"/>
+                    <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="9rx-Uh-5th" secondAttribute="height" multiplier="35:44" id="CZF-L3-adv"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="10"/>
+                    <state key="normal" title="カテゴリから探す"/>
+                    <connections>
+                        <action selector="category_search_btn:" destination="-1" eventType="touchUpInside" id="ZbK-ff-nkC"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pgf-6A-KPE">
+                    <rect key="frame" x="220" y="80" width="80" height="100.5"/>
+                    <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="10"/>
+                    <state key="normal" title="こだわりから探す"/>
+                    <connections>
+                        <action selector="option_search_btn:" destination="-1" eventType="touchUpInside" id="Uyv-Ey-gC5"/>
+                    </connections>
+                </button>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="フリーワードで検索" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7EF-xk-SmI">
+                    <rect key="frame" x="20" y="200" width="280" height="30"/>
+                    <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qKP-iJ-wGb">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="2FS-fY-UK5"/>
+                    </constraints>
+                    <textAttributes key="titleTextAttributes">
+                        <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="18"/>
+                    </textAttributes>
+                    <items>
+                        <navigationItem title="検索" id="JTt-pr-xQA"/>
+                    </items>
+                </navigationBar>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="pgf-6A-KPE" firstAttribute="height" secondItem="AcY-BG-eNC" secondAttribute="height" id="2nu-1H-tvo"/>
+                <constraint firstItem="9rx-Uh-5th" firstAttribute="centerY" secondItem="AcY-BG-eNC" secondAttribute="centerY" id="3S6-EF-O1B"/>
+                <constraint firstItem="pgf-6A-KPE" firstAttribute="width" secondItem="AcY-BG-eNC" secondAttribute="width" id="8h4-XD-xqd"/>
+                <constraint firstItem="9rx-Uh-5th" firstAttribute="leading" secondItem="AcY-BG-eNC" secondAttribute="trailing" constant="20" id="C5l-Im-0Yq"/>
+                <constraint firstItem="9rx-Uh-5th" firstAttribute="top" secondItem="AcY-BG-eNC" secondAttribute="top" id="J2Y-Oo-LdU"/>
+                <constraint firstItem="9rx-Uh-5th" firstAttribute="top" secondItem="qKP-iJ-wGb" secondAttribute="bottom" constant="20" id="Jsq-Ta-bQD"/>
+                <constraint firstItem="AcY-BG-eNC" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="NO2-KJ-Kd2"/>
+                <constraint firstItem="9rx-Uh-5th" firstAttribute="width" secondItem="AcY-BG-eNC" secondAttribute="width" id="QZM-3r-mjF"/>
+                <constraint firstItem="pgf-6A-KPE" firstAttribute="trailing" secondItem="7EF-xk-SmI" secondAttribute="trailing" id="Zux-Oz-kTt"/>
+                <constraint firstItem="7EF-xk-SmI" firstAttribute="leading" secondItem="AcY-BG-eNC" secondAttribute="leading" id="eOH-jP-RiV"/>
+                <constraint firstItem="7EF-xk-SmI" firstAttribute="top" secondItem="pgf-6A-KPE" secondAttribute="bottom" constant="20" id="f4g-m0-OV5"/>
+                <constraint firstItem="qKP-iJ-wGb" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="iap-zs-hTT"/>
+                <constraint firstItem="pgf-6A-KPE" firstAttribute="top" secondItem="AcY-BG-eNC" secondAttribute="top" id="icr-8k-Epo"/>
+                <constraint firstItem="pgf-6A-KPE" firstAttribute="leading" secondItem="9rx-Uh-5th" secondAttribute="trailing" constant="20" id="kFN-Xw-KwT"/>
+                <constraint firstItem="9rx-Uh-5th" firstAttribute="height" secondItem="AcY-BG-eNC" secondAttribute="height" id="kyQ-z1-nFP"/>
+                <constraint firstItem="qKP-iJ-wGb" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="lN6-Vj-tN9"/>
+                <constraint firstItem="qKP-iJ-wGb" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="q0d-TV-oVU"/>
+                <constraint firstAttribute="trailing" secondItem="pgf-6A-KPE" secondAttribute="trailing" constant="20" id="tdV-b4-Kbn"/>
+                <constraint firstAttribute="trailing" secondItem="qKP-iJ-wGb" secondAttribute="trailing" id="vDM-o2-Gr6"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="3S6-EF-O1B"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+</document>
