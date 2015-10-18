@@ -44,4 +44,32 @@ class BaseViewController: UIViewController, UITabBarControllerDelegate {
         // Dispose of any resources that can be recreated.
     }
     
+    
+    /**
+     * エリア全取得
+     */
+    func get_area_data() -> RealmSwift.Results<Area> {
+        let area_items = self.appdelegate.search_realm.objects(Area)
+
+        return area_items
+    }
+    
+    /**
+     * メインカテゴリ全取得
+     */
+    func get_main_category_data() -> RealmSwift.Results<MainCategory> {
+        let main_category_items = self.appdelegate.search_realm.objects(MainCategory)
+        
+        return main_category_items
+    }
+    
+    /**
+     * こだわり全取得
+     */
+    func get_option_data() -> RealmSwift.Results<Option> {
+        let option_items = self.appdelegate.search_realm.objects(Option)
+        
+        return option_items
+    }
+    
 }

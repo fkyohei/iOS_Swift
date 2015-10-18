@@ -31,7 +31,7 @@ class MainCategorySearchViewController: BaseViewController, UITableViewDataSourc
         self.main_category_table_view.registerNib(nib, forCellReuseIdentifier: "MainCategoryCustomCell")
         
         // メインカテゴリデータ取得
-        self.main_category_items = self.appdelegate.search_realm.objects(MainCategory)
+        self.main_category_items = self.get_main_category_data()
     }
 
     override func didReceiveMemoryWarning() {

@@ -31,7 +31,7 @@ class OptionSearchViewController: BaseViewController, UITableViewDataSource, UIT
         self.option_table_view.registerNib(nib, forCellReuseIdentifier: "OptionCustomCell")
         
         // こだわりデータ取得
-        self.option_items = self.appdelegate.search_realm.objects(Option)
+        self.option_items = self.get_option_data()
     }
 
     override func didReceiveMemoryWarning() {

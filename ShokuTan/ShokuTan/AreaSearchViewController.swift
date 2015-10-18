@@ -31,7 +31,7 @@ class AreaSearchViewController: BaseViewController, UITableViewDataSource, UITab
         self.area_table_view.registerNib(nib, forCellReuseIdentifier: "AreaCustomCell")
         
         // エリアデータ取得
-        self.area_items = self.appdelegate.search_realm.objects(Area)
+        self.area_items = self.get_area_data()
     }
 
     override func didReceiveMemoryWarning() {
