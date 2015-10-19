@@ -18,6 +18,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="history" id="rmK-DJ-zLy"/>
+                    <navigationItem key="navigationItem" id="sQk-ao-2mY"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Ht-ca-PsG" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -35,12 +36,12 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="7u3-4R-jc3" kind="show" identifier="toSearchView" id="LRF-bw-7Qf"/>
+                        <segue destination="7u3-4R-jc3" kind="relationship" relationship="rootViewController" id="fFe-mE-ytq"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jzy-bh-ypV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-649" y="155"/>
+            <point key="canvasLocation" x="-597" y="-231"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ogu-r9-SVP">
@@ -53,7 +54,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="KM3-VG-SEc" kind="show" identifier="toFavoritesView" id="HZf-QH-C3T"/>
+                        <segue destination="KM3-VG-SEc" kind="relationship" relationship="rootViewController" id="OJJ-EG-9OL"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wqg-GF-h1N" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -71,7 +72,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="eY1-2o-oBB" kind="show" identifier="toHistorySearchView" id="c2E-S6-e6O"/>
+                        <segue destination="eY1-2o-oBB" kind="relationship" relationship="rootViewController" id="jhM-oU-yrP"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gmt-1q-8MK" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -89,17 +90,17 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="jkE-PV-9a1" kind="show" identifier="toMoreView" id="qLt-93-JgE"/>
+                        <segue destination="jkE-PV-9a1" kind="relationship" relationship="rootViewController" id="8WQ-xk-Spk"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bTn-YP-QpU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-183" y="1821"/>
         </scene>
-        <!--View Controller-->
+        <!--More View Controller-->
         <scene sceneID="hqj-Qv-lV2">
             <objects>
-                <viewController id="jkE-PV-9a1" sceneMemberID="viewController">
+                <viewController id="jkE-PV-9a1" customClass="MoreViewController" customModule="ShokuTan" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="M37-5q-TYm"/>
                         <viewControllerLayoutGuide type="bottom" id="fzM-Ke-mjW"/>
@@ -109,6 +110,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Mkl-Td-KKD"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SsY-oy-nZ7" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -129,6 +131,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="favorites" id="fqA-3P-8PI"/>
+                    <navigationItem key="navigationItem" id="dD9-cf-bS9"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5GB-v9-wrE" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -138,7 +141,7 @@
         <!--Search View Contoller-->
         <scene sceneID="GuR-xB-NNB">
             <objects>
-                <viewController storyboardIdentifier="SearchView" id="7u3-4R-jc3" customClass="SearchViewContoller" customModule="ShokuTan" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="search_view_controller" id="7u3-4R-jc3" customClass="SearchViewContoller" customModule="ShokuTan" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="b8S-t0-2rl"/>
                         <viewControllerLayoutGuide type="bottom" id="IGh-p2-XjQ"/>
@@ -149,6 +152,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="search" id="4zJ-XN-PII"/>
+                    <navigationItem key="navigationItem" id="HRL-va-M3D"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <segue destination="4O9-gZ-dxN" kind="show" identifier="toAreaSearchView" id="Z9Y-iQ-Bxh"/>
@@ -220,7 +224,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="YLQ-ZZ-jVe">
             <objects>
-                <tabBarController id="Ax2-Qz-15O" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="init_tab_controller" id="Ax2-Qz-15O" sceneMemberID="viewController">
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="loi-Cl-sRZ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
@@ -228,15 +232,15 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="2Tx-0F-Kfc" kind="relationship" relationship="viewControllers" id="69J-IS-7sX"/>
-                        <segue destination="lSq-97-awz" kind="relationship" relationship="viewControllers" id="h7e-JC-2GG"/>
-                        <segue destination="6uF-3s-7v5" kind="relationship" relationship="viewControllers" id="Tiw-Pq-RFC"/>
                         <segue destination="KnK-ej-ckh" kind="relationship" relationship="viewControllers" id="9h0-qb-uc5"/>
+                        <segue destination="6uF-3s-7v5" kind="relationship" relationship="viewControllers" id="Tiw-Pq-RFC"/>
+                        <segue destination="lSq-97-awz" kind="relationship" relationship="viewControllers" id="h7e-JC-2GG"/>
+                        <segue destination="2Tx-0F-Kfc" kind="relationship" relationship="viewControllers" id="69J-IS-7sX"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Re9-JF-VTT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1197" y="1286"/>
+            <point key="canvasLocation" x="-1131" y="1286"/>
         </scene>
     </scenes>
 </document>

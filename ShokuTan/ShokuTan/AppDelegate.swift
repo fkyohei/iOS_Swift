@@ -40,6 +40,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             // ユーザ記録読み込み
             user_realm = try Realm()
             
+            // 画面初期化
+            initViewController()
+            
             Fabric.with([Crashlytics.self])
             return true
             
@@ -48,7 +51,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             return false
         }
     }
-
+    
+    /**
+     * 画面の初期化
+     */
+    func initViewController() {
+        self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle())
+        
+        let init_tab = storyboard.instantiateViewControllerWithIdentifier("init_tab_controller") as! UITabBarController
+        let search_nav = storyboard.instantiateViewControllerWithIdentifier("search_nav_controller") as! UINavigationController
+        let search_view_controller = storyboard.instantiateViewControllerWithIdentifier("search_view_controller") as! SearchViewContoller
+        
+        search_nav.viewControllers = [search_view_controller]
+        init_tab.viewControllers?[0] = search_nav
+        
+        self.window?.rootViewController = init_tab
+        self.window?.makeKeyAndVisible()
+    }
+    
     func applicationWillResignActive(application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
         // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
