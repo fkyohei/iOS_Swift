@@ -157,7 +157,7 @@
 			name = view;
 			sourceTree = "<group>";
 		};
-		E23A1FBC1BD25B0C00C70DDA /* object */ = {
+		E23A1FBC1BD25B0C00C70DDA /* model */ = {
 			isa = PBXGroup;
 			children = (
 				E23A1FB81BD25AEF00C70DDA /* Area.swift */,
@@ -167,7 +167,7 @@
 				E23A1FE01BD2A34000C70DDA /* Option.swift */,
 				E23A1FE61BD367E400C70DDA /* AppDefine.swift */,
 			);
-			name = object;
+			name = model;
 			sourceTree = "<group>";
 		};
 		E23A1FEA1BD36C4B00C70DDA /* search */ = {
@@ -225,7 +225,7 @@
 		E2B79BF61BD239E5004E3654 /* ShokuTan */ = {
 			isa = PBXGroup;
 			children = (
-				E23A1FBC1BD25B0C00C70DDA /* object */,
+				E23A1FBC1BD25B0C00C70DDA /* model */,
 				E23A1FBB1BD25B0400C70DDA /* view */,
 				E23A1FBA1BD25AF800C70DDA /* controller */,
 				E2B79BF71BD239E5004E3654 /* AppDelegate.swift */,
