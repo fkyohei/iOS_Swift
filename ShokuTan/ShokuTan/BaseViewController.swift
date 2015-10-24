@@ -55,6 +55,34 @@ class BaseViewController: UIViewController, UITabBarControllerDelegate {
     }
     
     /**
+     * 都道府県取得
+     *
+     * @param string area_code エリアコード
+     */
+    func get_pref_data(area_code: String = "") -> RealmSwift.Results<Pref> {
+        if area_code != "" {
+            let predicate = NSPredicate(format: "areacode = %@", area_code)
+            return self.appdelegate.search_realm.objects(Pref).filter(predicate)
+        }
+        
+        return self.appdelegate.search_realm.objects(Pref)
+    }
+    
+    /**
+     * Lエリア取得
+     *
+     * @param string pref_code 都道府県コード
+     */
+    func get_areal_data(pref_code: String = "") -> RealmSwift.Results<Area_L> {
+        if pref_code != "" {
+            let predicate = NSPredicate(format: "prefcode = %@", pref_code)
+            return self.appdelegate.search_realm.objects(Area_L).filter(predicate)
+        }
+        
+        return  self.appdelegate.search_realm.objects(Area_L)
+    }
+    
+    /**
      * メインカテゴリ全取得
      */
     func get_main_category_data() -> RealmSwift.Results<MainCategory> {

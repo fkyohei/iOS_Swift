@@ -1,0 +1,137 @@
+ [
+  {"code" : "lunch",
+  "name" : "ランチ営業あり"
+  },
+  {
+  "code" : "no_smoking",
+  "name" : "禁煙席あり"
+  },
+  {
+  "code" : "card",
+  "name" : "カード利用可"
+  },
+  {
+  "code" : "mobilephone",
+  "name" : "携帯の電波が入る"
+  },
+  {
+  "code" : "bottomless_cup",
+  "name" : "飲み放題あり"
+  },
+  {
+  "code" : "sunday_open",
+  "name" : "日曜営業あり"
+  },
+  {
+  "code" : "takeout",
+  "name" : "テイクアウトあり"
+  },
+  {
+  "code" : "private_room",
+  "name" : "個室あり"
+  },
+  {
+  "code" : "midnight",
+  "name" : "深夜営業あり"
+  },
+  {
+  "code" : "parking",
+  "name" : "駐車場あり"
+  },
+  {
+  "code" : "memorial_service",
+  "name" : "法事利用可"
+  },
+  {
+  "code" : "birthday_privilege",
+  "name" : "誕生日特典あり"
+  },
+  {
+  "code" : "betrothal_present",
+  "name" : "結納利用可"
+  },
+  {
+  "code" : "kids_menu",
+  "name" : "キッズメニューあり"
+  },
+  {
+  "code" : "outret",
+  "name" : "電源あり"
+  },
+  {
+  "code" : "wifi",
+  "name" : "wifiあり"
+  },
+  {
+  "code" : "microphone",
+  "name" : "マイクあり"
+  },
+  {
+  "code" : "buffet",
+  "name" : "食べ放題あり"
+  },
+  {
+  "code" : "late_lunch",
+  "name" : "14時以降のランチあり"
+  },
+  {
+  "code" : "sports",
+  "name" : "スポーツ観戦可"
+  },
+  {
+  "code" : "until_morning",
+  "name" : "朝まで営業あり"
+  },
+  {
+  "code" : "lunch_desert",
+  "name" : "ランチデザートあり"
+  },
+  {
+  "code" : "projecter_screen",
+  "name" : "プロジェクター・スクリーンあり"
+  },
+  {
+  "code" : "with_pet",
+  "name" : "ペット同伴可"
+  },
+  {
+  "code" : "deliverly",
+  "name" : "デリバリーあり"
+  },
+  {
+  "code" : "special_holiday_lunch",
+  "name" : "土日特別ランチあり"
+  },
+  {
+  "code" : "e_money",
+  "name" : "電子マネー利用可"
+  },
+  {
+  "code" : "caterling",
+  "name" : "ケータリングあり"
+  },
+  {
+  "code" : "breakfast",
+  "name" : "モーニング・朝ごはんあり"
+  },
+  {
+  "code" : "desert_buffet",
+  "name" : "デザートビュッフェあり"
+  },
+  {
+  "code" : "lunch_buffet",
+  "name" : "ランチビュッフェあり"
+  },
+  {
+  "code" : "bento",
+  "name" : "お弁当あり"
+  },
+  {
+  "code" : "lunch_salad_buffet",
+  "name" : "ランチサラダバーあり"
+  },
+  {
+  "code" : "darts",
+  "name" : "ダーツあり"
+  }
+  ]

@@ -26,6 +26,9 @@ class SearchViewContoller: BaseViewController, UITextFieldDelegate {
         
         // フリーワード検索フォームのデリゲートをセット
         freeword_text_field.delegate = self
+        
+        // ナビゲーションタイトルを変更
+        self.navigationItem.title = "検索"
     }
     
     
@@ -35,10 +38,10 @@ class SearchViewContoller: BaseViewController, UITextFieldDelegate {
     }
     
     /**
-     * エリアから探す
+     * 場所から探す
      */
     @IBAction func area_search_btn(sender: AnyObject) {
-        self.performSegueWithIdentifier("toAreaSearchView", sender: self)
+        self.performSegueWithIdentifier("toAreaLSearchView", sender: self)
     }
     
     /**

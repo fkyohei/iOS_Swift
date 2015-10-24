@@ -18,6 +18,8 @@ import RealmSwift
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    // アプリコード
+    var app_code: AppCode!
     
     // 検索条件
     var search_realm: Realm!
@@ -30,18 +32,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
         do {
+            // アプリコード読み込み
+            self.app_code = AppCode.init()
+            
             // 検索条件読み込み
             let realm_path = NSBundle.mainBundle().pathForResource("ShokuTan_v1", ofType:"realm")
             let realm_config = Realm.Configuration(path: realm_path, readOnly: true)
-            search_realm = try Realm(configuration: realm_config)
+            self.search_realm = try Realm(configuration: realm_config)
             
-            // ユーザ記録読み込み
-            user_realm = try Realm()
+            // ユーザ記録（お気に入り・履歴）
+            self.user_realm = try Realm()
             
             // 画面初期化
-            initViewController()
+            self.initViewController()
             
             Fabric.with([Crashlytics.self])
             return true
@@ -62,14 +66,29 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let init_tab = storyboard.instantiateViewControllerWithIdentifier("init_tab_controller") as! UITabBarController
         let search_nav = storyboard.instantiateViewControllerWithIdentifier("search_nav_controller") as! UINavigationController
-        let search_view_controller = storyboard.instantiateViewControllerWithIdentifier("search_view_controller") as! SearchViewContoller
         
-        search_nav.viewControllers = [search_view_controller]
-        init_tab.viewControllers?[0] = search_nav
+        
+        // 都道府県が選択済みの場合
+        if self.app_code.pref_code != "" {
+            let init_area_view_controller = storyboard.instantiateViewControllerWithIdentifier("init_area_view_controller") as! InitAreaViewController
+            let init_pref_view_controller = storyboard.instantiateViewControllerWithIdentifier("init_pref_view_controller") as! InitPrefViewController
+            let search_view_controller = storyboard.instantiateViewControllerWithIdentifier("search_view_controller") as! SearchViewContoller
+            
+            search_nav.viewControllers = [init_area_view_controller, init_pref_view_controller, search_view_controller]
+            init_tab.viewControllers?[0] = search_nav
+            
+        } else {
+            let init_area_view_controller = storyboard.instantiateViewControllerWithIdentifier("init_area_view_controller") as! InitAreaViewController
+            
+            search_nav.viewControllers = [init_area_view_controller]
+            init_tab.viewControllers?[0] = search_nav
+        }
         
         self.window?.rootViewController = init_tab
         self.window?.makeKeyAndVisible()
     }
+    
+    
     
     func applicationWillResignActive(application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

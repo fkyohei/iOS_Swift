@@ -1,0 +1,2137 @@
+ [
+  {
+  "code": "AREAL5500",
+  "name": "札幌駅・大通・すすきの",
+  "prefcode": "PREF01",
+  },
+  {
+  "code": "AREAL5520",
+  "name": "円山公園・琴似・手稲",
+  "prefcode": "PREF01",
+  },
+  {
+  "code": "AREAL5540",
+  "name": "白石・南郷・新さっぽろ",
+  "prefcode": "PREF01",
+  },
+  {
+  "code": "AREAL5560",
+  "name": "平岸・澄川・月寒・清田",
+  "prefcode": "PREF01",
+  },
+  {
+  "code": "AREAL5580",
+  "name": "北２４条・麻生・元町・栄町",
+  "prefcode": "PREF01",
+  },
+  {
+  "code": "AREAL5600",
+  "name": "小樽・千歳",
+  "prefcode": "PREF01",
+  },
+  {
+  "code": "AREAL5800",
+  "name": "旭川・富良野・稚内",
+  "prefcode": "PREF01",
+  },
+  {
+  "code": "AREAL5700",
+  "name": "函館・苫小牧",
+  "prefcode": "PREF01",
+  },
+  {
+  "code": "AREAL5900",
+  "name": "釧路・帯広・網走",
+  "prefcode": "PREF01",
+  },
+  {
+  "code": "AREAL6100",
+  "name": "青森市",
+  "prefcode": "PREF02",
+  },
+  {
+  "code": "AREAL6101",
+  "name": "弘前・黒石・平川",
+  "prefcode": "PREF02",
+  },
+  {
+  "code": "AREAL6103",
+  "name": "つがる・鰺ヶ沢・深浦",
+  "prefcode": "PREF02",
+  },
+  {
+  "code": "AREAL6104",
+  "name": "五所川原・中泊",
+  "prefcode": "PREF02",
+  },
+  {
+  "code": "AREAL6105",
+  "name": "十和田・七戸・東北町",
+  "prefcode": "PREF02",
+  },
+  {
+  "code": "AREAL6106",
+  "name": "三沢・三戸・五戸",
+  "prefcode": "PREF02",
+  },
+  {
+  "code": "AREAL6102",
+  "name": "八戸",
+  "prefcode": "PREF02",
+  },
+  {
+  "code": "AREAL6107",
+  "name": "むつ市・大間・野辺地",
+  "prefcode": "PREF02",
+  },
+  {
+  "code": "AREAL6150",
+  "name": "盛岡",
+  "prefcode": "PREF03",
+  },
+  {
+  "code": "AREAL6151",
+  "name": "二戸・八幡平・滝沢",
+  "prefcode": "PREF03",
+  },
+  {
+  "code": "AREAL6154",
+  "name": "奥州・一関・平泉",
+  "prefcode": "PREF03",
+  },
+  {
+  "code": "AREAL6152",
+  "name": "花巻・北上・遠野",
+  "prefcode": "PREF03",
+  },
+  {
+  "code": "AREAL6153",
+  "name": "三陸海岸沿岸部",
+  "prefcode": "PREF03",
+  },
+  {
+  "code": "AREAL6204",
+  "name": "仙台",
+  "prefcode": "PREF04",
+  },
+  {
+  "code": "AREAL6201",
+  "name": "仙台市郊外・富谷",
+  "prefcode": "PREF04",
+  },
+  {
+  "code": "AREAL6250",
+  "name": "松島・石巻・気仙沼",
+  "prefcode": "PREF04",
+  },
+  {
+  "code": "AREAL6266",
+  "name": "古川・登米・栗原",
+  "prefcode": "PREF04",
+  },
+  {
+  "code": "AREAL6260",
+  "name": "蔵王・宮城南部",
+  "prefcode": "PREF04",
+  },
+  {
+  "code": "AREAL6300",
+  "name": "秋田市",
+  "prefcode": "PREF05",
+  },
+  {
+  "code": "AREAL6301",
+  "name": "能代・山本・男鹿",
+  "prefcode": "PREF05",
+  },
+  {
+  "code": "AREAL6303",
+  "name": "由利本荘・にかほ",
+  "prefcode": "PREF05",
+  },
+  {
+  "code": "AREAL6304",
+  "name": "北秋田・大館・鹿角",
+  "prefcode": "PREF05",
+  },
+  {
+  "code": "AREAL6302",
+  "name": "仙北・大仙・横手",
+  "prefcode": "PREF05",
+  },
+  {
+  "code": "AREAL6305",
+  "name": "湯沢・羽後",
+  "prefcode": "PREF05",
+  },
+  {
+  "code": "AREAL6350",
+  "name": "山形市",
+  "prefcode": "PREF06",
+  },
+  {
+  "code": "AREAL6351",
+  "name": "米沢・置賜",
+  "prefcode": "PREF06",
+  },
+  {
+  "code": "AREAL6353",
+  "name": "天童・尾花沢・寒河江",
+  "prefcode": "PREF06",
+  },
+  {
+  "code": "AREAL6354",
+  "name": "新庄・最上",
+  "prefcode": "PREF06",
+  },
+  {
+  "code": "AREAL6352",
+  "name": "酒田・遊佐",
+  "prefcode": "PREF06",
+  },
+  {
+  "code": "AREAL6355",
+  "name": "鶴岡・庄内",
+  "prefcode": "PREF06",
+  },
+  {
+  "code": "AREAL6400",
+  "name": "福島市",
+  "prefcode": "PREF07",
+  },
+  {
+  "code": "AREAL6403",
+  "name": "二本松・本宮",
+  "prefcode": "PREF07",
+  },
+  {
+  "code": "AREAL6404",
+  "name": "伊達・桑折・川俣",
+  "prefcode": "PREF07",
+  },
+  {
+  "code": "AREAL6405",
+  "name": "郡山",
+  "prefcode": "PREF07",
+  },
+  {
+  "code": "AREAL6406",
+  "name": "田村・小野・三春",
+  "prefcode": "PREF07",
+  },
+  {
+  "code": "AREAL6407",
+  "name": "須賀川・天栄",
+  "prefcode": "PREF07",
+  },
+  {
+  "code": "AREAL6408",
+  "name": "古殿・石川町・玉川村",
+  "prefcode": "PREF07",
+  },
+  {
+  "code": "AREAL6409",
+  "name": "白河・矢吹",
+  "prefcode": "PREF07",
+  },
+  {
+  "code": "AREAL6401",
+  "name": "いわき",
+  "prefcode": "PREF07",
+  },
+  {
+  "code": "AREAL6410",
+  "name": "浪江・大熊・広野",
+  "prefcode": "PREF07",
+  },
+  {
+  "code": "AREAL6411",
+  "name": "相馬・南相馬",
+  "prefcode": "PREF07",
+  },
+  {
+  "code": "AREAL6402",
+  "name": "会津若松・喜多方",
+  "prefcode": "PREF07",
+  },
+  {
+  "code": "AREAL6412",
+  "name": "下郷・南会津・只見",
+  "prefcode": "PREF07",
+  },
+  {
+  "code": "AREAL2101",
+  "name": "銀座・有楽町・築地",
+  "prefcode": "PREF13",
+  },
+  {
+  "code": "AREAL2107",
+  "name": "新橋・浜松町・田町",
+  "prefcode": "PREF13",
+  },
+  {
+  "code": "AREAL2115",
+  "name": "新宿（代々木）・千駄ヶ谷",
+  "prefcode": "PREF13",
+  },
+  {
+  "code": "AREAL2116",
+  "name": "大久保・高田馬場",
+  "prefcode": "PREF13",
+  },
+  {
+  "code": "AREAL2125",
+  "name": "渋谷・原宿・青山",
+  "prefcode": "PREF13",
+  },
+  {
+  "code": "AREAL2156",
+  "name": "池袋・巣鴨・駒込",
+  "prefcode": "PREF13",
+  },
+  {
+  "code": "AREAL2141",
+  "name": "東京駅・丸の内・日本橋",
+  "prefcode": "PREF13",
+  },
+  {
+  "code": "AREAL2133",
+  "name": "赤坂・六本木・麻布",
+  "prefcode": "PREF13",
+  },
+  {
+  "code": "AREAL2198",
+  "name": "上野・浅草・日暮里",
+  "prefcode": "PREF13",
+  },
+  {
+  "code": "AREAL2142",
+  "name": "神田・秋葉原・水道橋",
+  "prefcode": "PREF13",
+  },
+  {
+  "code": "AREAL2184",
+  "name": "飯田橋・四ツ谷・神楽坂",
+  "prefcode": "PREF13",
+  },
+  {
+  "code": "AREAL2169",
+  "name": "品川・五反田・大崎",
+  "prefcode": "PREF13",
+  },
+  {
+  "code": "AREAL2170",
+  "name": "お台場・豊洲・湾岸",
+  "prefcode": "PREF13",
+  },
+  {
+  "code": "AREAL2178",
+  "name": "恵比寿・中目黒・目黒",
+  "prefcode": "PREF13",
+  },
+  {
+  "code": "AREAL2164",
+  "name": "自由が丘・三軒茶屋・二子玉川",
+  "prefcode": "PREF13",
+  },
+  {
+  "code": "AREAL2207",
+  "name": "下北沢・明大前・成城学園前",
+  "prefcode": "PREF13",
+  },
+  {
+  "code": "AREAL2217",
+  "name": "中野・吉祥寺・三鷹",
+  "prefcode": "PREF13",
+  },
+  {
+  "code": "AREAL2222",
+  "name": "練馬・江古田・田無",
+  "prefcode": "PREF13",
+  },
+  {
+  "code": "AREAL2228",
+  "name": "錦糸町・押上・新小岩",
+  "prefcode": "PREF13",
+  },
+  {
+  "code": "AREAL2146",
+  "name": "人形町・門前仲町・葛西",
+  "prefcode": "PREF13",
+  },
+  {
+  "code": "AREAL2241",
+  "name": "北千住・綾瀬・亀有",
+  "prefcode": "PREF13",
+  },
+  {
+  "code": "AREAL2250",
+  "name": "板橋・成増・赤羽",
+  "prefcode": "PREF13",
+  },
+  {
+  "code": "AREAL2254",
+  "name": "大井町・大森・蒲田",
+  "prefcode": "PREF13",
+  },
+  {
+  "code": "AREAL2273",
+  "name": "府中・調布",
+  "prefcode": "PREF13",
+  },
+  {
+  "code": "AREAL2923",
+  "name": "町田・多摩",
+  "prefcode": "PREF13",
+  },
+  {
+  "code": "AREAL2278",
+  "name": "小金井・国分寺・国立",
+  "prefcode": "PREF13",
+  },
+  {
+  "code": "AREAL2286",
+  "name": "立川・八王子・青梅",
+  "prefcode": "PREF13",
+  },
+  {
+  "code": "AREAL2295",
+  "name": "伊豆諸島・小笠原諸島",
+  "prefcode": "PREF13",
+  },
+  {
+  "code": "AREAL2322",
+  "name": "横浜・東神奈川",
+  "prefcode": "PREF14",
+  },
+  {
+  "code": "AREAL2336",
+  "name": "みなとみらい・関内・中華街",
+  "prefcode": "PREF14",
+  },
+  {
+  "code": "AREAL2302",
+  "name": "川崎・鶴見",
+  "prefcode": "PREF14",
+  },
+  {
+  "code": "AREAL2310",
+  "name": "武蔵小杉・日吉・綱島",
+  "prefcode": "PREF14",
+  },
+  {
+  "code": "AREAL2354",
+  "name": "新横浜・センター南・鴨居",
+  "prefcode": "PREF14",
+  },
+  {
+  "code": "AREAL2360",
+  "name": "上大岡・金沢文庫・新杉田",
+  "prefcode": "PREF14",
+  },
+  {
+  "code": "AREAL2372",
+  "name": "横須賀・久里浜・三浦半島",
+  "prefcode": "PREF14",
+  },
+  {
+  "code": "AREAL2352",
+  "name": "戸塚・東戸塚",
+  "prefcode": "PREF14",
+  },
+  {
+  "code": "AREAL2374",
+  "name": "鎌倉・大船・逗子",
+  "prefcode": "PREF14",
+  },
+  {
+  "code": "AREAL2375",
+  "name": "藤沢・茅ヶ崎・平塚",
+  "prefcode": "PREF14",
+  },
+  {
+  "code": "AREAL2308",
+  "name": "溝の口・たまプラーザ・青葉台",
+  "prefcode": "PREF14",
+  },
+  {
+  "code": "AREAL2294",
+  "name": "登戸・向ヶ丘遊園・新百合ヶ丘",
+  "prefcode": "PREF14",
+  },
+  {
+  "code": "AREAL2350",
+  "name": "大和・中央林間・二俣川",
+  "prefcode": "PREF14",
+  },
+  {
+  "code": "AREAL2293",
+  "name": "相模大野・橋本・相模湖",
+  "prefcode": "PREF14",
+  },
+  {
+  "code": "AREAL2296",
+  "name": "本厚木・海老名",
+  "prefcode": "PREF14",
+  },
+  {
+  "code": "AREAL2922",
+  "name": "伊勢原・秦野・渋沢",
+  "prefcode": "PREF14",
+  },
+  {
+  "code": "AREAL2380",
+  "name": "小田原・箱根・湯河原",
+  "prefcode": "PREF14",
+  },
+  {
+  "code": "AREAL2402",
+  "name": "大宮・さいたま新都心",
+  "prefcode": "PREF11",
+  },
+  {
+  "code": "AREAL2408",
+  "name": "浦和",
+  "prefcode": "PREF11",
+  },
+  {
+  "code": "AREAL2422",
+  "name": "川口・蕨・戸田",
+  "prefcode": "PREF11",
+  },
+  {
+  "code": "AREAL2428",
+  "name": "越谷・草加・春日部",
+  "prefcode": "PREF11",
+  },
+  {
+  "code": "AREAL2432",
+  "name": "志木・川越・坂戸",
+  "prefcode": "PREF11",
+  },
+  {
+  "code": "AREAL2452",
+  "name": "所沢・入間・狭山",
+  "prefcode": "PREF11",
+  },
+  {
+  "code": "AREAL2453",
+  "name": "秩父・長瀞・飯能",
+  "prefcode": "PREF11",
+  },
+  {
+  "code": "AREAL2442",
+  "name": "上尾・熊谷・久喜",
+  "prefcode": "PREF11",
+  },
+  {
+  "code": "AREAL2502",
+  "name": "千葉・幕張",
+  "prefcode": "PREF12",
+  },
+  {
+  "code": "AREAL2524",
+  "name": "市川・船橋・津田沼",
+  "prefcode": "PREF12",
+  },
+  {
+  "code": "AREAL2526",
+  "name": "舞浜・浦安・行徳",
+  "prefcode": "PREF12",
+  },
+  {
+  "code": "AREAL2542",
+  "name": "柏・松戸・我孫子",
+  "prefcode": "PREF12",
+  },
+  {
+  "code": "AREAL2562",
+  "name": "成田・八千代・鎌ヶ谷",
+  "prefcode": "PREF12",
+  },
+  {
+  "code": "AREAL2564",
+  "name": "市原・銚子・南房総",
+  "prefcode": "PREF12",
+  },
+  {
+  "code": "AREAL2601",
+  "name": "高崎",
+  "prefcode": "PREF10",
+  },
+  {
+  "code": "AREAL2607",
+  "name": "前橋",
+  "prefcode": "PREF10",
+  },
+  {
+  "code": "AREAL2605",
+  "name": "伊勢崎・玉村",
+  "prefcode": "PREF10",
+  },
+  {
+  "code": "AREAL2606",
+  "name": "桐生・みどり市",
+  "prefcode": "PREF10",
+  },
+  {
+  "code": "AREAL2608",
+  "name": "太田・館林・大泉",
+  "prefcode": "PREF10",
+  },
+  {
+  "code": "AREAL2604",
+  "name": "藤岡・富岡・安中",
+  "prefcode": "PREF10",
+  },
+  {
+  "code": "AREAL2600",
+  "name": "草津・東吾妻・嬬恋",
+  "prefcode": "PREF10",
+  },
+  {
+  "code": "AREAL2603",
+  "name": "渋川・吉岡・榛東",
+  "prefcode": "PREF10",
+  },
+  {
+  "code": "AREAL2602",
+  "name": "沼田・みなかみ・片品",
+  "prefcode": "PREF10",
+  },
+  {
+  "code": "AREAL2700",
+  "name": "宇都宮",
+  "prefcode": "PREF09",
+  },
+  {
+  "code": "AREAL2703",
+  "name": "小山・下野",
+  "prefcode": "PREF09",
+  },
+  {
+  "code": "AREAL2704",
+  "name": "真岡・益子・芳賀",
+  "prefcode": "PREF09",
+  },
+  {
+  "code": "AREAL2705",
+  "name": "鹿沼・栃木市・壬生",
+  "prefcode": "PREF09",
+  },
+  {
+  "code": "AREAL2701",
+  "name": "佐野",
+  "prefcode": "PREF09",
+  },
+  {
+  "code": "AREAL2706",
+  "name": "足利",
+  "prefcode": "PREF09",
+  },
+  {
+  "code": "AREAL2702",
+  "name": "日光・鬼怒川",
+  "prefcode": "PREF09",
+  },
+  {
+  "code": "AREAL2707",
+  "name": "さくら市・高根沢",
+  "prefcode": "PREF09",
+  },
+  {
+  "code": "AREAL2708",
+  "name": "那須烏山・那珂川",
+  "prefcode": "PREF09",
+  },
+  {
+  "code": "AREAL2709",
+  "name": "那須塩原・大田原・矢板",
+  "prefcode": "PREF09",
+  },
+  {
+  "code": "AREAL2800",
+  "name": "水戸",
+  "prefcode": "PREF08",
+  },
+  {
+  "code": "AREAL2804",
+  "name": "笠間・大洗",
+  "prefcode": "PREF08",
+  },
+  {
+  "code": "AREAL2801",
+  "name": "ひたちなか・日立・常陸大宮",
+  "prefcode": "PREF08",
+  },
+  {
+  "code": "AREAL2802",
+  "name": "つくば",
+  "prefcode": "PREF08",
+  },
+  {
+  "code": "AREAL2805",
+  "name": "県南地域",
+  "prefcode": "PREF08",
+  },
+  {
+  "code": "AREAL2806",
+  "name": "県西地域",
+  "prefcode": "PREF08",
+  },
+  {
+  "code": "AREAL2803",
+  "name": "鹿行地域",
+  "prefcode": "PREF08",
+  },
+  {
+  "code": "AREAL6600",
+  "name": "新潟市",
+  "prefcode": "PREF15",
+  },
+  {
+  "code": "AREAL6604",
+  "name": "村上・関川",
+  "prefcode": "PREF15",
+  },
+  {
+  "code": "AREAL6601",
+  "name": "新発田・胎内",
+  "prefcode": "PREF15",
+  },
+  {
+  "code": "AREAL6605",
+  "name": "五泉・阿賀野・阿賀",
+  "prefcode": "PREF15",
+  },
+  {
+  "code": "AREAL6606",
+  "name": "燕市・弥彦",
+  "prefcode": "PREF15",
+  },
+  {
+  "code": "AREAL6602",
+  "name": "長岡・見附・小千谷",
+  "prefcode": "PREF15",
+  },
+  {
+  "code": "AREAL6607",
+  "name": "三条市・燕三条・加茂",
+  "prefcode": "PREF15",
+  },
+  {
+  "code": "AREAL6608",
+  "name": "魚沼",
+  "prefcode": "PREF15",
+  },
+  {
+  "code": "AREAL6609",
+  "name": "十日町・津南",
+  "prefcode": "PREF15",
+  },
+  {
+  "code": "AREAL6610",
+  "name": "南魚沼・湯沢",
+  "prefcode": "PREF15",
+  },
+  {
+  "code": "AREAL6611",
+  "name": "柏崎",
+  "prefcode": "PREF15",
+  },
+  {
+  "code": "AREAL6615",
+  "name": "糸魚川",
+  "prefcode": "PREF15",
+  },
+  {
+  "code": "AREAL6613",
+  "name": "上越市",
+  "prefcode": "PREF15",
+  },
+  {
+  "code": "AREAL6614",
+  "name": "妙高",
+  "prefcode": "PREF15",
+  },
+  {
+  "code": "AREAL6603",
+  "name": "佐渡",
+  "prefcode": "PREF15",
+  },
+  {
+  "code": "AREAL6700",
+  "name": "富山市",
+  "prefcode": "PREF16",
+  },
+  {
+  "code": "AREAL6703",
+  "name": "立山・上市",
+  "prefcode": "PREF16",
+  },
+  {
+  "code": "AREAL6701",
+  "name": "滑川・魚津・黒部",
+  "prefcode": "PREF16",
+  },
+  {
+  "code": "AREAL6702",
+  "name": "高岡",
+  "prefcode": "PREF16",
+  },
+  {
+  "code": "AREAL6704",
+  "name": "砺波・南砺",
+  "prefcode": "PREF16",
+  },
+  {
+  "code": "AREAL6705",
+  "name": "射水",
+  "prefcode": "PREF16",
+  },
+  {
+  "code": "AREAL6706",
+  "name": "小矢部",
+  "prefcode": "PREF16",
+  },
+  {
+  "code": "AREAL6707",
+  "name": "氷見",
+  "prefcode": "PREF16",
+  },
+  {
+  "code": "AREAL6800",
+  "name": "金沢・野々市・かほく",
+  "prefcode": "PREF17",
+  },
+  {
+  "code": "AREAL6802",
+  "name": "能登・和倉温泉・輪島",
+  "prefcode": "PREF17",
+  },
+  {
+  "code": "AREAL6801",
+  "name": "加賀・小松・白山",
+  "prefcode": "PREF17",
+  },
+  {
+  "code": "AREAL6900",
+  "name": "福井市",
+  "prefcode": "PREF18",
+  },
+  {
+  "code": "AREAL6903",
+  "name": "奥越",
+  "prefcode": "PREF18",
+  },
+  {
+  "code": "AREAL6904",
+  "name": "坂井・あわら・永平寺",
+  "prefcode": "PREF18",
+  },
+  {
+  "code": "AREAL6901",
+  "name": "鯖江・越前市・南越前",
+  "prefcode": "PREF18",
+  },
+  {
+  "code": "AREAL6902",
+  "name": "敦賀・若狭・美浜",
+  "prefcode": "PREF18",
+  },
+  {
+  "code": "AREAL6905",
+  "name": "小浜",
+  "prefcode": "PREF18",
+  },
+  {
+  "code": "AREAL4102",
+  "name": "名古屋駅",
+  "prefcode": "PREF23",
+  },
+  {
+  "code": "AREAL4122",
+  "name": "栄周辺",
+  "prefcode": "PREF23",
+  },
+  {
+  "code": "AREAL4142",
+  "name": "（名古屋）伏見・丸の内",
+  "prefcode": "PREF23",
+  },
+  {
+  "code": "AREAL4162",
+  "name": "新栄・CBC・東区",
+  "prefcode": "PREF23",
+  },
+  {
+  "code": "AREAL4182",
+  "name": "金山・大須・熱田区",
+  "prefcode": "PREF23",
+  },
+  {
+  "code": "AREAL4202",
+  "name": "千種区・名東区",
+  "prefcode": "PREF23",
+  },
+  {
+  "code": "AREAL4222",
+  "name": "昭和区・瑞穂区・天白区",
+  "prefcode": "PREF23",
+  },
+  {
+  "code": "AREAL4242",
+  "name": "中川区・港区・南区・緑区",
+  "prefcode": "PREF23",
+  },
+  {
+  "code": "AREAL4262",
+  "name": "西区・北区・守山区",
+  "prefcode": "PREF23",
+  },
+  {
+  "code": "AREAL4271",
+  "name": "豊田",
+  "prefcode": "PREF23",
+  },
+  {
+  "code": "AREAL4272",
+  "name": "岡崎・刈谷・安城",
+  "prefcode": "PREF23",
+  },
+  {
+  "code": "AREAL4302",
+  "name": "一宮・小牧・春日井",
+  "prefcode": "PREF23",
+  },
+  {
+  "code": "AREAL4304",
+  "name": "尾張・長久手・日進",
+  "prefcode": "PREF23",
+  },
+  {
+  "code": "AREAL4306",
+  "name": "稲沢・津島・あま市",
+  "prefcode": "PREF23",
+  },
+  {
+  "code": "AREAL4312",
+  "name": "大府・東海・知多半島",
+  "prefcode": "PREF23",
+  },
+  {
+  "code": "AREAL4322",
+  "name": "蒲郡・東三河・豊橋",
+  "prefcode": "PREF23",
+  },
+  {
+  "code": "AREAL4500",
+  "name": "岐阜市",
+  "prefcode": "PREF21",
+  },
+  {
+  "code": "AREAL4501",
+  "name": "各務原・大垣・羽島",
+  "prefcode": "PREF21",
+  },
+  {
+  "code": "AREAL4504",
+  "name": "可児・美濃加茂・関",
+  "prefcode": "PREF21",
+  },
+  {
+  "code": "AREAL4502",
+  "name": "多治見・瑞浪・中津川",
+  "prefcode": "PREF21",
+  },
+  {
+  "code": "AREAL4503",
+  "name": "飛騨・高山",
+  "prefcode": "PREF21",
+  },
+  {
+  "code": "AREAL4505",
+  "name": "下呂",
+  "prefcode": "PREF21",
+  },
+  {
+  "code": "AREAL4600",
+  "name": "四日市",
+  "prefcode": "PREF24",
+  },
+  {
+  "code": "AREAL4602",
+  "name": "桑名・いなべ",
+  "prefcode": "PREF24",
+  },
+  {
+  "code": "AREAL4603",
+  "name": "鈴鹿",
+  "prefcode": "PREF24",
+  },
+  {
+  "code": "AREAL4605",
+  "name": "亀山・伊賀・名張",
+  "prefcode": "PREF24",
+  },
+  {
+  "code": "AREAL4604",
+  "name": "津・松阪",
+  "prefcode": "PREF24",
+  },
+  {
+  "code": "AREAL4601",
+  "name": "伊勢・鳥羽・志摩",
+  "prefcode": "PREF24",
+  },
+  {
+  "code": "AREAL4606",
+  "name": "熊野・尾鷲・大紀",
+  "prefcode": "PREF24",
+  },
+  {
+  "code": "AREAL4700",
+  "name": "長野・須坂・信濃",
+  "prefcode": "PREF20",
+  },
+  {
+  "code": "AREAL4704",
+  "name": "千曲・坂城",
+  "prefcode": "PREF20",
+  },
+  {
+  "code": "AREAL4705",
+  "name": "飯山・中野・志賀高原",
+  "prefcode": "PREF20",
+  },
+  {
+  "code": "AREAL4732",
+  "name": "軽井沢",
+  "prefcode": "PREF20",
+  },
+  {
+  "code": "AREAL4707",
+  "name": "小諸・御代田",
+  "prefcode": "PREF20",
+  },
+  {
+  "code": "AREAL4701",
+  "name": "上田・東御・長和",
+  "prefcode": "PREF20",
+  },
+  {
+  "code": "AREAL4708",
+  "name": "佐久・小海・川上",
+  "prefcode": "PREF20",
+  },
+  {
+  "code": "AREAL4702",
+  "name": "松本",
+  "prefcode": "PREF20",
+  },
+  {
+  "code": "AREAL4709",
+  "name": "白馬・大町",
+  "prefcode": "PREF20",
+  },
+  {
+  "code": "AREAL4710",
+  "name": "安曇野・筑北",
+  "prefcode": "PREF20",
+  },
+  {
+  "code": "AREAL4711",
+  "name": "塩尻・山形村",
+  "prefcode": "PREF20",
+  },
+  {
+  "code": "AREAL4712",
+  "name": "木曽・大桑・南木曽",
+  "prefcode": "PREF20",
+  },
+  {
+  "code": "AREAL4703",
+  "name": "岡谷・諏訪・茅野",
+  "prefcode": "PREF20",
+  },
+  {
+  "code": "AREAL4713",
+  "name": "伊那・箕輪・辰野",
+  "prefcode": "PREF20",
+  },
+  {
+  "code": "AREAL4714",
+  "name": "駒ケ根・飯島・中川",
+  "prefcode": "PREF20",
+  },
+  {
+  "code": "AREAL4715",
+  "name": "飯田・大鹿・根羽",
+  "prefcode": "PREF20",
+  },
+  {
+  "code": "AREAL4751",
+  "name": "甲府",
+  "prefcode": "PREF19",
+  },
+  {
+  "code": "AREAL4752",
+  "name": "甲州・山梨市・笛吹",
+  "prefcode": "PREF19",
+  },
+  {
+  "code": "AREAL4753",
+  "name": "早川・身延・南部町",
+  "prefcode": "PREF19",
+  },
+  {
+  "code": "AREAL4754",
+  "name": "甲斐・韮崎・南アルプス",
+  "prefcode": "PREF19",
+  },
+  {
+  "code": "AREAL4755",
+  "name": "大月・上野原・都留",
+  "prefcode": "PREF19",
+  },
+  {
+  "code": "AREAL4750",
+  "name": "河口湖・富士吉田・山中湖",
+  "prefcode": "PREF19",
+  },
+  {
+  "code": "AREAL4800",
+  "name": "熱海・伊豆・下田",
+  "prefcode": "PREF22",
+  },
+  {
+  "code": "AREAL4812",
+  "name": "三島・沼津・御殿場",
+  "prefcode": "PREF22",
+  },
+  {
+  "code": "AREAL4842",
+  "name": "富士市・富士宮",
+  "prefcode": "PREF22",
+  },
+  {
+  "code": "AREAL4822",
+  "name": "静岡・清水",
+  "prefcode": "PREF22",
+  },
+  {
+  "code": "AREAL4852",
+  "name": "藤枝・掛川・磐田",
+  "prefcode": "PREF22",
+  },
+  {
+  "code": "AREAL4832",
+  "name": "浜松・浜名湖",
+  "prefcode": "PREF22",
+  },
+  {
+  "code": "AREAL3102",
+  "name": "梅田・北新地",
+  "prefcode": "PREF27",
+  },
+  {
+  "code": "AREAL3142",
+  "name": "難波・道頓堀",
+  "prefcode": "PREF27",
+  },
+  {
+  "code": "AREAL3162",
+  "name": "心斎橋",
+  "prefcode": "PREF27",
+  },
+  {
+  "code": "AREAL3182",
+  "name": "淀屋橋・本町・北浜",
+  "prefcode": "PREF27",
+  },
+  {
+  "code": "AREAL3206",
+  "name": "天満・天神橋筋・南森町",
+  "prefcode": "PREF27",
+  },
+  {
+  "code": "AREAL3208",
+  "name": "天満橋・谷町四丁目",
+  "prefcode": "PREF27",
+  },
+  {
+  "code": "AREAL3223",
+  "name": "鶴橋・上本町",
+  "prefcode": "PREF27",
+  },
+  {
+  "code": "AREAL3222",
+  "name": "京橋・OBP",
+  "prefcode": "PREF27",
+  },
+  {
+  "code": "AREAL3242",
+  "name": "ユニバーサルシティ・大阪南港・九条",
+  "prefcode": "PREF27",
+  },
+  {
+  "code": "AREAL3264",
+  "name": "天王寺・新世界・住吉",
+  "prefcode": "PREF27",
+  },
+  {
+  "code": "AREAL3282",
+  "name": "新大阪・西中島・十三",
+  "prefcode": "PREF27",
+  },
+  {
+  "code": "AREAL3302",
+  "name": "江坂・千里中央・豊中",
+  "prefcode": "PREF27",
+  },
+  {
+  "code": "AREAL3304",
+  "name": "茨木・高槻",
+  "prefcode": "PREF27",
+  },
+  {
+  "code": "AREAL3306",
+  "name": "京阪エリア・東大阪・八尾",
+  "prefcode": "PREF27",
+  },
+  {
+  "code": "AREAL3308",
+  "name": "松原・藤井寺・河内長野",
+  "prefcode": "PREF27",
+  },
+  {
+  "code": "AREAL3310",
+  "name": "堺",
+  "prefcode": "PREF27",
+  },
+  {
+  "code": "AREAL3314",
+  "name": "岸和田・和泉・泉佐野",
+  "prefcode": "PREF27",
+  },
+  {
+  "code": "AREAL3402",
+  "name": "河原町・木屋町・先斗町",
+  "prefcode": "PREF26",
+  },
+  {
+  "code": "AREAL3414",
+  "name": "烏丸・西院",
+  "prefcode": "PREF26",
+  },
+  {
+  "code": "AREAL3412",
+  "name": "京都御所・西陣・二条城",
+  "prefcode": "PREF26",
+  },
+  {
+  "code": "AREAL3404",
+  "name": "京都駅・南区",
+  "prefcode": "PREF26",
+  },
+  {
+  "code": "AREAL3422",
+  "name": "祇園・岡崎・清水寺",
+  "prefcode": "PREF26",
+  },
+  {
+  "code": "AREAL3432",
+  "name": "嵐山・嵯峨野",
+  "prefcode": "PREF26",
+  },
+  {
+  "code": "AREAL3436",
+  "name": "金閣寺・北山・銀閣寺",
+  "prefcode": "PREF26",
+  },
+  {
+  "code": "AREAL3438",
+  "name": "大原・京都北部",
+  "prefcode": "PREF26",
+  },
+  {
+  "code": "AREAL3442",
+  "name": "伏見・山科・宇治",
+  "prefcode": "PREF26",
+  },
+  {
+  "code": "AREAL3502",
+  "name": "三宮・元町",
+  "prefcode": "PREF28",
+  },
+  {
+  "code": "AREAL3512",
+  "name": "神戸",
+  "prefcode": "PREF28",
+  },
+  {
+  "code": "AREAL3518",
+  "name": "灘・東灘",
+  "prefcode": "PREF28",
+  },
+  {
+  "code": "AREAL3524",
+  "name": "須磨・垂水・舞子",
+  "prefcode": "PREF28",
+  },
+  {
+  "code": "AREAL3578",
+  "name": "神戸市北区・有馬・三田",
+  "prefcode": "PREF28",
+  },
+  {
+  "code": "AREAL3542",
+  "name": "神戸ベイエリア",
+  "prefcode": "PREF28",
+  },
+  {
+  "code": "AREAL3570",
+  "name": "西宮・芦屋",
+  "prefcode": "PREF28",
+  },
+  {
+  "code": "AREAL3562",
+  "name": "尼崎・伊丹・宝塚",
+  "prefcode": "PREF28",
+  },
+  {
+  "code": "AREAL3582",
+  "name": "姫路・加古川",
+  "prefcode": "PREF28",
+  },
+  {
+  "code": "AREAL3588",
+  "name": "淡路島",
+  "prefcode": "PREF28",
+  },
+  {
+  "code": "AREAL3587",
+  "name": "明石・神戸市西区",
+  "prefcode": "PREF28",
+  },
+  {
+  "code": "AREAL3586",
+  "name": "丹波・城崎北部",
+  "prefcode": "PREF28",
+  },
+  {
+  "code": "AREAL3601",
+  "name": "奈良市・大和郡山・天理",
+  "prefcode": "PREF29",
+  },
+  {
+  "code": "AREAL3603",
+  "name": "桜井・宇陀",
+  "prefcode": "PREF29",
+  },
+  {
+  "code": "AREAL3602",
+  "name": "生駒",
+  "prefcode": "PREF29",
+  },
+  {
+  "code": "AREAL3604",
+  "name": "王寺・広陵・香芝",
+  "prefcode": "PREF29",
+  },
+  {
+  "code": "AREAL3605",
+  "name": "大和高田・橿原",
+  "prefcode": "PREF29",
+  },
+  {
+  "code": "AREAL3600",
+  "name": "吉野・五條・十津川",
+  "prefcode": "PREF29",
+  },
+  {
+  "code": "AREAL3606",
+  "name": "曽爾・川上・下北山",
+  "prefcode": "PREF29",
+  },
+  {
+  "code": "AREAL3700",
+  "name": "（滋賀）草津",
+  "prefcode": "PREF25",
+  },
+  {
+  "code": "AREAL3703",
+  "name": "近江八幡",
+  "prefcode": "PREF25",
+  },
+  {
+  "code": "AREAL3704",
+  "name": "守山・野洲・栗東",
+  "prefcode": "PREF25",
+  },
+  {
+  "code": "AREAL3705",
+  "name": "甲賀・湖南",
+  "prefcode": "PREF25",
+  },
+  {
+  "code": "AREAL3706",
+  "name": "東近江・日野",
+  "prefcode": "PREF25",
+  },
+  {
+  "code": "AREAL3701",
+  "name": "大津市",
+  "prefcode": "PREF25",
+  },
+  {
+  "code": "AREAL3707",
+  "name": "高島",
+  "prefcode": "PREF25",
+  },
+  {
+  "code": "AREAL3708",
+  "name": "長浜・米原",
+  "prefcode": "PREF25",
+  },
+  {
+  "code": "AREAL3702",
+  "name": "彦根・多賀・愛荘",
+  "prefcode": "PREF25",
+  },
+  {
+  "code": "AREAL3800",
+  "name": "和歌山市",
+  "prefcode": "PREF30",
+  },
+  {
+  "code": "AREAL3804",
+  "name": "海南",
+  "prefcode": "PREF30",
+  },
+  {
+  "code": "AREAL3803",
+  "name": "岩出・紀の川・橋本",
+  "prefcode": "PREF30",
+  },
+  {
+  "code": "AREAL3801",
+  "name": "有田・湯浅・みなべ",
+  "prefcode": "PREF30",
+  },
+  {
+  "code": "AREAL3805",
+  "name": "田辺・白浜・すさみ",
+  "prefcode": "PREF30",
+  },
+  {
+  "code": "AREAL3802",
+  "name": "新宮・串本",
+  "prefcode": "PREF30",
+  },
+  {
+  "code": "AREAL7300",
+  "name": "広島市・中区・流川",
+  "prefcode": "PREF34",
+  },
+  {
+  "code": "AREAL7310",
+  "name": "広島駅・南区・安芸郡",
+  "prefcode": "PREF34",
+  },
+  {
+  "code": "AREAL7315",
+  "name": "宮島・佐伯区・西区",
+  "prefcode": "PREF34",
+  },
+  {
+  "code": "AREAL7317",
+  "name": "安佐南区・安佐北区",
+  "prefcode": "PREF34",
+  },
+  {
+  "code": "AREAL7322",
+  "name": "東広島・呉",
+  "prefcode": "PREF34",
+  },
+  {
+  "code": "AREAL7332",
+  "name": "福山・尾道・三原",
+  "prefcode": "PREF34",
+  },
+  {
+  "code": "AREAL7342",
+  "name": "県北・三次",
+  "prefcode": "PREF34",
+  },
+  {
+  "code": "AREAL7200",
+  "name": "岡山市",
+  "prefcode": "PREF33",
+  },
+  {
+  "code": "AREAL7201",
+  "name": "倉敷",
+  "prefcode": "PREF33",
+  },
+  {
+  "code": "AREAL7202",
+  "name": "赤磐・瀬戸内・備前",
+  "prefcode": "PREF33",
+  },
+  {
+  "code": "AREAL7204",
+  "name": "井原・笠岡・浅口",
+  "prefcode": "PREF33",
+  },
+  {
+  "code": "AREAL7205",
+  "name": "総社・高梁・吉備中央",
+  "prefcode": "PREF33",
+  },
+  {
+  "code": "AREAL7206",
+  "name": "美作・奈義・勝央",
+  "prefcode": "PREF33",
+  },
+  {
+  "code": "AREAL7203",
+  "name": "津山・美咲",
+  "prefcode": "PREF33",
+  },
+  {
+  "code": "AREAL7207",
+  "name": "新見・真庭",
+  "prefcode": "PREF33",
+  },
+  {
+  "code": "AREAL7403",
+  "name": "下関",
+  "prefcode": "PREF35",
+  },
+  {
+  "code": "AREAL7408",
+  "name": "宇部・山陽小野田",
+  "prefcode": "PREF35",
+  },
+  {
+  "code": "AREAL7402",
+  "name": "萩・美祢",
+  "prefcode": "PREF35",
+  },
+  {
+  "code": "AREAL7407",
+  "name": "長門",
+  "prefcode": "PREF35",
+  },
+  {
+  "code": "AREAL7401",
+  "name": "山口市",
+  "prefcode": "PREF35",
+  },
+  {
+  "code": "AREAL7405",
+  "name": "防府",
+  "prefcode": "PREF35",
+  },
+  {
+  "code": "AREAL7406",
+  "name": "周南・下松",
+  "prefcode": "PREF35",
+  },
+  {
+  "code": "AREAL7400",
+  "name": "岩国",
+  "prefcode": "PREF35",
+  },
+  {
+  "code": "AREAL7404",
+  "name": "光市・柳井・周防大島",
+  "prefcode": "PREF35",
+  },
+  {
+  "code": "AREAL7150",
+  "name": "松江",
+  "prefcode": "PREF32",
+  },
+  {
+  "code": "AREAL7153",
+  "name": "出雲",
+  "prefcode": "PREF32",
+  },
+  {
+  "code": "AREAL7154",
+  "name": "雲南・飯南・奥出雲",
+  "prefcode": "PREF32",
+  },
+  {
+  "code": "AREAL7155",
+  "name": "安来",
+  "prefcode": "PREF32",
+  },
+  {
+  "code": "AREAL7156",
+  "name": "大田・美郷・邑南",
+  "prefcode": "PREF32",
+  },
+  {
+  "code": "AREAL7152",
+  "name": "浜田・江津",
+  "prefcode": "PREF32",
+  },
+  {
+  "code": "AREAL7157",
+  "name": "津和野・益田・吉賀",
+  "prefcode": "PREF32",
+  },
+  {
+  "code": "AREAL7151",
+  "name": "隠岐",
+  "prefcode": "PREF32",
+  },
+  {
+  "code": "AREAL7100",
+  "name": "鳥取市",
+  "prefcode": "PREF31",
+  },
+  {
+  "code": "AREAL7102",
+  "name": "八頭・若桜・智頭",
+  "prefcode": "PREF31",
+  },
+  {
+  "code": "AREAL7101",
+  "name": "倉吉・湯梨浜・琴浦",
+  "prefcode": "PREF31",
+  },
+  {
+  "code": "AREAL7103",
+  "name": "米子",
+  "prefcode": "PREF31",
+  },
+  {
+  "code": "AREAL7104",
+  "name": "境港",
+  "prefcode": "PREF31",
+  },
+  {
+  "code": "AREAL7105",
+  "name": "大山・伯耆・南部",
+  "prefcode": "PREF31",
+  },
+  {
+  "code": "AREAL7106",
+  "name": "日南・日野・江府",
+  "prefcode": "PREF31",
+  },
+  {
+  "code": "AREAL7600",
+  "name": "徳島市",
+  "prefcode": "PREF36",
+  },
+  {
+  "code": "AREAL7602",
+  "name": "美馬・吉野川・石井",
+  "prefcode": "PREF36",
+  },
+  {
+  "code": "AREAL7603",
+  "name": "三好",
+  "prefcode": "PREF36",
+  },
+  {
+  "code": "AREAL7604",
+  "name": "小松島",
+  "prefcode": "PREF36",
+  },
+  {
+  "code": "AREAL7923",
+  "name": "鳴門",
+  "prefcode": "PREF36",
+  },
+  {
+  "code": "AREAL7924",
+  "name": "阿波",
+  "prefcode": "PREF36",
+  },
+  {
+  "code": "AREAL7601",
+  "name": "阿南",
+  "prefcode": "PREF36",
+  },
+  {
+  "code": "AREAL7607",
+  "name": "那賀・勝浦",
+  "prefcode": "PREF36",
+  },
+  {
+  "code": "AREAL7608",
+  "name": "美波・牟岐・海陽",
+  "prefcode": "PREF36",
+  },
+  {
+  "code": "AREAL7800",
+  "name": "松山",
+  "prefcode": "PREF38",
+  },
+  {
+  "code": "AREAL7803",
+  "name": "松前・伊予",
+  "prefcode": "PREF38",
+  },
+  {
+  "code": "AREAL7804",
+  "name": "久万高原・東温",
+  "prefcode": "PREF38",
+  },
+  {
+  "code": "AREAL7805",
+  "name": "今治・しまなみ海道",
+  "prefcode": "PREF38",
+  },
+  {
+  "code": "AREAL7801",
+  "name": "西条・新居浜・四国中央",
+  "prefcode": "PREF38",
+  },
+  {
+  "code": "AREAL7802",
+  "name": "鬼北・宇和島・愛南",
+  "prefcode": "PREF38",
+  },
+  {
+  "code": "AREAL7806",
+  "name": "八幡浜・大洲・西予",
+  "prefcode": "PREF38",
+  },
+  {
+  "code": "AREAL7700",
+  "name": "高松",
+  "prefcode": "PREF37",
+  },
+  {
+  "code": "AREAL7701",
+  "name": "三木・さぬき・東かがわ",
+  "prefcode": "PREF37",
+  },
+  {
+  "code": "AREAL7704",
+  "name": "三豊・観音寺",
+  "prefcode": "PREF37",
+  },
+  {
+  "code": "AREAL7702",
+  "name": "坂出・丸亀・善通寺",
+  "prefcode": "PREF37",
+  },
+  {
+  "code": "AREAL7703",
+  "name": "小豆島・直島",
+  "prefcode": "PREF37",
+  },
+  {
+  "code": "AREAL7901",
+  "name": "高知市",
+  "prefcode": "PREF39",
+  },
+  {
+  "code": "AREAL7903",
+  "name": "南国・香南・香美",
+  "prefcode": "PREF39",
+  },
+  {
+  "code": "AREAL7904",
+  "name": "大豊・本山・土佐町",
+  "prefcode": "PREF39",
+  },
+  {
+  "code": "AREAL7905",
+  "name": "土佐・須崎・いの町",
+  "prefcode": "PREF39",
+  },
+  {
+  "code": "AREAL7906",
+  "name": "仁淀川・越知・佐川",
+  "prefcode": "PREF39",
+  },
+  {
+  "code": "AREAL7900",
+  "name": "安芸・室戸",
+  "prefcode": "PREF39",
+  },
+  {
+  "code": "AREAL7907",
+  "name": "梼原・津野・四万十町",
+  "prefcode": "PREF39",
+  },
+  {
+  "code": "AREAL7902",
+  "name": "四万十市・土佐清水",
+  "prefcode": "PREF39",
+  },
+  {
+  "code": "AREAL7908",
+  "name": "宿毛",
+  "prefcode": "PREF39",
+  },
+  {
+  "code": "AREAL5010",
+  "name": "天神・親富孝",
+  "prefcode": "PREF40",
+  },
+  {
+  "code": "AREAL5011",
+  "name": "大名・赤坂",
+  "prefcode": "PREF40",
+  },
+  {
+  "code": "AREAL5020",
+  "name": "今泉・警固・薬院",
+  "prefcode": "PREF40",
+  },
+  {
+  "code": "AREAL5030",
+  "name": "大濠・六本松・桜坂",
+  "prefcode": "PREF40",
+  },
+  {
+  "code": "AREAL5040",
+  "name": "博多",
+  "prefcode": "PREF40",
+  },
+  {
+  "code": "AREAL5050",
+  "name": "中洲・春吉・川端",
+  "prefcode": "PREF40",
+  },
+  {
+  "code": "AREAL5070",
+  "name": "福岡市南区・大橋",
+  "prefcode": "PREF40",
+  },
+  {
+  "code": "AREAL5090",
+  "name": "西新・百道・その他早良区",
+  "prefcode": "PREF40",
+  },
+  {
+  "code": "AREAL5100",
+  "name": "姪浜・福岡市西区・糸島",
+  "prefcode": "PREF40",
+  },
+  {
+  "code": "AREAL5110",
+  "name": "香椎・箱崎・その他東区",
+  "prefcode": "PREF40",
+  },
+  {
+  "code": "AREAL5120",
+  "name": "別府・その他城南区",
+  "prefcode": "PREF40",
+  },
+  {
+  "code": "AREAL5130",
+  "name": "北九州",
+  "prefcode": "PREF40",
+  },
+  {
+  "code": "AREAL5154",
+  "name": "春日・太宰府・筑紫野",
+  "prefcode": "PREF40",
+  },
+  {
+  "code": "AREAL5151",
+  "name": "久留米・大牟田・柳川",
+  "prefcode": "PREF40",
+  },
+  {
+  "code": "AREAL5155",
+  "name": "宗像・糟屋・筑豊",
+  "prefcode": "PREF40",
+  },
+  {
+  "code": "AREAL5150",
+  "name": "佐賀市",
+  "prefcode": "PREF41",
+  },
+  {
+  "code": "AREAL5156",
+  "name": "鳥栖・みやき・神埼",
+  "prefcode": "PREF41",
+  },
+  {
+  "code": "AREAL5157",
+  "name": "伊万里・有田",
+  "prefcode": "PREF41",
+  },
+  {
+  "code": "AREAL5152",
+  "name": "唐津・呼子・玄海",
+  "prefcode": "PREF41",
+  },
+  {
+  "code": "AREAL5158",
+  "name": "多久・小城",
+  "prefcode": "PREF41",
+  },
+  {
+  "code": "AREAL5153",
+  "name": "武雄",
+  "prefcode": "PREF41",
+  },
+  {
+  "code": "AREAL5159",
+  "name": "嬉野・鹿島・太良",
+  "prefcode": "PREF41",
+  },
+  {
+  "code": "AREAL5160",
+  "name": "白石・大町・江北町",
+  "prefcode": "PREF41",
+  },
+  {
+  "code": "AREAL5200",
+  "name": "長崎市",
+  "prefcode": "PREF42",
+  },
+  {
+  "code": "AREAL5205",
+  "name": "西海",
+  "prefcode": "PREF42",
+  },
+  {
+  "code": "AREAL5206",
+  "name": "時津・長与",
+  "prefcode": "PREF42",
+  },
+  {
+  "code": "AREAL5207",
+  "name": "雲仙・島原・南島原",
+  "prefcode": "PREF42",
+  },
+  {
+  "code": "AREAL5201",
+  "name": "諫早・大村",
+  "prefcode": "PREF42",
+  },
+  {
+  "code": "AREAL5202",
+  "name": "佐世保",
+  "prefcode": "PREF42",
+  },
+  {
+  "code": "AREAL5209",
+  "name": "波佐見・川棚",
+  "prefcode": "PREF42",
+  },
+  {
+  "code": "AREAL5210",
+  "name": "平戸・松浦",
+  "prefcode": "PREF42",
+  },
+  {
+  "code": "AREAL5203",
+  "name": "五島",
+  "prefcode": "PREF42",
+  },
+  {
+  "code": "AREAL5204",
+  "name": "壱岐・対馬",
+  "prefcode": "PREF42",
+  },
+  {
+  "code": "AREAL5250",
+  "name": "熊本市",
+  "prefcode": "PREF43",
+  },
+  {
+  "code": "AREAL5251",
+  "name": "荒尾・玉名・長洲",
+  "prefcode": "PREF43",
+  },
+  {
+  "code": "AREAL5256",
+  "name": "山鹿・大津・菊陽",
+  "prefcode": "PREF43",
+  },
+  {
+  "code": "AREAL5257",
+  "name": "西原・益城・御船",
+  "prefcode": "PREF43",
+  },
+  {
+  "code": "AREAL5253",
+  "name": "宇土・宇城・美里",
+  "prefcode": "PREF43",
+  },
+  {
+  "code": "AREAL5258",
+  "name": "水俣・芦北・津奈木",
+  "prefcode": "PREF43",
+  },
+  {
+  "code": "AREAL5252",
+  "name": "小国・阿蘇・南阿蘇",
+  "prefcode": "PREF43",
+  },
+  {
+  "code": "AREAL5255",
+  "name": "上天草・天草・苓北",
+  "prefcode": "PREF43",
+  },
+  {
+  "code": "AREAL5254",
+  "name": "人吉・球磨・錦町",
+  "prefcode": "PREF43",
+  },
+  {
+  "code": "AREAL5300",
+  "name": "大分市",
+  "prefcode": "PREF44",
+  },
+  {
+  "code": "AREAL5304",
+  "name": "臼杵・津久見",
+  "prefcode": "PREF44",
+  },
+  {
+  "code": "AREAL5302",
+  "name": "別府・湯布院・杵築",
+  "prefcode": "PREF44",
+  },
+  {
+  "code": "AREAL5301",
+  "name": "佐伯",
+  "prefcode": "PREF44",
+  },
+  {
+  "code": "AREAL5305",
+  "name": "豊後大野",
+  "prefcode": "PREF44",
+  },
+  {
+  "code": "AREAL5306",
+  "name": "竹田",
+  "prefcode": "PREF44",
+  },
+  {
+  "code": "AREAL5307",
+  "name": "日田・玖珠・九重",
+  "prefcode": "PREF44",
+  },
+  {
+  "code": "AREAL5303",
+  "name": "中津・宇佐・豊後高田",
+  "prefcode": "PREF44",
+  },
+  {
+  "code": "AREAL5350",
+  "name": "宮崎市",
+  "prefcode": "PREF45",
+  },
+  {
+  "code": "AREAL5353",
+  "name": "小林・えびの・高原町",
+  "prefcode": "PREF45",
+  },
+  {
+  "code": "AREAL5354",
+  "name": "都城・三股",
+  "prefcode": "PREF45",
+  },
+  {
+  "code": "AREAL5351",
+  "name": "日南・串間",
+  "prefcode": "PREF45",
+  },
+  {
+  "code": "AREAL5355",
+  "name": "延岡・日向・門川",
+  "prefcode": "PREF45",
+  },
+  {
+  "code": "AREAL5352",
+  "name": "高鍋・西都・都農",
+  "prefcode": "PREF45",
+  },
+  {
+  "code": "AREAL5356",
+  "name": "五ヶ瀬・高千穂・日之影",
+  "prefcode": "PREF45",
+  },
+  {
+  "code": "AREAL5357",
+  "name": "美郷・椎葉・西米良",
+  "prefcode": "PREF45",
+  },
+  {
+  "code": "AREAL5400",
+  "name": "鹿児島市",
+  "prefcode": "PREF46",
+  },
+  {
+  "code": "AREAL5404",
+  "name": "いちき串木野・日置",
+  "prefcode": "PREF46",
+  },
+  {
+  "code": "AREAL5405",
+  "name": "枕崎・南さつま・指宿",
+  "prefcode": "PREF46",
+  },
+  {
+  "code": "AREAL5406",
+  "name": "霧島・薩摩川内・姶良",
+  "prefcode": "PREF46",
+  },
+  {
+  "code": "AREAL5407",
+  "name": "阿久根・出水・伊佐",
+  "prefcode": "PREF46",
+  },
+  {
+  "code": "AREAL5408",
+  "name": "志布志・曽於・大崎",
+  "prefcode": "PREF46",
+  },
+  {
+  "code": "AREAL5401",
+  "name": "鹿屋・垂水・肝付",
+  "prefcode": "PREF46",
+  },
+  {
+  "code": "AREAL5402",
+  "name": "種子島・屋久島",
+  "prefcode": "PREF46",
+  },
+  {
+  "code": "AREAL5403",
+  "name": "奄美大島・徳之島・与論",
+  "prefcode": "PREF46",
+  },
+  {
+  "code": "AREAL8100",
+  "name": "那覇",
+  "prefcode": "PREF47",
+  },
+  {
+  "code": "AREAL8400",
+  "name": "名護・本島北部",
+  "prefcode": "PREF47",
+  },
+  {
+  "code": "AREAL8200",
+  "name": "恩納・北谷・本島中部",
+  "prefcode": "PREF47",
+  },
+  {
+  "code": "AREAL8150",
+  "name": "糸満・本島南部",
+  "prefcode": "PREF47",
+  },
+  {
+  "code": "AREAL8450",
+  "name": "沖縄離島",
+  "prefcode": "PREF47",
+  }
+  ]
