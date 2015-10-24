@@ -27,19 +27,21 @@ class InitAreaViewController: BaseViewController, UITableViewDataSource, UITable
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // ナビゲーションタイトルを変更
-        self.navigationItem.title = "エリア選択"
-
         // カスタムセル読み込み
         let nib = UINib(nibName: "AreaCustomCell", bundle: nil)
         self.init_area_table_view.registerNib(nib, forCellReuseIdentifier: "AreaCustomCell")
         
+        // ナビゲーションタイトルを変更
+        self.navigationItem.titleView = self.set_nav_title("エリア選択", int_width: 90, int_height: 44)
+        
         self.area_items = self.get_area_data()
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        // タブバー非表示
+        self.tabBarController?.tabBar.hidden = true
     }
 
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
@@ -69,4 +71,10 @@ class InitAreaViewController: BaseViewController, UITableViewDataSource, UITable
         // 都道府県選択画面に遷移
         performSegueWithIdentifier("toInitPrefView", sender: self)
     }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+
 }

@@ -225,6 +225,8 @@
 				E23A1FC31BD2686200C70DDA /* SubCategory.swift */,
 				E23A1FE01BD2A34000C70DDA /* Option.swift */,
 				E23A20081BDB460400C70DDA /* AppCode.swift */,
+				E23A1FE61BD367E400C70DDA /* AppDefine.swift */,
+				E23A200A1BDB461E00C70DDA /* UDWrapper.swift */,
 			);
 			name = model;
 			sourceTree = "<group>";
@@ -288,8 +290,6 @@
 		E25169A81BDB5CC000D734AD /* common */ = {
 			isa = PBXGroup;
 			children = (
-				E23A1FE61BD367E400C70DDA /* AppDefine.swift */,
-				E23A200A1BDB461E00C70DDA /* UDWrapper.swift */,
 				E2B79BF71BD239E5004E3654 /* AppDelegate.swift */,
 				E23A1FE21BD2A44A00C70DDA /* BaseViewController.swift */,
 			);

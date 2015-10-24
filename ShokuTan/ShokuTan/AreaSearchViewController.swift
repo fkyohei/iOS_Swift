@@ -26,20 +26,15 @@ class AreaSearchViewController: BaseViewController, UITableViewDataSource, UITab
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // ナビゲーションタイトルを変更
-        self.navigationItem.title = "エリア選択"
-
         // カスタムセル読み込み
         let nib = UINib(nibName: "AreaCustomCell", bundle: nil)
         self.area_table_view.registerNib(nib, forCellReuseIdentifier: "AreaCustomCell")
         
+        // ナビゲーションタイトルを変更
+        self.navigationItem.titleView = self.set_nav_title("エリア選択", int_width: 90, int_height: 44)
+        
         // エリアデータ取得
         self.area_items = self.get_area_data()
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
@@ -63,5 +58,10 @@ class AreaSearchViewController: BaseViewController, UITableViewDataSource, UITab
         let obj_area: Area = self.area_items[indexPath.row] as Area
         print("\(obj_area.code)")
         print("\(obj_area.name)")
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
     }
 }

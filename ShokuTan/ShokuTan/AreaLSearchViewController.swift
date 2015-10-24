@@ -26,26 +26,20 @@ class AreaLSearchViewController: BaseViewController, UITableViewDataSource, UITa
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // ナビゲーションタイトルを変更
-        self.navigationItem.title = "エリア選択"
+        // アプリコード読み込み
+        self.appdelegate.app_code.get_data()
 
         // カスタムセル読み込み
         let nib = UINib(nibName: "AreaLCustomCell", bundle: nil)
         self.areal_table_view.registerNib(nib, forCellReuseIdentifier: "AreaLCustomCell")
         
-        // アプリコード読み込み
-        self.appdelegate.app_code.get_data()
+        // ナビゲーションタイトルを変更
+        self.navigationItem.titleView = self.set_nav_title("エリア選択", int_width: 90, int_height: 44)
         
         // Lエリアデータ取得
         let pref_code = self.appdelegate.app_code.pref_code
         self.areal_items = self.get_areal_data(pref_code!)
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
 
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
@@ -70,4 +64,8 @@ class AreaLSearchViewController: BaseViewController, UITableViewDataSource, UITa
         print("\(obj_area.name)")
     }
 
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
 }

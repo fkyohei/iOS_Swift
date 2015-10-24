@@ -30,13 +30,11 @@ class MainCategorySearchViewController: BaseViewController, UITableViewDataSourc
         let nib = UINib(nibName: "MainCategoryCustomCell", bundle: nil)
         self.main_category_table_view.registerNib(nib, forCellReuseIdentifier: "MainCategoryCustomCell")
         
+        // ナビゲーションタイトルを変更
+        self.navigationItem.titleView = self.set_nav_title("カテゴリ選択", int_width: 90, int_height: 44)
+        
         // メインカテゴリデータ取得
         self.main_category_items = self.get_main_category_data()
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
@@ -60,5 +58,10 @@ class MainCategorySearchViewController: BaseViewController, UITableViewDataSourc
         let obj_main_category: MainCategory = self.main_category_items[indexPath.row] as MainCategory
         print("\(obj_main_category.code)")
         print("\(obj_main_category.name)")
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
     }
 }

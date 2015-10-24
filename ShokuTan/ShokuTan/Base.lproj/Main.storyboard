@@ -150,11 +150,11 @@
                         <viewControllerLayoutGuide type="bottom" id="KZk-Uh-Fe3"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="2gi-2O-Tff">
-                        <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                     <navigationItem key="navigationItem" id="Snt-lb-5rt"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
@@ -174,11 +174,11 @@
                         <viewControllerLayoutGuide type="bottom" id="wJp-cp-6Fy"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="fB9-SS-f6r">
-                        <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <segue destination="7u3-4R-jc3" kind="show" identifier="toSearchView" id="7o0-Sy-TPl"/>
@@ -203,7 +203,6 @@
                     </view>
                     <extendedEdge key="edgesForExtendedLayout"/>
                     <tabBarItem key="tabBarItem" systemItem="search" id="4zJ-XN-PII"/>
-                    <navigationItem key="navigationItem" id="HRL-va-M3D"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <segue destination="4O9-gZ-dxN" kind="show" identifier="toAreaLSearchView" id="Z9Y-iQ-Bxh"/>

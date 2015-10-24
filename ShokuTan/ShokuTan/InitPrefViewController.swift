@@ -26,27 +26,28 @@ class InitPrefViewController: BaseViewController, UITableViewDataSource, UITable
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // ナビゲーションタイトルを変更
-        self.navigationItem.title = "都道府県選択"
+        // アプリコード読み込み
+        self.appdelegate.app_code.get_data()
 
         // カスタムセル読み込み
         let nib = UINib(nibName: "PrefCustomCell", bundle: nil)
         self.init_pref_table_view.registerNib(nib, forCellReuseIdentifier: "PrefCustomCell")
         
-        // アプリコード読み込み
-        self.appdelegate.app_code.get_data()
+        // ナビゲーションタイトルを変更
+        self.navigationItem.titleView = self.set_nav_title("都道府県選択", int_width: 90, int_height: 44)
         
         // 都道府県データ取得
         let area_code = self.appdelegate.app_code.area_code
         self.pref_items = self.get_pref_data(area_code!)
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        // タブバー非表示
+        self.tabBarController?.tabBar.hidden = true
     }
     
-
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
     }
@@ -66,16 +67,21 @@ class InitPrefViewController: BaseViewController, UITableViewDataSource, UITable
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         let obj_pref: Pref = self.pref_items[indexPath.row] as Pref
-        print("\(obj_pref.code)")
-        print("\(obj_pref.name)")
         
-        // 選択した都道府県を選択
+        // 選択した都道府県を保存
         UDWrapper.setString("pref_code", value: obj_pref.code)
         UDWrapper.setString("pref_name", value: obj_pref.name)
         
         // 検索画面に遷移
         performSegueWithIdentifier("toSearchView", sender: self)
     }
-
-
+    
+    @IBAction func back_view(sender: AnyObject) {
+        self.navigationController?.popViewControllerAnimated(true)
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
 }

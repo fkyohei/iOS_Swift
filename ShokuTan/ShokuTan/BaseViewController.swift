@@ -38,12 +38,16 @@ class BaseViewController: UIViewController, UITabBarControllerDelegate {
             break
         }
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
     
+    func set_nav_title(str_title :String, int_width:Int, int_height:Int) -> UILabel{
+        let title_label = UILabel()
+        title_label.frame         = CGRectMake(0, 0, CGFloat(int_width), CGFloat(int_height))
+        title_label.font          = UIFont(name:"HiraginoSans-W6", size:15)!
+        title_label.textColor     = UIColor.blackColor()
+        title_label.textAlignment = NSTextAlignment.Center
+        title_label.text          = str_title
+        return title_label
+    }
     
     /**
      * エリア全取得
@@ -98,6 +102,12 @@ class BaseViewController: UIViewController, UITabBarControllerDelegate {
         let option_items = self.appdelegate.search_realm.objects(Option)
         
         return option_items
+    }
+    
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
     }
     
 }

@@ -30,13 +30,11 @@ class OptionSearchViewController: BaseViewController, UITableViewDataSource, UIT
         let nib = UINib(nibName: "OptionCustomCell", bundle: nil)
         self.option_table_view.registerNib(nib, forCellReuseIdentifier: "OptionCustomCell")
         
+        // ナビゲーションタイトルを変更
+        self.navigationItem.titleView = self.set_nav_title("こだわり選択", int_width: 90, int_height: 44)
+        
         // こだわりデータ取得
         self.option_items = self.get_option_data()
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
@@ -60,5 +58,10 @@ class OptionSearchViewController: BaseViewController, UITableViewDataSource, UIT
         let obj_option: Option = self.option_items[indexPath.row] as Option
         print("\(obj_option.code)")
         print("\(obj_option.name)")
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
     }
 }
