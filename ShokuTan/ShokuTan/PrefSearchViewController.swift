@@ -37,7 +37,7 @@ class PrefSearchViewController: BaseViewController, UITableViewDataSource, UITab
         self.navigationItem.titleView = self.set_nav_title("都道府県選択", int_width: 90, int_height: 44)
         
         // 都道府県データ取得
-        let area_code = self.appdelegate.app_code.area_code
+        let area_code   = self.appdelegate.app_code.area_code
         self.pref_items = self.get_pref_data(area_code!)
     }
     

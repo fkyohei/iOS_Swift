@@ -56,8 +56,13 @@ class MainCategorySearchViewController: BaseViewController, UITableViewDataSourc
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         let obj_main_category: MainCategory = self.main_category_items[indexPath.row] as MainCategory
-        print("\(obj_main_category.code)")
-        print("\(obj_main_category.name)")
+        
+        // 選択したメインカテゴリを保存
+        UDWrapper.setString("main_category_code", value: obj_main_category.code)
+        UDWrapper.setString("main_category_name", value: obj_main_category.name)
+        
+        // サブカテゴリ選択画面に遷移
+        performSegueWithIdentifier("toSubCategoryView", sender: self)
     }
     
     override func didReceiveMemoryWarning() {

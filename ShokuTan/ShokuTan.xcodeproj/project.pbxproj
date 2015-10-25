@@ -39,6 +39,10 @@
 		E23A20101BDB4CF100C70DDA /* ShokuTan_v1.realm in Resources */ = {isa = PBXBuildFile; fileRef = E23A200F1BDB4CF100C70DDA /* ShokuTan_v1.realm */; settings = {ASSET_TAGS = (); }; };
 		E23A20141BDB4EDC00C70DDA /* InitAreaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23A20121BDB4EDC00C70DDA /* InitAreaViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		E23A20151BDB4EDC00C70DDA /* InitAreaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E23A20131BDB4EDC00C70DDA /* InitAreaViewController.xib */; settings = {ASSET_TAGS = (); }; };
+		E250424D1BDCCD310050318D /* SubCategorySearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E250424B1BDCCD310050318D /* SubCategorySearchViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		E250424E1BDCCD310050318D /* SubCategorySearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E250424C1BDCCD310050318D /* SubCategorySearchViewController.xib */; settings = {ASSET_TAGS = (); }; };
+		E25042511BDCCDAB0050318D /* SubCategoryCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E250424F1BDCCDAB0050318D /* SubCategoryCustomCell.swift */; settings = {ASSET_TAGS = (); }; };
+		E25042521BDCCDAB0050318D /* SubCategoryCustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E25042501BDCCDAB0050318D /* SubCategoryCustomCell.xib */; settings = {ASSET_TAGS = (); }; };
 		E251699D1BDB52B700D734AD /* InitPrefViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E251699B1BDB52B700D734AD /* InitPrefViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		E251699E1BDB52B700D734AD /* InitPrefViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E251699C1BDB52B700D734AD /* InitPrefViewController.xib */; settings = {ASSET_TAGS = (); }; };
 		E25169A11BDB53A700D734AD /* PrefCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E251699F1BDB53A700D734AD /* PrefCustomCell.swift */; settings = {ASSET_TAGS = (); }; };
@@ -116,6 +120,10 @@
 		E23A200F1BDB4CF100C70DDA /* ShokuTan_v1.realm */ = {isa = PBXFileReference; lastKnownFileType = file; path = ShokuTan_v1.realm; sourceTree = "<group>"; };
 		E23A20121BDB4EDC00C70DDA /* InitAreaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitAreaViewController.swift; sourceTree = "<group>"; };
 		E23A20131BDB4EDC00C70DDA /* InitAreaViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InitAreaViewController.xib; sourceTree = "<group>"; };
+		E250424B1BDCCD310050318D /* SubCategorySearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubCategorySearchViewController.swift; sourceTree = "<group>"; };
+		E250424C1BDCCD310050318D /* SubCategorySearchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SubCategorySearchViewController.xib; sourceTree = "<group>"; };
+		E250424F1BDCCDAB0050318D /* SubCategoryCustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubCategoryCustomCell.swift; sourceTree = "<group>"; };
+		E25042501BDCCDAB0050318D /* SubCategoryCustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SubCategoryCustomCell.xib; sourceTree = "<group>"; };
 		E251699B1BDB52B700D734AD /* InitPrefViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitPrefViewController.swift; sourceTree = "<group>"; };
 		E251699C1BDB52B700D734AD /* InitPrefViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InitPrefViewController.xib; sourceTree = "<group>"; };
 		E251699F1BDB53A700D734AD /* PrefCustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrefCustomCell.swift; sourceTree = "<group>"; };
@@ -185,6 +193,7 @@
 				E25169A01BDB53A700D734AD /* PrefCustomCell.xib */,
 				E25169AE1BDB650900D734AD /* AreaLCustomCell.xib */,
 				E23A1FF61BD3B09E00C70DDA /* MainCategoryCustomCell.xib */,
+				E25042501BDCCDAB0050318D /* SubCategoryCustomCell.xib */,
 				E23A1FFF1BD3B78800C70DDA /* OptionCustomCell.xib */,
 			);
 			name = custom;
@@ -239,6 +248,7 @@
 				E25169A31BDB547800D734AD /* PrefSearchViewController.swift */,
 				E25169A91BDB63F200D734AD /* AreaLSearchViewController.swift */,
 				E23A1FF21BD3AF2D00C70DDA /* MainCategorySearchViewController.swift */,
+				E250424B1BDCCD310050318D /* SubCategorySearchViewController.swift */,
 				E23A1FFA1BD3B76100C70DDA /* OptionSearchViewController.swift */,
 			);
 			name = search;
@@ -252,6 +262,7 @@
 				E25169A41BDB547800D734AD /* PrefSearchViewController.xib */,
 				E25169AA1BDB63F200D734AD /* AreaLSearchViewController.xib */,
 				E23A1FF31BD3AF2D00C70DDA /* MainCategorySearchViewController.xib */,
+				E250424C1BDCCD310050318D /* SubCategorySearchViewController.xib */,
 				E23A1FFB1BD3B76100C70DDA /* OptionSearchViewController.xib */,
 			);
 			name = search;
@@ -282,6 +293,7 @@
 				E251699F1BDB53A700D734AD /* PrefCustomCell.swift */,
 				E25169AD1BDB650900D734AD /* AreaLCustomCell.swift */,
 				E23A1FF81BD3B12A00C70DDA /* MainCategoryCustomCell.swift */,
+				E250424F1BDCCDAB0050318D /* SubCategoryCustomCell.swift */,
 				E23A1FFE1BD3B78800C70DDA /* OptionCustomCell.swift */,
 			);
 			name = custom;
@@ -469,8 +481,10 @@
 				E23A1FF51BD3AF2D00C70DDA /* MainCategorySearchViewController.xib in Resources */,
 				E2B79C021BD239E5004E3654 /* LaunchScreen.storyboard in Resources */,
 				E25169BB1BDB699C00D734AD /* Pref.json in Resources */,
+				E250424E1BDCCD310050318D /* SubCategorySearchViewController.xib in Resources */,
 				E23A20151BDB4EDC00C70DDA /* InitAreaViewController.xib in Resources */,
 				E25169B81BDB699C00D734AD /* Area.json in Resources */,
+				E25042521BDCCDAB0050318D /* SubCategoryCustomCell.xib in Resources */,
 				E25169BC1BDB699C00D734AD /* SubCategory.json in Resources */,
 				E25169A61BDB547800D734AD /* PrefSearchViewController.xib in Resources */,
 				E2B79BFF1BD239E5004E3654 /* Assets.xcassets in Resources */,
@@ -547,6 +561,7 @@
 				E23A1FFC1BD3B76100C70DDA /* OptionSearchViewController.swift in Sources */,
 				E23A1FF41BD3AF2D00C70DDA /* MainCategorySearchViewController.swift in Sources */,
 				E2B79BFA1BD239E5004E3654 /* ViewController.swift in Sources */,
+				E25042511BDCCDAB0050318D /* SubCategoryCustomCell.swift in Sources */,
 				E25169AB1BDB63F200D734AD /* AreaLSearchViewController.swift in Sources */,
 				E23A1FF91BD3B12A00C70DDA /* MainCategoryCustomCell.swift in Sources */,
 				E23A1FE91BD36C3200C70DDA /* AreaSearchViewController.swift in Sources */,
@@ -565,6 +580,7 @@
 				E251699D1BDB52B700D734AD /* InitPrefViewController.swift in Sources */,
 				E23A1FBF1BD266C800C70DDA /* Pref.swift in Sources */,
 				E23A1FDF1BD29F1B00C70DDA /* MoreViewController.swift in Sources */,
+				E250424D1BDCCD310050318D /* SubCategorySearchViewController.swift in Sources */,
 				E2B79BF81BD239E5004E3654 /* AppDelegate.swift in Sources */,
 				E23A1FDD1BD29F0900C70DDA /* HistoryViewController.swift in Sources */,
 				E23A1FC41BD2686200C70DDA /* SubCategory.swift in Sources */,

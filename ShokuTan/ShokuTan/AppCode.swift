@@ -15,6 +15,12 @@ class AppCode: NSObject {
     var pref_code: String? = ""
     var pref_name: String? = ""
     
+    var main_category_code: String? = ""
+    var main_category_name: String? = ""
+    
+    var sub_category_code: String? = ""
+    var sub_category_name: String? = ""
+    
     override init() {
         super.init()
         get_data()
@@ -29,5 +35,11 @@ class AppCode: NSObject {
         
         self.pref_code = UDWrapper.getString("pref_code", defaultValue: "")
         self.pref_name = UDWrapper.getString("pref_name", defaultValue: "")
+        
+        self.main_category_code = UDWrapper.getString("main_category_code", defaultValue: "")
+        self.main_category_name = UDWrapper.getString("main_category_name", defaultValue: "")
+        
+        self.sub_category_code = UDWrapper.getString("sub_category_code", defaultValue: "")
+        self.sub_category_name = UDWrapper.getString("sub_category_name", defaultValue: "")
     }
 }

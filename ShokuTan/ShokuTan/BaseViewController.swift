@@ -96,6 +96,21 @@ class BaseViewController: UIViewController, UITabBarControllerDelegate {
     }
     
     /**
+     * サブカテゴリ取得
+     *
+     * @param string main_category_code メインカテゴリコード
+     */
+    func get_sub_category_data(main_category_code: String = "") -> RealmSwift.Results<SubCategory> {
+        if main_category_code != "" {
+            let predecate = NSPredicate(format: "maincode = %@", main_category_code)
+            return self.appdelegate.search_realm.objects(SubCategory).filter(predecate)
+        }
+        
+        return  self.appdelegate.search_realm.objects(SubCategory)
+    }
+    
+    
+    /**
      * こだわり全取得
      */
     func get_option_data() -> RealmSwift.Results<Option> {
