@@ -10,10 +10,13 @@ import UIKit
 
 class OptionCustomCell: UITableViewCell {
     @IBOutlet weak var custom_cell: UILabel!
+    // 選択状態
+    var is_checked = false
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        
+        self.is_checked = false
     }
 
     override func setSelected(selected: Bool, animated: Bool) {

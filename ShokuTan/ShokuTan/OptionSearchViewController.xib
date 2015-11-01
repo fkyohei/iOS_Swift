@@ -18,7 +18,6 @@
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" allowsMultipleSelection="YES" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="RIk-G3-RAV">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                     <animations/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <connections>
                         <outlet property="dataSource" destination="-1" id="Fdv-WQ-eqq"/>
                         <outlet property="delegate" destination="-1" id="Mxu-km-e6C"/>

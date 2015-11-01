@@ -52,14 +52,43 @@ class OptionSearchViewController: BaseViewController, UITableViewDataSource, UIT
         // ラベル設定
         let obj_option: Option = self.option_items[indexPath.row] as Option
         cell.custom_cell.text = obj_option.name
-        
+
         return cell
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        // セルのチェック状態変更
+        self._change_cell_status(tableView, indexPath: indexPath)
+        
+        // 選択した項目
         let obj_option: Option = self.option_items[indexPath.row] as Option
         print("\(obj_option.code)")
         print("\(obj_option.name)")
+    }
+    
+    func tableView(tableView: UITableView, didDeselectRowAtIndexPath indexPath: NSIndexPath) {
+        // セルのチェック状態変更
+        self._change_cell_status(tableView, indexPath: indexPath)
+        
+        // 選択した項目
+        let obj_option: Option = self.option_items[indexPath.row] as Option
+        print("\(obj_option.code)")
+        print("\(obj_option.name)")
+    }
+    
+    /**
+     * セルの選択状態を変更
+     */
+    func _change_cell_status(tableView: UITableView, indexPath: NSIndexPath) {
+        // 選択したセルを取得
+        let cell = tableView.cellForRowAtIndexPath(indexPath) as! OptionCustomCell
+        // チェックの状態を反転
+        if cell.is_checked == true {
+            cell.tintColor  = UIColor(red: 0.89, green: 0.89, blue: 0.89, alpha: 1.0)
+        } else {
+            cell.tintColor  = UIColor.orangeColor()
+        }
+        cell.is_checked = !cell.is_checked
     }
     
     override func didReceiveMemoryWarning() {
