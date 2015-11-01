@@ -59,6 +59,8 @@
 		E25169BA1BDB699C00D734AD /* Option.json in Resources */ = {isa = PBXBuildFile; fileRef = E25169B41BDB699C00D734AD /* Option.json */; settings = {ASSET_TAGS = (); }; };
 		E25169BB1BDB699C00D734AD /* Pref.json in Resources */ = {isa = PBXBuildFile; fileRef = E25169B51BDB699C00D734AD /* Pref.json */; settings = {ASSET_TAGS = (); }; };
 		E25169BC1BDB699C00D734AD /* SubCategory.json in Resources */ = {isa = PBXBuildFile; fileRef = E25169B61BDB699C00D734AD /* SubCategory.json */; settings = {ASSET_TAGS = (); }; };
+		E2A4A0631BE61C26009F7CDF /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A4A0621BE61C26009F7CDF /* BaseModel.swift */; settings = {ASSET_TAGS = (); }; };
+		E2A4A0651BE61D03009F7CDF /* SearchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A4A0641BE61D03009F7CDF /* SearchModel.swift */; settings = {ASSET_TAGS = (); }; };
 		E2B79BF81BD239E5004E3654 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B79BF71BD239E5004E3654 /* AppDelegate.swift */; };
 		E2B79BFA1BD239E5004E3654 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B79BF91BD239E5004E3654 /* ViewController.swift */; };
 		E2B79BFD1BD239E5004E3654 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2B79BFB1BD239E5004E3654 /* Main.storyboard */; };
@@ -140,6 +142,8 @@
 		E25169B41BDB699C00D734AD /* Option.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Option.json; sourceTree = "<group>"; };
 		E25169B51BDB699C00D734AD /* Pref.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Pref.json; sourceTree = "<group>"; };
 		E25169B61BDB699C00D734AD /* SubCategory.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SubCategory.json; sourceTree = "<group>"; };
+		E2A4A0621BE61C26009F7CDF /* BaseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
+		E2A4A0641BE61D03009F7CDF /* SearchModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchModel.swift; sourceTree = "<group>"; };
 		E2B79BF41BD239E5004E3654 /* ShokuTan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShokuTan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2B79BF71BD239E5004E3654 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E2B79BF91BD239E5004E3654 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -236,6 +240,8 @@
 				E23A20081BDB460400C70DDA /* AppCode.swift */,
 				E23A1FE61BD367E400C70DDA /* AppDefine.swift */,
 				E23A200A1BDB461E00C70DDA /* UDWrapper.swift */,
+				E2A4A0621BE61C26009F7CDF /* BaseModel.swift */,
+				E2A4A0641BE61D03009F7CDF /* SearchModel.swift */,
 			);
 			name = model;
 			sourceTree = "<group>";
@@ -578,6 +584,7 @@
 				E23A1FE31BD2A44A00C70DDA /* BaseViewController.swift in Sources */,
 				E23A20091BDB460400C70DDA /* AppCode.swift in Sources */,
 				E251699D1BDB52B700D734AD /* InitPrefViewController.swift in Sources */,
+				E2A4A0651BE61D03009F7CDF /* SearchModel.swift in Sources */,
 				E23A1FBF1BD266C800C70DDA /* Pref.swift in Sources */,
 				E23A1FDF1BD29F1B00C70DDA /* MoreViewController.swift in Sources */,
 				E250424D1BDCCD310050318D /* SubCategorySearchViewController.swift in Sources */,
@@ -585,6 +592,7 @@
 				E23A1FDD1BD29F0900C70DDA /* HistoryViewController.swift in Sources */,
 				E23A1FC41BD2686200C70DDA /* SubCategory.swift in Sources */,
 				E23A20141BDB4EDC00C70DDA /* InitAreaViewController.swift in Sources */,
+				E2A4A0631BE61C26009F7CDF /* BaseModel.swift in Sources */,
 				E23A1FF11BD372C200C70DDA /* AreaCustomCell.swift in Sources */,
 				E25169A11BDB53A700D734AD /* PrefCustomCell.swift in Sources */,
 				E23A1FC21BD2682300C70DDA /* MainCategory.swift in Sources */,

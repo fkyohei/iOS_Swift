@@ -13,6 +13,8 @@ class MainCategorySearchViewController: BaseViewController, UITableViewDataSourc
     @IBOutlet weak var main_category_table_view: UITableView!
     // メインカテゴリデータ
     var main_category_items: RealmSwift.Results<MainCategory>!
+    // 検索モデル
+    var search_model: SearchModel = SearchModel()
     
     /**
      * xib読み込み
@@ -34,7 +36,7 @@ class MainCategorySearchViewController: BaseViewController, UITableViewDataSourc
         self.navigationItem.titleView = self.set_nav_title("カテゴリ選択", int_width: 90, int_height: 44)
         
         // メインカテゴリデータ取得
-        self.main_category_items = self.get_main_category_data()
+        self.main_category_items = self.search_model.get_main_category_data()
     }
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {

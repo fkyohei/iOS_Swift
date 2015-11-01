@@ -13,6 +13,8 @@ class PrefSearchViewController: BaseViewController, UITableViewDataSource, UITab
     @IBOutlet weak var pref_table_view: UITableView!
     // 都道府県データ
     var pref_items: RealmSwift.Results<Pref>!
+    // 検索モデル
+    var search_model: SearchModel = SearchModel()
 
     /**
      * xib読み込み
@@ -26,9 +28,6 @@ class PrefSearchViewController: BaseViewController, UITableViewDataSource, UITab
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // アプリコード読み込み
-        self.appdelegate.app_code.get_data()
-
         // カスタムセル読み込み
         let nib = UINib(nibName: "PrefCustomCell", bundle: nil)
         self.pref_table_view.registerNib(nib, forCellReuseIdentifier: "PrefCustomCell")
@@ -37,8 +36,7 @@ class PrefSearchViewController: BaseViewController, UITableViewDataSource, UITab
         self.navigationItem.titleView = self.set_nav_title("都道府県選択", int_width: 90, int_height: 44)
         
         // 都道府県データ取得
-        let area_code   = self.appdelegate.app_code.area_code
-        self.pref_items = self.get_pref_data(area_code!)
+        self.pref_items = self.search_model.get_pref_data()
     }
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {

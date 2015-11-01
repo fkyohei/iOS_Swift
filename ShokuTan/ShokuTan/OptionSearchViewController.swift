@@ -13,6 +13,8 @@ class OptionSearchViewController: BaseViewController, UITableViewDataSource, UIT
     @IBOutlet weak var option_table_view: UITableView!
     // こだわりデータ
     var option_items: RealmSwift.Results<Option>!
+    // 検索モデル
+    var search_model: SearchModel = SearchModel()
     
     /**
      * xib読み込み
@@ -34,7 +36,7 @@ class OptionSearchViewController: BaseViewController, UITableViewDataSource, UIT
         self.navigationItem.titleView = self.set_nav_title("こだわり選択", int_width: 90, int_height: 44)
         
         // こだわりデータ取得
-        self.option_items = self.get_option_data()
+        self.option_items = self.search_model.get_option_data()
     }
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {

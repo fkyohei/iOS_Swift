@@ -13,6 +13,8 @@ class InitAreaViewController: BaseViewController, UITableViewDataSource, UITable
     @IBOutlet weak var init_area_table_view: UITableView!
     // エリアデータ
     var area_items: RealmSwift.Results<Area>!
+    // 検索モデル
+    var search_model: SearchModel = SearchModel()
     
     /**
      * xib読み込み
@@ -34,7 +36,7 @@ class InitAreaViewController: BaseViewController, UITableViewDataSource, UITable
         // ナビゲーションタイトルを変更
         self.navigationItem.titleView = self.set_nav_title("エリア選択", int_width: 90, int_height: 44)
         
-        self.area_items = self.get_area_data()
+        self.area_items = self.search_model.get_area_data()
     }
     
     override func viewWillAppear(animated: Bool) {

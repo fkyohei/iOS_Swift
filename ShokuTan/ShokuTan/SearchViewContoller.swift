@@ -11,6 +11,8 @@ import UIKit
 class SearchViewContoller: BaseViewController, UITextFieldDelegate {
     // フリーワード検索
     @IBOutlet weak var freeword_text_field: UITextField!
+    // アプリコード
+    var app_code: AppCode = AppCode()
     
     /**
      * xib読み込み
@@ -26,9 +28,6 @@ class SearchViewContoller: BaseViewController, UITextFieldDelegate {
         
         // フリーワード検索フォームのデリゲートをセット
         freeword_text_field.delegate = self
-        
-        // アプリコード読み込み
-        self.appdelegate.app_code.get_data()
         
         self._set_custom_bar()
     }
@@ -67,8 +66,7 @@ class SearchViewContoller: BaseViewController, UITextFieldDelegate {
      */
     func _set_custom_bar() {
         // ナビゲーションバータイトルセット
-        let pref_name = self.appdelegate.app_code.pref_name
-        self.navigationItem.titleView = self.set_nav_title("\(pref_name!)で食探", int_width: 90, int_height: 44)
+        self.navigationItem.titleView = self.set_nav_title("\(self.app_code.pref_name!)で食探", int_width: 90, int_height: 44)
 
         // ナビゲーションバー戻るボタン非表示
         self.navigationItem.hidesBackButton = true

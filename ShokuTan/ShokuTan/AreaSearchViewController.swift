@@ -13,6 +13,8 @@ class AreaSearchViewController: BaseViewController, UITableViewDataSource, UITab
     @IBOutlet weak var area_table_view: UITableView!
     // エリアデータ
     var area_items: RealmSwift.Results<Area>!
+    // 検索モデル
+    var search_model: SearchModel = SearchModel()
 
     /**
      * xib読み込み
@@ -34,7 +36,7 @@ class AreaSearchViewController: BaseViewController, UITableViewDataSource, UITab
         self.navigationItem.titleView = self.set_nav_title("エリア選択", int_width: 90, int_height: 44)
         
         // エリアデータ取得
-        self.area_items = self.get_area_data()
+        self.area_items = self.search_model.get_area_data()
     }
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {

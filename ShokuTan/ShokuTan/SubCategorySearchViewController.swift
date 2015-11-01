@@ -13,6 +13,8 @@ class SubCategorySearchViewController: BaseViewController, UITableViewDataSource
     @IBOutlet weak var sub_category_table_view: UITableView!
     // サブカテゴリデータ
     var sub_category_items: RealmSwift.Results<SubCategory>!
+    // 検索モデル
+    var search_model: SearchModel = SearchModel()
     
     /**
      * xib読み込み
@@ -26,9 +28,6 @@ class SubCategorySearchViewController: BaseViewController, UITableViewDataSource
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // アプリコード読み込み
-        self.appdelegate.app_code.get_data()
-
         // カスタムセル読み込み
         let nib = UINib(nibName: "SubCategoryCustomCell", bundle: nil)
         self.sub_category_table_view.registerNib(nib, forCellReuseIdentifier: "SubCategoryCustomCell")
@@ -37,8 +36,7 @@ class SubCategorySearchViewController: BaseViewController, UITableViewDataSource
         self.navigationItem.titleView = self.set_nav_title("サブカテゴリ選択", int_width: 90, int_height: 44)
         
         // サブカテゴリデータ取得
-        let sub_category_code   = self.appdelegate.app_code.main_category_code
-        self.sub_category_items = self.get_sub_category_data(sub_category_code!)
+        self.sub_category_items = self.search_model.get_sub_category_data()
     }
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {

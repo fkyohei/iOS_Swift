@@ -13,6 +13,8 @@ class AreaLSearchViewController: BaseViewController, UITableViewDataSource, UITa
     @IBOutlet weak var areal_table_view: UITableView!
     // Lエリアデータ
     var areal_items: RealmSwift.Results<Area_L>!
+    // 検索モデル
+    var search_model: SearchModel = SearchModel()
 
     /**
      * xib読み込み
@@ -26,9 +28,6 @@ class AreaLSearchViewController: BaseViewController, UITableViewDataSource, UITa
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // アプリコード読み込み
-        self.appdelegate.app_code.get_data()
-
         // カスタムセル読み込み
         let nib = UINib(nibName: "AreaLCustomCell", bundle: nil)
         self.areal_table_view.registerNib(nib, forCellReuseIdentifier: "AreaLCustomCell")
@@ -37,8 +36,7 @@ class AreaLSearchViewController: BaseViewController, UITableViewDataSource, UITa
         self.navigationItem.titleView = self.set_nav_title("エリア選択", int_width: 90, int_height: 44)
         
         // Lエリアデータ取得
-        let pref_code = self.appdelegate.app_code.pref_code
-        self.areal_items = self.get_areal_data(pref_code!)
+        self.areal_items = self.search_model.get_areal_data()
     }
 
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
