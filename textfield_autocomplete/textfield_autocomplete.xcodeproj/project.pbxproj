@@ -1,0 +1,504 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7590B18E1BFEF8F600DECF16 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7590B18D1BFEF8F600DECF16 /* AppDelegate.swift */; };
+		7590B1901BFEF8F600DECF16 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7590B18F1BFEF8F600DECF16 /* ViewController.swift */; };
+		7590B1931BFEF8F600DECF16 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7590B1911BFEF8F600DECF16 /* Main.storyboard */; };
+		7590B1951BFEF8F600DECF16 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7590B1941BFEF8F600DECF16 /* Assets.xcassets */; };
+		7590B1981BFEF8F600DECF16 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7590B1961BFEF8F600DECF16 /* LaunchScreen.storyboard */; };
+		7590B1A31BFEF8F600DECF16 /* textfield_autocompleteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7590B1A21BFEF8F600DECF16 /* textfield_autocompleteTests.swift */; };
+		7590B1AE1BFEF8F600DECF16 /* textfield_autocompleteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7590B1AD1BFEF8F600DECF16 /* textfield_autocompleteUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7590B19F1BFEF8F600DECF16 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7590B1821BFEF8F600DECF16 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7590B1891BFEF8F600DECF16;
+			remoteInfo = textfield_autocomplete;
+		};
+		7590B1AA1BFEF8F600DECF16 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7590B1821BFEF8F600DECF16 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7590B1891BFEF8F600DECF16;
+			remoteInfo = textfield_autocomplete;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7590B18A1BFEF8F600DECF16 /* textfield_autocomplete.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = textfield_autocomplete.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7590B18D1BFEF8F600DECF16 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7590B18F1BFEF8F600DECF16 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7590B1921BFEF8F600DECF16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7590B1941BFEF8F600DECF16 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7590B1971BFEF8F600DECF16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7590B1991BFEF8F600DECF16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7590B19E1BFEF8F600DECF16 /* textfield_autocompleteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = textfield_autocompleteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7590B1A21BFEF8F600DECF16 /* textfield_autocompleteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = textfield_autocompleteTests.swift; sourceTree = "<group>"; };
+		7590B1A41BFEF8F600DECF16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7590B1A91BFEF8F600DECF16 /* textfield_autocompleteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = textfield_autocompleteUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7590B1AD1BFEF8F600DECF16 /* textfield_autocompleteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = textfield_autocompleteUITests.swift; sourceTree = "<group>"; };
+		7590B1AF1BFEF8F600DECF16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7590B1871BFEF8F600DECF16 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7590B19B1BFEF8F600DECF16 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7590B1A61BFEF8F600DECF16 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7590B1811BFEF8F600DECF16 = {
+			isa = PBXGroup;
+			children = (
+				7590B18C1BFEF8F600DECF16 /* textfield_autocomplete */,
+				7590B1A11BFEF8F600DECF16 /* textfield_autocompleteTests */,
+				7590B1AC1BFEF8F600DECF16 /* textfield_autocompleteUITests */,
+				7590B18B1BFEF8F600DECF16 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7590B18B1BFEF8F600DECF16 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7590B18A1BFEF8F600DECF16 /* textfield_autocomplete.app */,
+				7590B19E1BFEF8F600DECF16 /* textfield_autocompleteTests.xctest */,
+				7590B1A91BFEF8F600DECF16 /* textfield_autocompleteUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7590B18C1BFEF8F600DECF16 /* textfield_autocomplete */ = {
+			isa = PBXGroup;
+			children = (
+				7590B18D1BFEF8F600DECF16 /* AppDelegate.swift */,
+				7590B18F1BFEF8F600DECF16 /* ViewController.swift */,
+				7590B1911BFEF8F600DECF16 /* Main.storyboard */,
+				7590B1941BFEF8F600DECF16 /* Assets.xcassets */,
+				7590B1961BFEF8F600DECF16 /* LaunchScreen.storyboard */,
+				7590B1991BFEF8F600DECF16 /* Info.plist */,
+			);
+			path = textfield_autocomplete;
+			sourceTree = "<group>";
+		};
+		7590B1A11BFEF8F600DECF16 /* textfield_autocompleteTests */ = {
+			isa = PBXGroup;
+			children = (
+				7590B1A21BFEF8F600DECF16 /* textfield_autocompleteTests.swift */,
+				7590B1A41BFEF8F600DECF16 /* Info.plist */,
+			);
+			path = textfield_autocompleteTests;
+			sourceTree = "<group>";
+		};
+		7590B1AC1BFEF8F600DECF16 /* textfield_autocompleteUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7590B1AD1BFEF8F600DECF16 /* textfield_autocompleteUITests.swift */,
+				7590B1AF1BFEF8F600DECF16 /* Info.plist */,
+			);
+			path = textfield_autocompleteUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7590B1891BFEF8F600DECF16 /* textfield_autocomplete */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7590B1B21BFEF8F600DECF16 /* Build configuration list for PBXNativeTarget "textfield_autocomplete" */;
+			buildPhases = (
+				7590B1861BFEF8F600DECF16 /* Sources */,
+				7590B1871BFEF8F600DECF16 /* Frameworks */,
+				7590B1881BFEF8F600DECF16 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = textfield_autocomplete;
+			productName = textfield_autocomplete;
+			productReference = 7590B18A1BFEF8F600DECF16 /* textfield_autocomplete.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7590B19D1BFEF8F600DECF16 /* textfield_autocompleteTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7590B1B51BFEF8F600DECF16 /* Build configuration list for PBXNativeTarget "textfield_autocompleteTests" */;
+			buildPhases = (
+				7590B19A1BFEF8F600DECF16 /* Sources */,
+				7590B19B1BFEF8F600DECF16 /* Frameworks */,
+				7590B19C1BFEF8F600DECF16 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7590B1A01BFEF8F600DECF16 /* PBXTargetDependency */,
+			);
+			name = textfield_autocompleteTests;
+			productName = textfield_autocompleteTests;
+			productReference = 7590B19E1BFEF8F600DECF16 /* textfield_autocompleteTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7590B1A81BFEF8F600DECF16 /* textfield_autocompleteUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7590B1B81BFEF8F600DECF16 /* Build configuration list for PBXNativeTarget "textfield_autocompleteUITests" */;
+			buildPhases = (
+				7590B1A51BFEF8F600DECF16 /* Sources */,
+				7590B1A61BFEF8F600DECF16 /* Frameworks */,
+				7590B1A71BFEF8F600DECF16 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7590B1AB1BFEF8F600DECF16 /* PBXTargetDependency */,
+			);
+			name = textfield_autocompleteUITests;
+			productName = textfield_autocompleteUITests;
+			productReference = 7590B1A91BFEF8F600DECF16 /* textfield_autocompleteUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7590B1821BFEF8F600DECF16 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = fujisakikyo;
+				TargetAttributes = {
+					7590B1891BFEF8F600DECF16 = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+					7590B19D1BFEF8F600DECF16 = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = 7590B1891BFEF8F600DECF16;
+					};
+					7590B1A81BFEF8F600DECF16 = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = 7590B1891BFEF8F600DECF16;
+					};
+				};
+			};
+			buildConfigurationList = 7590B1851BFEF8F600DECF16 /* Build configuration list for PBXProject "textfield_autocomplete" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7590B1811BFEF8F600DECF16;
+			productRefGroup = 7590B18B1BFEF8F600DECF16 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7590B1891BFEF8F600DECF16 /* textfield_autocomplete */,
+				7590B19D1BFEF8F600DECF16 /* textfield_autocompleteTests */,
+				7590B1A81BFEF8F600DECF16 /* textfield_autocompleteUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7590B1881BFEF8F600DECF16 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7590B1981BFEF8F600DECF16 /* LaunchScreen.storyboard in Resources */,
+				7590B1951BFEF8F600DECF16 /* Assets.xcassets in Resources */,
+				7590B1931BFEF8F600DECF16 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7590B19C1BFEF8F600DECF16 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7590B1A71BFEF8F600DECF16 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7590B1861BFEF8F600DECF16 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7590B1901BFEF8F600DECF16 /* ViewController.swift in Sources */,
+				7590B18E1BFEF8F600DECF16 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7590B19A1BFEF8F600DECF16 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7590B1A31BFEF8F600DECF16 /* textfield_autocompleteTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7590B1A51BFEF8F600DECF16 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7590B1AE1BFEF8F600DECF16 /* textfield_autocompleteUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7590B1A01BFEF8F600DECF16 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7590B1891BFEF8F600DECF16 /* textfield_autocomplete */;
+			targetProxy = 7590B19F1BFEF8F600DECF16 /* PBXContainerItemProxy */;
+		};
+		7590B1AB1BFEF8F600DECF16 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7590B1891BFEF8F600DECF16 /* textfield_autocomplete */;
+			targetProxy = 7590B1AA1BFEF8F600DECF16 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7590B1911BFEF8F600DECF16 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7590B1921BFEF8F600DECF16 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7590B1961BFEF8F600DECF16 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7590B1971BFEF8F600DECF16 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7590B1B01BFEF8F600DECF16 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7590B1B11BFEF8F600DECF16 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7590B1B31BFEF8F600DECF16 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = textfield_autocomplete/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.fujisakikyo.textfield-autocomplete";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		7590B1B41BFEF8F600DECF16 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = textfield_autocomplete/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.fujisakikyo.textfield-autocomplete";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		7590B1B61BFEF8F600DECF16 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = textfield_autocompleteTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.fujisakikyo.textfield-autocompleteTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/textfield_autocomplete.app/textfield_autocomplete";
+			};
+			name = Debug;
+		};
+		7590B1B71BFEF8F600DECF16 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = textfield_autocompleteTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.fujisakikyo.textfield-autocompleteTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/textfield_autocomplete.app/textfield_autocomplete";
+			};
+			name = Release;
+		};
+		7590B1B91BFEF8F600DECF16 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = textfield_autocompleteUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.fujisakikyo.textfield-autocompleteUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = textfield_autocomplete;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		7590B1BA1BFEF8F600DECF16 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = textfield_autocompleteUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.fujisakikyo.textfield-autocompleteUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = textfield_autocomplete;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7590B1851BFEF8F600DECF16 /* Build configuration list for PBXProject "textfield_autocomplete" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7590B1B01BFEF8F600DECF16 /* Debug */,
+				7590B1B11BFEF8F600DECF16 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7590B1B21BFEF8F600DECF16 /* Build configuration list for PBXNativeTarget "textfield_autocomplete" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7590B1B31BFEF8F600DECF16 /* Debug */,
+				7590B1B41BFEF8F600DECF16 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		7590B1B51BFEF8F600DECF16 /* Build configuration list for PBXNativeTarget "textfield_autocompleteTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7590B1B61BFEF8F600DECF16 /* Debug */,
+				7590B1B71BFEF8F600DECF16 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		7590B1B81BFEF8F600DECF16 /* Build configuration list for PBXNativeTarget "textfield_autocompleteUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7590B1B91BFEF8F600DECF16 /* Debug */,
+				7590B1BA1BFEF8F600DECF16 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7590B1821BFEF8F600DECF16 /* Project object */;
+}
