@@ -481,6 +481,7 @@
 				7590B1B41BFEF8F600DECF16 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7590B1B51BFEF8F600DECF16 /* Build configuration list for PBXNativeTarget "textfield_autocompleteTests" */ = {
 			isa = XCConfigurationList;
@@ -489,6 +490,7 @@
 				7590B1B71BFEF8F600DECF16 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7590B1B81BFEF8F600DECF16 /* Build configuration list for PBXNativeTarget "textfield_autocompleteUITests" */ = {
 			isa = XCConfigurationList;
@@ -497,6 +499,7 @@
 				7590B1BA1BFEF8F600DECF16 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

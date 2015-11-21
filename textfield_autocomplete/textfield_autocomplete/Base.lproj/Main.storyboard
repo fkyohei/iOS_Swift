@@ -17,13 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ncb-he-cwz">
-                                <rect key="frame" x="20" y="100" width="560" height="30"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="wbS-Q1-cOc">
+                            <tableView clipsSubviews="YES" tag="1" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="wbS-Q1-cOc">
                                 <rect key="frame" x="20" y="130" width="560" height="150"/>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -31,16 +25,34 @@
                                     <constraint firstAttribute="height" constant="150" id="TPd-Ph-Gue"/>
                                 </constraints>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o44-r3-I2E">
+                                <rect key="frame" x="40" y="320" width="520" height="30"/>
+                                <animations/>
+                                <state key="normal" title="モーダル"/>
+                                <connections>
+                                    <action selector="modalBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wtD-k5-xCp"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ncb-he-cwz">
+                                <rect key="frame" x="20" y="100" width="560" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="ncb-he-cwz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="25R-Zy-23x"/>
+                            <constraint firstItem="o44-r3-I2E" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="3x5-uO-7t4"/>
                             <constraint firstItem="wbS-Q1-cOc" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="6zP-sR-SIm"/>
                             <constraint firstItem="ncb-he-cwz" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="71F-or-9Tc"/>
                             <constraint firstItem="wbS-Q1-cOc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="I7d-Wu-Qcw"/>
                             <constraint firstItem="ncb-he-cwz" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="80" id="LaC-9g-Li0"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="o44-r3-I2E" secondAttribute="bottom" constant="250" id="MRx-mr-r6U"/>
+                            <constraint firstItem="o44-r3-I2E" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SSO-yH-FRb"/>
                             <constraint firstItem="wbS-Q1-cOc" firstAttribute="top" secondItem="ncb-he-cwz" secondAttribute="bottom" id="SmQ-Ma-9yR"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="o44-r3-I2E" secondAttribute="trailing" constant="20" id="gZF-bb-IE0"/>
                         </constraints>
                     </view>
                     <connections>
@@ -50,7 +62,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="363" y="479"/>
+            <point key="canvasLocation" x="351" y="514"/>
         </scene>
     </scenes>
 </document>

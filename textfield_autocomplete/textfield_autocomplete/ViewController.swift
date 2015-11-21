@@ -12,9 +12,14 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 
     @IBOutlet weak var textField: UITextField!
     @IBOutlet weak var autocompleteTableView: UITableView!
+    
+    var myWindow = UIWindow()
+    var myWindowButton = UIButton()
 
     var ary_select = ["Camel", "Cat", "Dog", "Dolphin", "Koala", "Men", "Monkey", "Women"]
     var autocompleteUrls = [String]()
+    
+    var ary_data = ["aaa", "bbbb", "ccc", "ddd", "eee"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -65,29 +70,101 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return autocompleteUrls.count
+        // サジェストテーブル
+        if tableView.tag == 1 {
+            return autocompleteUrls.count
+        }
+        // ポップアップテーブル
+        else if tableView.tag == 2 {
+            return ary_data.count
+        }
+        return 1
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        
+        // サジェストテーブル
+        if tableView.tag == 1 {
+            let autoCompleteRowIdentifier = "AutoCompleteRowIdentifier"
+            var cell = tableView.dequeueReusableCellWithIdentifier(autoCompleteRowIdentifier) as UITableViewCell?
+            
+            if let _ = cell {
+                cell!.textLabel!.text = autocompleteUrls[indexPath.row]
+            } else {
+                cell = UITableViewCell(style: UITableViewCellStyle.Value1, reuseIdentifier: autoCompleteRowIdentifier)
+            }
+            return cell!
+        }
+        // ポップアップテーブル
+        else if tableView.tag == 2 {
+            let cell:UITableViewCell = UITableViewCell(style:UITableViewCellStyle.Default, reuseIdentifier:"Cell")
+            cell.textLabel?.text = ary_data[indexPath.row]
+            return cell
+        }
         let autoCompleteRowIdentifier = "AutoCompleteRowIdentifier"
         var cell = tableView.dequeueReusableCellWithIdentifier(autoCompleteRowIdentifier) as UITableViewCell?
-        
-        if let _ = cell {
-            cell!.textLabel!.text = autocompleteUrls[indexPath.row]
-        } else {
-            cell = UITableViewCell(style: UITableViewCellStyle.Value1, reuseIdentifier: autoCompleteRowIdentifier)
-        }
-        
         return cell!
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        let selectedCell : UITableViewCell = tableView.cellForRowAtIndexPath(indexPath)!
-        textField.text = selectedCell.textLabel!.text
-        autocompleteTableView.hidden = true
+        // サジェストテーブル
+        if tableView.tag == 1 {
+            let selectedCell : UITableViewCell = tableView.cellForRowAtIndexPath(indexPath)!
+            textField.text = selectedCell.textLabel!.text
+            autocompleteTableView.hidden = true
+        }
+        // ポップアップテーブル
+        else if tableView.tag == 2 {
+            print(ary_data[indexPath.row])
+            myWindow.hidden = true
+        }
     }
 
+    @IBAction func modalBtn(sender: AnyObject) {
+
+        
+        // 背景黒
+        myWindow.backgroundColor = UIColor.blackColor()
+        myWindow.frame = CGRectMake(0, 0, self.view.frame.width, self.view.frame.height)
+        myWindow.layer.position = CGPointMake(self.view.frame.width/2, self.view.frame.height/2)
+        myWindow.alpha = 0.8
+        
+        // myWindowをkeyWindowにする.
+        myWindow.makeKeyWindow()
+        
+        // windowを表示する.
+        myWindow.makeKeyAndVisible()
+        
+        // テーブルを作成
+        let table = UITableView(frame:CGRect(x:0, y: 0, width:self.view.frame.size.width * 2 / 3, height: self.view.frame.height * 2 / 3))
+        table.layer.position = CGPointMake(self.view.frame.width/2, self.view.frame.height/2)
+        table.delegate = self
+        table.dataSource = self
+        table.tag = 2
+        myWindow.addSubview(table)
+        
+        // ボタンを作成する.
+        myWindowButton.frame = CGRectMake(0, 0, 100, 60)
+        myWindowButton.backgroundColor = UIColor.orangeColor()
+        myWindowButton.setTitle("Close", forState: .Normal)
+        myWindowButton.setTitleColor(UIColor.whiteColor(), forState: .Normal)
+        myWindowButton.layer.masksToBounds = true
+        myWindowButton.layer.cornerRadius = 20.0
+        myWindowButton.layer.position = CGPointMake(myWindow.frame.width/2, myWindow.frame.height-50)
+        myWindowButton.addTarget(self, action: "onClickMyButton:", forControlEvents: .TouchUpInside)
+        myWindow.addSubview(myWindowButton)
+    }
+    
+    /*
+    ボタンイベント
+    */
+    internal func onClickMyButton(sender: UIButton) {
+        
+        if sender == myWindowButton {
+            myWindow.hidden = true
+        }
+    }
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
