@@ -12,6 +12,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 
     @IBOutlet weak var textField: UITextField!
     @IBOutlet weak var autocompleteTableView: UITableView!
+    @IBOutlet weak var secondtextField: UITextField!
     
     var myWindow = UIWindow()
     var myWindowButton = UIButton()
@@ -19,7 +20,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     var ary_select = ["Camel", "Cat", "Dog", "Dolphin", "Koala", "Men", "Monkey", "Women"]
     var autocompleteUrls = [String]()
     
-    var ary_data = ["aaa", "bbbb", "ccc", "ddd", "eee"]
+    var ary_data = ["aaa", "bbbb", "ccc", "ddd", "eee", "aaa", "bbbb", "ccc", "ddd", "eee", "aaa", "bbbb", "ccc", "ddd", "eee"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -114,7 +115,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         }
         // ポップアップテーブル
         else if tableView.tag == 2 {
-            print(ary_data[indexPath.row])
+            let selectedCell : UITableViewCell = tableView.cellForRowAtIndexPath(indexPath)!
+            secondtextField.text = selectedCell.textLabel!.text
             myWindow.hidden = true
         }
     }
